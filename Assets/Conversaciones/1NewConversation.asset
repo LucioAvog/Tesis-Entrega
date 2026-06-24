@@ -1,0 +1,375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: 1NewConversation
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  conversationLines:
+  - speaker: ' '
+    text: "1789 - Par\xEDs, Francia.\r\nA las afueras del pueblo.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 3
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: ' '
+    text: "El amanecer llegaba fr\xEDo sobre los campos secos, casi vac\xEDos debido
+      a las malas cosechas. La tierra se pega a mis manos mientras entierro la pala
+      una y otra vez entre ra\xEDces y piedras.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 200, y: 400}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: " El viento trae olor a trigo mojado, esti\xE9rcol y humo de chimenea de
+      otros campesinos cercanos. "
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 200, y: 400}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Apenas sale el sol, pero ya me duele la espalda como si hubiera trabajado
+      2 d\xEDas sin dormir... o comer."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 300, y: 400}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: ' '
+    text: "Mi nombre es Fran\xE7ois Mercier. Tengo 20 a\xF1os y soy el due\xF1o de
+      esta tierra desolada.  "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 150, y: 100}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ' '
+    text: 'No soy un juez, ni abogado o sacerdote, solo un simple agricultor. En
+      Francia, eso significa deberle la vida a gente rica solo para respirar.
+
+'
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 220.44, y: 370.96}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ' '
+    text: "Mis manos tiemblan de fr\xEDo mientras mis hombros se mantienen tensos,
+      veo otro saco con papas peque\xF1as, muchas podridas siquiera antes de crecer."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 220.44, y: 370.96}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Este a\xF1o las cosechas fueron malas, otra vez. \xDAltimamente, los d\xEDas
+      han sido muy secos o muy lluviosos, arruinando la plantaci\xF3n. A\xFAn as\xED,
+      los recaudadores de impuestos exigen exactamente lo mismo."
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 300, y: 400}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: ' '
+    text: "Siempre exigen lo mismo... o m\xE1s, incluso."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 220.44, y: 370.96}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ' '
+    text: "La iglesia quiere su parte, el Rey tambi\xE9n. "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 220.44, y: 370.96}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ' '
+    text: "Miro de reojo al escuchar pasos familiares acerc\xE1ndose entre el barro,
+      de una persona que conoc\xEDa muy bien. "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 220.44, y: 370.96}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ???
+    text: "Sigues movi\xE9ndote como un anciano, Fran\xE7ois. "
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Levanto la vista y veo a Elodie Valjean, acerc\xE1ndose con un canasto
+      apoyado en la cintura. Su vestido campesino tiene manchas de tierra seca, adem\xE1s
+      de tener mechones de su cabello casta\xF1o pegados a la frente por el sudor. "
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "La conozco, hace a\xF1os, tantos que dej\xE9 de contarlos porque \xE9ramos
+      muy peque\xF1os. Sol\xEDamos correr entre estos mismos campos, imaginando aventuras
+      antes de entender el significado de lo que \xE9ramos. Pobres."
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Intent\xE9 sonre\xEDr, pero estaba muy cansado para hacerlo."
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices:
+    - buttonText: "Y t\xFA tienes unos labios muy parlanchines, Elodie."
+      nextDialogue: {fileID: 11400000, guid: d26af289fd0c33d46b09a02b64501515, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: "Siempre tan alegre, Elodie\u2026"
+      nextDialogue: {fileID: 11400000, guid: d863655d7b1ae47449617939b2c27361, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 

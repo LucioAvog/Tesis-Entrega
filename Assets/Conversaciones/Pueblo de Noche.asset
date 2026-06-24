@@ -1,0 +1,991 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Pueblo de Noche
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  conversationLines:
+  - speaker: 
+    text: Noche, 11:49 pm.
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "La noche ca\xEDa pesada sobre el pueblo, las ventanas estaban cerradas,
+      como si hubiera un leve miedo a que alguien escuchara. No hab\xEDa guardias,
+      hoy en realidad, era una de las despampanantes fiestas de la realeza, as\xED
+      que estaban en el palacio.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Hab\xEDa un leve olor a humedad, vino barato, y humo de antorchas lejanas\u2026
+      mientras que Elodie caminaba delante de m\xED, con rapidez mientras atravesamos
+      callejones estrechos."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Francois
+    text: "\xBFSeguro que es buena idea? \r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Pregunt\xE9."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Elodie
+    text: Demasiado tarde para arrepentirse.
+    showImage: 1
+    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Suspir\xE9 mientras segu\xEDa avanzando detr\xE1s de ella, finalmente
+      se detuvo frente a una vieja bodega de piedras, la puerta estaba custodiada
+      por dos hombres que se aseguraron de que no fu\xE9ramos guardias\u2026"
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Adentro hab\xEDa m\xE1s personas de lo que esperaba, campesinos, herreros,
+      mujeres con ni\xF1os en brazos, y m\xE1s comerciantes de lo que imagin\xE9.\r\n"
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: -2964408731682713348, guid: 74863ceb471b3a9448785ea587fbe202, type: 3}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Todos hablaban en voz baja cuando v\xED a lo que parec\xEDan ser los convocados
+      de aquella reuni\xF3n. Uno de ellos era un hombre de cabellos casta\xF1os,
+      casi rojizos, ten\xEDa una sonrisa afilada como la de un zorro y parec\xEDa
+      divertido por la reuni\xF3n.\r\n"
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: El otro se veia mas serio, ropa que delataba mas estatus social y un cabello
+      negro perfectamente ordenado.
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Mientras que el \xFAltimo, resaltaba mucho menos, ten\xEDa ropas de campesinos
+      y una mirada amable, incluso algo t\xEDmida, sus cabellos rubios alborotados
+      y se ve\xEDa menor que los otros dos."
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Elodie
+    text: "Ellos son quienes organizaron todo esto \r\n"
+    showImage: 1
+    characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: Dijo Elodie, algo boquiabierta.
+    showImage: 1
+    characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: 'El hombre de sonrisa burlona fue el primero en acercarse, inclinando la
+      cabeza levemente hacia nosotros.
+
+'
+    showImage: 0
+    characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ???
+    text: "\xBFNuevas caras\u2026? \xA1Que felicidad ver a m\xE1s j\xF3venes entusiasmados
+      por la revoluci\xF3n! \xA1Soy Jean Dubois! Me memorizo cada rostro para asegurarse
+      de que un guardia no hayan\u2026"
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: 'Ya sabes, personas indeseadas.  '
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "La \xFAltima oraci\xF3n sali\xF3 algo venenosa de sus labios\u2026 si
+      que parec\xEDa odiar a la monarqu\xEDa, luego volvi\xF3 con su sonrisa."
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jean Dubois
+    text: "\xBFMe permiten sus nombres?"
+    showImage: 1
+    characterImage: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Elodie me mir\xF3 a mi, y luego a Jean, pude sentir su mirada finalmente
+      y creo que ella tambi\xE9n lo not\xF3.\r\n"
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Elodie
+    text: 'Elodie Valjean y Francois Mercier
+
+'
+    showImage: 1
+    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Jean pareci\xF3 ponerse pensativo unos segundos, para luego mirarme."
+    showImage: 1
+    characterImage: {fileID: -5372799575133389614, guid: 5f77d39ef285360479f75989a971df5a, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: "As\xED que Francois, \xBFeh? Por las historias de Emma, esperaba a alguien
+      mucho m\xE1s rebelde\u2026 "
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: ...No tan apagado
+    showImage: 1
+    characterImage: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Solt\xF3 algo burl\xF3n, inclin\xE1ndose a mi levemente, parec\xEDa buscar
+      provocarme, como si quisiera iniciar una pelea."
+    showImage: 1
+    characterImage: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Ella era una hija de unos burgueses, de padres muy abiertos y que la educaron
+      para ser una dama de primera clase, aunque solo era una jovencita demasiado
+      habladora, y por lo qu\xE9 ve\xEDa, les cont\xF3 sobre m\xED."
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Mi mente solo pod\xEDa pensar en Emma, una vieja amiga\u2026 definitivamente
+      de boca suelta, no la hab\xEDa visto desde que hered\xE9 las tierras, asi que
+      he estado algo m\xE1s ocupado. "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Francois
+    text: "\xBFQu\xE9 dijo?  "
+    showImage: 0
+    characterImage: {fileID: -6834798008387797036, guid: 702d7aeab0f63b64490247044f6c0131, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Frunc\xED el ce\xF1o al escuchar eso."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jean Dubois
+    text: "Oh, Emma contaba las maravillosas historias de como dec\xEDas que quer\xEDas
+      derrotar a la corona, \xA1que le ganar\xEDas al rey en una batalla! Y te quedar\xEDas
+      con sus pasteles. "
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Sent\xED el rostro enrojecer de la verg\xFCenza al recordar esos momentos
+      de mi infancia cuando me escabulle a jugar con Emma, agradec\xED cuando vi
+      a otra figura acercarse. "
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ???
+    text: Jean, deja de incomodar a la gente.
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Interrumpi\xF3 otra vez con calma. "
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Mir\xE9 de reojo hacia la persona que se acerc\xF3, aquel hombre de cabellos
+      negros que se veia tan fr\xEDo\u2026 ahora que lo ve\xEDa bien, parec\xEDa
+      incluso hasta algo agotado, como si llevara d\xEDas apenas durmiendo correctamente.\r\n"
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: "Rel\xE1jate, solo los estoy conociendo. Es amigo de tu querida Emma.\r\n"
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "La sonrisa afilada de Jean no desapareci\xF3 ni un momento, pero esa afirmaci\xF3n
+      hizo que ese hombre estuviera menos tenso."
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jules Laurent
+    text: "Jules Laurent, joven. Es un placer conocerlo, Emma suele hablar bastante
+      seguido de usted\u2026 como de todo el mundo. "
+    showImage: 1
+    characterImage: {fileID: 6078482847972831915, guid: fc31fe2def8daa140b42bb1a03c7be65, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Suspir\xF3 rendido."
+    showImage: 1
+    characterImage: {fileID: 6078482847972831915, guid: fc31fe2def8daa140b42bb1a03c7be65, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Jean dej\xF3 escapar una risa leve, mientras su mirada me abandonaba y
+      pasaba a una menos amable con Jules."
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: "Nuestro querido sacerdote cree que va a salvar Francia siendo pac\xEDfico."
+    showImage: 1
+    characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jules Laurent
+    text: "Y t\xFA crees que vas a hacerlo con la violencia, es est\xFApido. "
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Murmur\xF3 entre dientes, aunque manteniendo su postura ser\xEDa."
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: El ambiente se puso tenso
+    showImage: 1
+    characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices:
+    - buttonText: Apoyar a Jean.
+      nextDialogue: {fileID: 11400000, guid: 6c7547a9616309641ae4da9da581bfcd, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: Apoyar a Jules.
+      nextDialogue: {fileID: 11400000, guid: 404202f80c9ca324aa30ae69a4e90e90, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 

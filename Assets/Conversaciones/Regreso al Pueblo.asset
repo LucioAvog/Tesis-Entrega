@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Regreso al Pueblo
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  conversationLines:
+  - speaker: 
+    text: "El regreso al pueblo fue silencioso. Mis pensamientos giraban en torno
+      a una sola cosa: \xBFQu\xE9 haremos ahora? La hambruna nos acecha, el clima
+      empeora las cosechas y mi salud empeora.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Cerca de mi hogar, divis\xE9 unas siluetas en la distancia. Al acercarme
+      m\xE1s, descubr\xED que se trataba de mi vecino y dos guardias. Mientras m\xE1s
+      me acercaba, m\xE1s claro se volv\xEDa el conflicto.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Vecino
+    text: "\xA1Debo alimentar a mi familia! \xA1No pueden hacerme esto!\r\n"
+    showImage: 1
+    characterImage: {fileID: 3651360570310532851, guid: 10f1667fe3eff034a9f75c2e7ed33afe, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 'Uno de los guardias lo sujetaba del cuello de su camisa, mientras que
+      el otro trozaba un pedazo de pan blanco sobre la tierra.
+
+'
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Guardia
+    text: 'Robar a Su Majestad es delito.  '
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Dijo con una mirada fr\xEDa y estoica. "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Vecino
+    text: "\xA1No tuve elecci\xF3n! \xA1Mi hijo morir\xE1 si no lo alimento!\r\n"
+    showImage: 1
+    characterImage: {fileID: 3651360570310532851, guid: 10f1667fe3eff034a9f75c2e7ed33afe, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "De repente, el guardia alz\xF3 su mano y form\xF3 un pu\xF1o. Retorci\xF3
+      su brazo hacia atr\xE1s para luego golpear al ladr\xF3n con una fuerza brutal.
+      La evidencia se marc\xF3 en sus nudillos.\r\n"
+    showImage: 0
+    characterImage: {fileID: 4422801775354360503, guid: 0af5e0bf20c4b6f4586282803de379e2, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Mi vecino cay\xF3 de rodillas. El barro comenz\xF3 a mezclarse con la
+      sangre que brotaba de su nariz, que recibi\xF3 todo el impacto.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 1
+    shakeDuration: 0.25
+    shakeIntensity: 5
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Sent\xED un vac\xEDo en mi interior."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Mi vecino intent\xF3 levantarse, pero un guardia sac\xF3 su espada y lo
+      detuvo:\r\n"
+    showImage: 0
+    characterImage: {fileID: 4422801775354360503, guid: 0af5e0bf20c4b6f4586282803de379e2, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Guardia
+    text: "Ni una palabra m\xE1s. Tienes suerte de no dormir en una celda.  "
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Una chispa se encendi\xF3 en mi interior. No tengo miedo. Debo de oponerme
+      a esto, detener su reinado de maldad. Pero, \xBFrealmente lo vale? \xBFArriesgar
+      mi vida por un simple campesino?\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices:
+    - buttonText: Conrfontarlos
+      nextDialogue: {fileID: 11400000, guid: bba20c432127caa42beadad2809c194f, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: Guardar Silencio
+      nextDialogue: {fileID: 11400000, guid: cfd3fdfec2253f74086b0652c2abd460, type: 2}
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      changeScene: 0
+      sceneToLoad: 

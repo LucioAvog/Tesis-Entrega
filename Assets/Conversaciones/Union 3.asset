@@ -1,0 +1,497 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Union 3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 1
+  sceneToLoadOnEnd: Seleccion de bando
+  conversationLines:
+  - speaker: 
+    text: "Ambos parec\xEDan a punto de volver a pelearse, pero una voz mas suave
+      los interrumpi\xF3.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: -2791861649169482472, guid: 8dc6b7c72819b06448cb61cca7c92373, type: 3}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: ???
+    text: "Disculpen\u2026 \r\n"
+    showImage: 1
+    characterImage: {fileID: -5748912362787912128, guid: 830407863e207d5498f6665558403051, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "El muchacho rubio de ropas pueblerinos se acerc\xF3 lentamente, sosteniendo
+      una caja con vendas y trozos de pan envueltos con tela, probablemente se mi
+      edad, aunque por su expresi\xF3n cansada se ve\xEDa unos a\xF1os mayor"
+    showImage: 1
+    characterImage: {fileID: -5748912362787912128, guid: 830407863e207d5498f6665558403051, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Gabriel
+    text: "La se\xF1ora Louise esta mejor."
+    showImage: 1
+    characterImage: {fileID: -5748912362787912128, guid: 830407863e207d5498f6665558403051, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jean Dubois
+    text: 'Ah, Gabriel quiere salvar Francia el solo. '
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Murmur\xF3 divertido Jean.\r\n"
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Gabriel Bernant
+    text: 'Solo intento ayudar.
+
+'
+    showImage: 1
+    characterImage: {fileID: 2881689380543344907, guid: ae8bc8aa98bc76340ae19b746eeab1a0, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Su mirada baj\xF3 t\xEDmidamente al suelo, su voz era baja, pero segura,
+      posiblemente muy preocupado por las personas.\r\n"
+    showImage: 1
+    characterImage: {fileID: 2881689380543344907, guid: ae8bc8aa98bc76340ae19b746eeab1a0, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jules Laurent
+    text: "El es Gabriel Bernard, es el hijo del representante del pueblo. Seguro
+      ya lo has visto, su padre esta enfermo y \xE9l anda ocupado su lugar."
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Explic\xF3 Jules con calma."
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Jules Laurent
+    text: "Es t\xEDmido, a diferencia de Jean, trata de no molestarlo. "
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Gabriel Bernant
+    text: "Escuch\xE9 lo que hiciste en el pueblo \r\n"
+    showImage: 1
+    characterImage: {fileID: -4189773919495433949, guid: 190fd7fb538f0484ca3779896358558f, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Solt\xF3 t\xEDmidamente Gabriel"
+    showImage: 1
+    characterImage: {fileID: -6260219087941143836, guid: ab9dba9b71fdbd84b91eeaded4ef8dbc, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: -70, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: Gabriel Bernard
+    text: "Unos se\xF1ores dijeron que estuviste para ellos luego de que un guardia
+      los atacara."
+    showImage: 1
+    characterImage: {fileID: -4189773919495433949, guid: 190fd7fb538f0484ca3779896358558f, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []
+  - speaker: 
+    text: "Que vergonzoso era saber que hab\xEDan m\xE1s personas enteradas, Elodie
+      apoy\xF3 una mano en mi hombro al verme tan tenso."
+    showImage: 0
+    characterImage: {fileID: 168661227485434523, guid: 17bfadfbd598e5e4b8abcaf37a53538d, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean Dubois
+    text: "\xBFVes? Ya eres popular entre nosotros, \xA1necesitamos la valent\xEDa
+      de todas las personas posibles! Gente que quiera acabar con este sistema y
+      haga lo que sea para conseguirlo. \xBFNo te gustar\xEDa unirte?\r\n"
+    showImage: 1
+    characterImage: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 60}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Francois
+    text: Yo...
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Trat\xE9 de hablar, pero fui interrumpido por Jules, que se ve\xEDa molesto
+      ante eso."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jules Laurent
+    text: "Deja de tratar de llevarte a m\xE1s gente a tu ideas tan radicales, Fran\xE7ois,
+      te quiero dar la posibilidad de unirte a nosotros, buscamos soluciones menos
+      extremistas, sin necesidad de violencia."
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Gabriel Bernart
+    text: "Nos vendr\xEDa bien gente que ayude con el pueblo\u2026 nos estamos muriendo
+      de hambre, alguien que nos ayude a administrar todo vendr\xEDa bien.\r\n"
+    showImage: 1
+    characterImage: {fileID: -4189773919495433949, guid: 190fd7fb538f0484ca3779896358558f, type: 3}
+    imagePosition: 2
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Los tres me miraron, que situaci\xF3n tan incomoda, \xBFa quien deb\xEDa
+      elegir?\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 1
+    choices: []

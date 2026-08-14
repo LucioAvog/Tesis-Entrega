@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ImagePosition { Izquierda, Derecha, Centro }
-public enum PanelType { Panel1, Panel2 }
+public enum ImagePosition { Izquierda, Derecha, Centro, Personalizada }
+public enum PanelType { Panel1, Panel2, Panel3 }
 
 [System.Serializable]
 public struct Choice
@@ -23,13 +23,30 @@ public struct Line
     [TextArea(3, 5)]
     public string text;
 
-    [Header("Configuración de Imagen de Personaje")]
+    [Header("Transición de Texto (Fade In)")]
+    public bool usarTransicionTexto; // <--- Check para activar/desactivar la transición suave
+    public float duracionTransicion; // <--- Duración del desvanecimiento en segundos (Ej: 1.5)
+
+    [Header("Personaje 1 (Principal)")]
     public bool showImage;
     public Sprite characterImage;
     public ImagePosition imagePosition;
-    
-    [Tooltip("¡CLAVE! Deja esto en (X: 0, Y: 0) para usar el tamaño por defecto que configuraste en el Editor. Solo escribe números aquí si quieres cambiar el tamaño del personaje en esta línea específica.")]
+    public Vector2 characterImagePosition;
     public Vector2 characterImageSize;
+
+    [Header("Personaje 2 (Opcional)")]
+    public bool showImage2;
+    public Sprite characterImage2;
+    public ImagePosition imagePosition2;
+    public Vector2 characterImagePosition2;
+    public Vector2 characterImageSize2;
+
+    [Header("Personaje 3 (Opcional)")]
+    public bool showImage3;
+    public Sprite characterImage3;
+    public ImagePosition imagePosition3;
+    public Vector2 characterImagePosition3;
+    public Vector2 characterImageSize3;
 
     [Header("Imagen UI de Pantalla / Ilustración")]
     public bool mostrarImagenUI; 
@@ -53,7 +70,6 @@ public struct Line
     [Header("Efectos de Audio Nuevos (SFX con Duración Fija)")]
     public bool playSFX;
     public AudioClip sfxClip;
-    [Tooltip("Tiempo exacto en segundos que sonará este efecto antes de apagarse.")]
     public float sfxDuration;
 
     [Header("Minijuegos / Carrusel de Paneles")]

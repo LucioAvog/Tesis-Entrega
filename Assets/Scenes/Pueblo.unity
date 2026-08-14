@@ -883,8 +883,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1867959982905978046, guid: 368f7088b43bd864a89a12ad945f0ed6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1587559870}
   m_SourcePrefab: {fileID: 100100000, guid: 368f7088b43bd864a89a12ad945f0ed6, type: 3}
+--- !u!1 &1587559869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1867959982905978046, guid: 368f7088b43bd864a89a12ad945f0ed6, type: 3}
+  m_PrefabInstance: {fileID: 1587559868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1587559870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587559869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8fedb9f39e1214e8e8f062c78eb8f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicManager
 --- !u!1001 &1799148813
 PrefabInstance:
   m_ObjectHideFlags: 0

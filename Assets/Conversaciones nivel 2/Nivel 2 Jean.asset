@@ -1,0 +1,606 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Nivel 2 Jean
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  conversationLines:
+  - speaker: 
+    text: "Jean subi\xF3 a la tribuna, golpeando la madera con el pu\xF1o."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1Ciudadanos!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1No podemos hablar de libertad mientras la sombra de la corona siga
+      envenenando la patria!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1La monarqu\xEDa debe ser abolida de inmediato!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1Francia debe renacer como una Rep\xFAblica \xFAnica e indivisible!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "La multitud estall\xF3 en gritos y aplausos, pero entre las bancadas m\xE1s
+      moderadas se escuchaban murmullos de duda y miedo. Jean baj\xF3 de la tribuna
+      y se pos\xF3 a mi lado, fijando su mirada inquisidora en m\xED.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "Lleg\xF3 el momento de demostrar tu lealtad a la causa, Fran\xE7ois"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "susurr\xF3 Jean"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xBFEst\xE1s listo para enterrar la monarqu\xEDa para siempre?\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Elodie
+    text: "Fran\xE7ois, esto es por lo que hemos luchado todos estos a\xF1os"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "a\xF1adi\xF3 Elodie con tono firme.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "El aire se sent\xEDa denso y pesado, el olor a humo se filtraba a mis
+      fosas nasales. Miles de personas se apretaban contra la puerta de la Bastille
+      Saint-Antoine, seg\xFAn Elodie, un s\xEDmbolo del absolutismo que gobernaba
+      en aquella \xE9poca, y el mayor dispositivo de p\xF3lvora del pa\xEDs."
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "El lugar era una masacre. Hab\xEDan m\xFAltiples cad\xE1veres esparcidos
+      por el suelo, al menos cien revolucionarios\u2026 una enorme cantidad a diferencia
+      de los guardias.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: Entre el humo denso de las primeras descargas de mosquete, divisamos a
+      Jean y a Jules en la vanguardia, representando dos caminos irreconciliables
+      frente al mismo abismo.
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Jean ten\xEDa la camisa manchada de holl\xEDn y agitaba una pica con la
+      cabeza de Jacques de Flesselles, la autoridad del lugar.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1Ciudadanos, no nos aliaremos con los ciervos del rey!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1Si se niegan a darnos la p\xF3lvora acabaremos con ellos! "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jean
+    text: "\xA1Los masacramos a cada guardia que nos mande!"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "dijo Jean con convicci\xF3n.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "Jules a su lado pareci\xF3 mirarlo con algo parecido al desprecio, claramente
+      disgustado. A diferencia de Jean, su ropa segu\xEDa igual de pulcra que siempre\u2026
+      mejor dicho, manchado con peque\xF1as gotas de sangre gracias a la cabeza que
+      el contrario sosten\xEDa.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jules
+    text: "\xA1Esc\xFAchenme! "
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jules
+    text: "Si asaltamos la Bastilla salvajemente, la Asamblea perder\xE1 la legitimidad"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: intervino Jules, alzando la voz tratando de contener la gran violencia
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Jules
+    text: "\xA1No hagan que esta masacre contin\xFAe!\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: Elodie
+    text: "Fran\xE7ois\u2026 vamos con ellos"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: "dijo Elodie en voz baja a mi lado, la mayor\xEDa de guardias hab\xEDan
+      sido capturados, la primera l\xEDnea se encarg\xF3 de todo.\r\n"
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImageSize: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 1
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []

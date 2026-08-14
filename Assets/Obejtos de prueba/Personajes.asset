@@ -1,0 +1,999 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Personajes
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  defaultPanelType: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  conversationLines:
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -1411162621863203439, guid: bde8b741bbee44d4eafb109210ec8a4c, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -8219889780560158332, guid: 129b34981bc2d1443886ea8a8cfbe292, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 7059979792448334937, guid: c369e112592f2754380a9841c5c31fd4, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 4782159938995461055, guid: 80fec011e548d8e4f8acf0814c85c9df, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -6767024041364065702, guid: 2ccd96595f838c14f87c35e6ee5caa78, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 4266216736615861182, guid: 7001d5e4cd02bca47a36fb7b7d8776a4, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -2649054745118234925, guid: 08f027812472cf64f86db27d6f6bdd11, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -3099223923429779885, guid: 2aa2c33da26624546b619e6a2ef86a38, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 4841001536275416567, guid: 97bb4471ff6a2434795f9bc90e022e3f, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -6732210578636942074, guid: bec1fc50343e6394db43fe4dc6c8d604, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8095609072769427553, guid: 75c258b2082668047bba36786e987ee2, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -921255922867621741, guid: b0690b933ddea6a42aa9966b29cea71c, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 1531178853750565228, guid: aba418a923eb8a34d9fecb750dd593c2, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -7052376867469560213, guid: c7d1b88d5ca90ee47b4c8801d5e7798d, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -1596029439960981801, guid: bbc96a47103dcc947bce6c24afc5203d, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -4938378081706138089, guid: 035f59a11df42d74eb3ea59c58c4c31a, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -1554342373273348534, guid: 73e0880cc71f8d7498c0493f76523d5e, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 6501404901668814070, guid: d375cb91aa6fd5141a539ccfd3fcef90, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 5197368410473150469, guid: 6e70b690af4b3314aa4d095d57d2c9e7, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 937242052729982932, guid: 3550d32fcda73e5408992f3c62ec1388, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8756535620283011005, guid: 43699145b17ea6b449b41d5df7039f2b, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -2443863155016254460, guid: 91002006afd385348b8942d2ae6cbe15, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: -7960142384896789528, guid: dde3de8a4c76012499e3dc02f81cafc3, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 941618591220326795, guid: 174db40131fd6b7469c1a1a9207e2459, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 948305265731372766, guid: 6ec10ea929d7d86458bff043a807de30, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 1066733591030079045, guid: 70406f5eb0e22ce41a9f46bd9450b7c8, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 5332115289724893654, guid: 129ec6479d131e74eb1babfb9cc7da8c, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []
+  - speaker: 
+    text: 
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 5049356013630306208, guid: 26ea1643e1edc0c44a28203cbb495cb3, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    mostrarImagenUI: 0
+    imagenUI: {fileID: 0}
+    panelType: 0
+    newBackground: {fileID: 0}
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    dispararCarruselPaneles: 0
+    ocultarPanelDialogo: 0
+    choicePanelType: 0
+    choices: []

@@ -10,6 +10,20 @@ using UnityEngine.InputSystem;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     [System.Serializable]
     public struct ChoicePanelGroup
     {
@@ -35,8 +49,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI lineText;
     [SerializeField] private TextMeshProUGUI lineText2;
+    [SerializeField] private TextMeshProUGUI lineText3; 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject dialoguePanel2;
+    [SerializeField] private GameObject dialoguePanel3; 
     [SerializeField] private Image gameBackgroundDisplay;
 
     [Header("Configuración de Texto Animado")]
@@ -45,9 +61,17 @@ public class DialogueManager : MonoBehaviour
     private string fullTextOfCurrentLine;
     private TextMeshProUGUI activeLineText;
 
-    [Header("Imagen del Personaje")]
+    [Header("Imágenes de Personaje")]
     [SerializeField] private Image characterImageDisplay;
     [SerializeField] private RectTransform characterImageRect;
+
+    [SerializeField] private Image characterImageDisplay2;
+    [SerializeField] private RectTransform characterImageRect2;
+
+    [SerializeField] private Image characterImageDisplay3;
+    [SerializeField] private RectTransform characterImageRect3;
+
+    [Header("Posiciones Predefinidas de Personajes")]
     [SerializeField] private Vector2 positionLeft = new Vector2(-350, -90);
     [SerializeField] private Vector2 positionCenter = new Vector2(0, -90);
     [SerializeField] private Vector2 positionRight = new Vector2(350, -90);
@@ -61,11 +85,12 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Efectos de Audio (Canal SFX Independiente)")]
     [SerializeField] private AudioSource sfxAudioSource; 
-    private Coroutine sfxDurationCoroutine;              
+    private Coroutine sfxDurationCoroutine; 
 
     [Header("Paneles de Decisiones Separados")]
     [SerializeField] private ChoicePanelGroup choicesPanel1;
     [SerializeField] private ChoicePanelGroup choicesPanel2;
+    [SerializeField] private ChoicePanelGroup choicesPanel3;
 
     private bool dialogueActive;
     private bool awaitingChoice;
@@ -73,6 +98,8 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueScript currentConversation;
     private Vector2 defaultCharacterSize;
+    private Vector2 defaultCharacterSize2;
+    private Vector2 defaultCharacterSize3;
 
     public static bool BloquearAvancePorCarrusel { get; set; } = false;
 
@@ -80,15 +107,22 @@ public class DialogueManager : MonoBehaviour
     {
         choicesPanel1.InitializeDefaults();
         choicesPanel2.InitializeDefaults();
+        choicesPanel3.InitializeDefaults();
 
-        if (dialoguePanel != null) dialoguePanel.SetActive(false);
-        if (dialoguePanel2 != null) dialoguePanel2.SetActive(false);
+        DesactivarTodosLosPaneles();
+        LimpiarTodosLosTextos();
+
         if (characterImageDisplay != null) characterImageDisplay.gameObject.SetActive(false);
+        if (characterImageDisplay2 != null) characterImageDisplay2.gameObject.SetActive(false);
+        if (characterImageDisplay3 != null) characterImageDisplay3.gameObject.SetActive(false);
 
         if (characterImageRect != null) defaultCharacterSize = characterImageRect.sizeDelta;
+        if (characterImageRect2 != null) defaultCharacterSize2 = characterImageRect2.sizeDelta;
+        if (characterImageRect3 != null) defaultCharacterSize3 = characterImageRect3.sizeDelta;
 
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
 
         if (dialogueAudioSource == null)
         {
@@ -114,7 +148,13 @@ public class DialogueManager : MonoBehaviour
             {
                 StopCoroutine(typingCoroutine);
                 typingCoroutine = null;
-                if (activeLineText != null) activeLineText.text = fullTextOfCurrentLine;
+
+                if (activeLineText != null)
+                {
+                    activeLineText.text = fullTextOfCurrentLine;
+                    RestablecerAlphaTexto(activeLineText);
+                }
+
                 StopDialogueAudio();
             }
             else
@@ -155,6 +195,7 @@ public class DialogueManager : MonoBehaviour
 
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
 
         ProduceNextLine();
     }
@@ -178,6 +219,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        LimpiarTodosLosTextos();
+
         Line currentLine = lines.Dequeue();
         if (nameText != null) nameText.text = currentLine.speaker;
 
@@ -186,23 +229,45 @@ public class DialogueManager : MonoBehaviour
             gameBackgroundDisplay.sprite = currentLine.newBackground;
         }
 
-        activeLineText = (currentLine.panelType == PanelType.Panel1) ? lineText : lineText2;
+        // 1. Asignar componente de texto activo
+        switch (currentLine.panelType)
+        {
+            case PanelType.Panel1: activeLineText = lineText; break;
+            case PanelType.Panel2: activeLineText = lineText2; break;
+            case PanelType.Panel3: activeLineText = lineText3; break;
+        }
 
+        // 2. Control de Paneles y Activación Explícita del GameObject del Texto
         if (currentLine.ocultarPanelDialogo)
         {
-            if (dialoguePanel != null) dialoguePanel.SetActive(false);
-            if (dialoguePanel2 != null) dialoguePanel2.SetActive(false);
+            DesactivarTodosLosPaneles();
         }
         else
         {
             if (dialoguePanel != null) dialoguePanel.SetActive(currentLine.panelType == PanelType.Panel1);
             if (dialoguePanel2 != null) dialoguePanel2.SetActive(currentLine.panelType == PanelType.Panel2);
+            if (dialoguePanel3 != null) dialoguePanel3.SetActive(currentLine.panelType == PanelType.Panel3);
+
+            // Asegurar la activación explícita del GameObject del texto asignado
+            if (activeLineText != null && !activeLineText.gameObject.activeSelf)
+            {
+                activeLineText.gameObject.SetActive(true);
+            }
         }
 
         fullTextOfCurrentLine = currentLine.text;
         
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        typingCoroutine = StartCoroutine(TypeText(fullTextOfCurrentLine));
+
+        if (currentLine.usarTransicionTexto)
+        {
+            float duration = currentLine.duracionTransicion > 0f ? currentLine.duracionTransicion : 1f;
+            typingCoroutine = StartCoroutine(FadeInText(fullTextOfCurrentLine, duration));
+        }
+        else
+        {
+            typingCoroutine = StartCoroutine(TypeText(fullTextOfCurrentLine));
+        }
 
         if (currentLine.triggerShake)
         {
@@ -213,10 +278,11 @@ public class DialogueManager : MonoBehaviour
         }
 
         HandleAudio(currentLine);
-        HandleCharacterImage(currentLine);
+        HandleAllCharacterImages(currentLine);
 
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
 
         if (currentLine.choices != null && currentLine.choices.Count > 0)
         {
@@ -298,6 +364,7 @@ public class DialogueManager : MonoBehaviour
             yield break;
         }
 
+        RestablecerAlphaTexto(activeLineText);
         activeLineText.text = "";
         char[] letters = textToType.ToCharArray();
         
@@ -310,6 +377,42 @@ public class DialogueManager : MonoBehaviour
         
         StopDialogueAudio();
         typingCoroutine = null; 
+    }
+
+    private IEnumerator FadeInText(string textToType, float duration)
+    {
+        if (activeLineText == null)
+        {
+            typingCoroutine = null;
+            yield break;
+        }
+
+        activeLineText.text = textToType;
+        
+        Color originalColor = activeLineText.color;
+        activeLineText.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsed / duration);
+            activeLineText.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        RestablecerAlphaTexto(activeLineText);
+        StopDialogueAudio();
+        typingCoroutine = null;
+    }
+
+    private void RestablecerAlphaTexto(TextMeshProUGUI tmpText)
+    {
+        if (tmpText != null)
+        {
+            Color c = tmpText.color;
+            tmpText.color = new Color(c.r, c.g, c.b, 1f);
+        }
     }
 
     private IEnumerator ScreenShakeRoutine(float duration, float intensity)
@@ -332,46 +435,55 @@ public class DialogueManager : MonoBehaviour
         activeShakeCoroutine = null;
     }
 
-    private void HandleCharacterImage(Line currentLine)
+    private void HandleAllCharacterImages(Line currentLine)
     {
-        if (characterImageDisplay == null) return;
+        ProcessSingleCharacter(currentLine.showImage, currentLine.characterImage, currentLine.imagePosition, currentLine.characterImagePosition, currentLine.characterImageSize, characterImageDisplay, characterImageRect, defaultCharacterSize);
+        ProcessSingleCharacter(currentLine.showImage2, currentLine.characterImage2, currentLine.imagePosition2, currentLine.characterImagePosition2, currentLine.characterImageSize2, characterImageDisplay2, characterImageRect2, defaultCharacterSize2);
+        ProcessSingleCharacter(currentLine.showImage3, currentLine.characterImage3, currentLine.imagePosition3, currentLine.characterImagePosition3, currentLine.characterImageSize3, characterImageDisplay3, characterImageRect3, defaultCharacterSize3);
+    }
 
-        if (currentLine.showImage && currentLine.characterImage != null)
+    private void ProcessSingleCharacter(bool show, Sprite sprite, ImagePosition position, Vector2 customPosition, Vector2 customSize, Image display, RectTransform rect, Vector2 defaultSize)
+    {
+        if (display == null) return;
+
+        if (show && sprite != null)
         {
-            characterImageDisplay.gameObject.SetActive(true);
-            characterImageDisplay.sprite = currentLine.characterImage;
-            characterImageDisplay.preserveAspect = true;
+            display.gameObject.SetActive(true);
+            display.sprite = sprite;
+            display.preserveAspect = true;
 
-            if (characterImageRect != null)
+            if (rect != null)
             {
-                if (currentLine.characterImageSize != Vector2.zero)
+                rect.sizeDelta = (customSize != Vector2.zero) ? customSize : defaultSize;
+
+                if (position == ImagePosition.Personalizada || customPosition != Vector2.zero)
                 {
-                    characterImageRect.sizeDelta = currentLine.characterImageSize;
+                    rect.anchoredPosition = customPosition;
                 }
                 else
                 {
-                    characterImageRect.sizeDelta = defaultCharacterSize;
-                }
-
-                switch (currentLine.imagePosition)
-                {
-                    case ImagePosition.Izquierda: characterImageRect.anchoredPosition = positionLeft; break;
-                    case ImagePosition.Centro: characterImageRect.anchoredPosition = positionCenter; break;
-                    case ImagePosition.Derecha: characterImageRect.anchoredPosition = positionRight; break;
+                    switch (position)
+                    {
+                        case ImagePosition.Izquierda: rect.anchoredPosition = positionLeft; break;
+                        case ImagePosition.Centro: rect.anchoredPosition = positionCenter; break;
+                        case ImagePosition.Derecha: rect.anchoredPosition = positionRight; break;
+                    }
                 }
             }
         }
         else
         {
-            characterImageDisplay.gameObject.SetActive(false);
+            display.gameObject.SetActive(false);
         }
     }
 
-    // AHORA SOLO CONFIGURA HASTA UN MÁXIMO DE 2 BOTONES
     void SetupChoices(List<Choice> choices, PanelType panelType)
     {
         awaitingChoice = true;
-        ChoicePanelGroup activeGroup = (panelType == PanelType.Panel1) ? choicesPanel1 : choicesPanel2;
+        ChoicePanelGroup activeGroup = choicesPanel1;
+        if (panelType == PanelType.Panel2) activeGroup = choicesPanel2;
+        else if (panelType == PanelType.Panel3) activeGroup = choicesPanel3;
+
         activeGroup.SetActive(true);
 
         if (activeGroup.buttonA != null) activeGroup.buttonA.gameObject.SetActive(false);
@@ -380,7 +492,6 @@ public class DialogueManager : MonoBehaviour
         if (activeGroup.buttonA != null) activeGroup.buttonA.onClick.RemoveAllListeners();
         if (activeGroup.buttonB != null) activeGroup.buttonB.onClick.RemoveAllListeners();
 
-        // Primera Opción
         if (choices.Count > 0 && activeGroup.buttonA != null)
         {
             activeGroup.buttonA.gameObject.SetActive(true);
@@ -390,7 +501,6 @@ public class DialogueManager : MonoBehaviour
             activeGroup.buttonA.onClick.AddListener(() => OnChoiceSelected(choiceA));
         }
 
-        // Segunda Opción
         if (choices.Count > 1 && activeGroup.buttonB != null)
         {
             activeGroup.buttonB.gameObject.SetActive(true);
@@ -406,6 +516,7 @@ public class DialogueManager : MonoBehaviour
         awaitingChoice = false;
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
 
         if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
 
@@ -419,6 +530,25 @@ public class DialogueManager : MonoBehaviour
         else EndDialogue();
     }
 
+    public void DesactivarTodosLosPaneles()
+    {
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (dialoguePanel2 != null) dialoguePanel2.SetActive(false);
+        if (dialoguePanel3 != null) dialoguePanel3.SetActive(false);
+    }
+
+    public void LimpiarTodosLosTextos()
+    {
+        RestablecerAlphaTexto(lineText);
+        RestablecerAlphaTexto(lineText2);
+        RestablecerAlphaTexto(lineText3);
+
+        if (lineText != null) lineText.text = "";
+        if (lineText2 != null) lineText2.text = "";
+        if (lineText3 != null) lineText3.text = "";
+        if (nameText != null) nameText.text = "";
+    }
+
     void EndDialogue()
     {
         dialogueActive = false;
@@ -428,10 +558,15 @@ public class DialogueManager : MonoBehaviour
         StopDialogueAudio();
         StopSFXAudio();
 
-        if (dialoguePanel != null) dialoguePanel.SetActive(false);
-        if (dialoguePanel2 != null) dialoguePanel2.SetActive(false);
+        DesactivarTodosLosPaneles();
+        LimpiarTodosLosTextos();
+
         choicesPanel1.SetActive(false);
         choicesPanel2.SetActive(false);
+        choicesPanel3.SetActive(false);
+
         if (characterImageDisplay != null) characterImageDisplay.gameObject.SetActive(false);
+        if (characterImageDisplay2 != null) characterImageDisplay2.gameObject.SetActive(false);
+        if (characterImageDisplay3 != null) characterImageDisplay3.gameObject.SetActive(false);
     }
 }

@@ -5,6 +5,6 @@ public class ItemData : ScriptableObject
 {
     public string itemName;
     public Sprite icon;
-    [TextArea] public string description;
+    [TextArea(3, 5)] public string description;
     public DialogueScript itemDialogue;
 }

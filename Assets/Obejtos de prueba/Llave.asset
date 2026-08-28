@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Llave
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Llave
-  icon: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+  icon: {fileID: 347172880587908169, guid: 8a530bbc715b25c49aa31c26536f6f81, type: 3}
   description: Llave de aspecto muy ostentoso, tal vez pueda abrir alguna puerta
-  itemDialogue: {fileID: 11400000, guid: 6a28b545d095a4a41ad8c86e337637de, type: 2}
+  itemDialogue: {fileID: 0}

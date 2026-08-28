@@ -14,16 +14,18 @@ public class ItemSlotUI : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (itemData != null && itemData.itemDialogue != null)
+        if (itemData != null)
         {
+            // Oculta la mochila al seleccionar un ítem
             if (inventoryPanel != null)
             {
                 inventoryPanel.SetActive(false);
             }
 
-            if (DialogueManager.Instance != null)
+            // CORREGIDO: Abre el ítem en ItemDialogueManager y NO en el DialogueManager de la novela
+            if (ItemDialogueManager.Instance != null)
             {
-                DialogueManager.Instance.GetConversation(itemData.itemDialogue);
+                ItemDialogueManager.Instance.MostrarItem(itemData);
             }
         }
     }

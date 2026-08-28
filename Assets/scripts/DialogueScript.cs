@@ -1,99 +1,127 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ImagePosition { Izquierda, Derecha, Centro, Personalizada }
-public enum PanelType { Panel1, Panel2, Panel3 }
+public enum PanelType
+{
+    Panel1,
+    Panel2,
+    Panel3,
+    Panel4
+}
+
+public enum ImagePosition
+{
+    Izquierda,
+    Centro,
+    Derecha,
+    Personalizada
+}
 
 [System.Serializable]
-public struct Choice
+public class Choice
 {
+    [TextArea(2, 5)]
     public string buttonText;
-    public DialogueScript nextDialogue;
     public Sprite buttonBackground;
+    public DialogueScript nextDialogue;
+    public bool restarVida = false;
 
-    [Header("Cambio de Escena (Opcional)")]
-    public bool changeScene;
+    [Header("Reinicio / Continuación")]
+    public bool reiniciarEnLineaEspecifica = false;
+    public int lineaDestino = 0;
+
+    [Header("Condicionales de Banderas")]
+    public string flagRequerida;
+    public DialogueScript dialogoSiTieneFlag;
+
+    [Header("Guardar Bandera")]
+    public string guardarFlag;
+
+    [Header("Cambio de Escena Directo")]
+    public bool changeScene = false;
     public string sceneToLoad;
 }
 
 [System.Serializable]
-public struct Line
+public class Line
 {
     public string speaker;
-    [TextArea(3, 5)]
+    [TextArea(3, 10)]
     public string text;
 
-    [Header("Transición de Texto (Fade In)")]
-    public bool usarTransicionTexto; // <--- Check para activar/desactivar la transición suave
-    public float duracionTransicion; // <--- Duración del desvanecimiento en segundos (Ej: 1.5)
+    [Header("Paneles de Diálogo")]
+    public PanelType panelType = PanelType.Panel1;
+    public PanelType choicePanelType = PanelType.Panel1;
+    public bool ocultarPanelDialogo = false;
 
-    [Header("Personaje 1 (Principal)")]
-    public bool showImage;
+    [Header("Control de Interacción Global")]
+    public bool bloquearOtrosBotones = false;
+
+    [Header("Animación de Texto")]
+    public bool usarTransicionTexto = false;
+    public float duracionTransicion = 1f;
+
+    [Header("Imágenes del Personaje (Hasta 3)")]
+    public bool showImage = false;
     public Sprite characterImage;
-    public ImagePosition imagePosition;
+    public ImagePosition imagePosition = ImagePosition.Izquierda;
     public Vector2 characterImagePosition;
     public Vector2 characterImageSize;
 
-    [Header("Personaje 2 (Opcional)")]
-    public bool showImage2;
+    public bool showImage2 = false;
     public Sprite characterImage2;
-    public ImagePosition imagePosition2;
+    public ImagePosition imagePosition2 = ImagePosition.Izquierda;
     public Vector2 characterImagePosition2;
     public Vector2 characterImageSize2;
 
-    [Header("Personaje 3 (Opcional)")]
-    public bool showImage3;
+    public bool showImage3 = false;
     public Sprite characterImage3;
-    public ImagePosition imagePosition3;
+    public ImagePosition imagePosition3 = ImagePosition.Izquierda;
     public Vector2 characterImagePosition3;
     public Vector2 characterImageSize3;
 
-    [Header("Imagen UI de Pantalla / Ilustración")]
-    public bool mostrarImagenUI; 
-    public Sprite imagenUI;      
+    [Header("Fondo")]
+    public Sprite newBackground;
 
-    [Header("Configuración del Panel de Diálogo")]
-    public PanelType panelType;
-
-    [Header("Configuración de Fondo (Opcional)")]
-    public Sprite newBackground; 
-
-    [Header("Efectos Especiales")]
-    public bool triggerShake;
-    public float shakeDuration;
-    public float shakeIntensity;
-
-    [Header("Efectos de Audio (Voz / Texto)")]
-    public bool playSound;
+    [Header("Audio y Sonidos")]
+    public bool playSound = false;
     public AudioClip soundClip;
 
-    [Header("Efectos de Audio Nuevos (SFX con Duración Fija)")]
-    public bool playSFX;
+    public bool playSFX = false;
     public AudioClip sfxClip;
-    public float sfxDuration;
+    public float sfxDuration = 0f;
 
-    [Header("Minijuegos / Carrusel de Paneles")]
-    public bool dispararCarruselPaneles;
-    public bool ocultarPanelDialogo;
+    [Header("Efectos Visuales")]
+    public bool triggerShake = false;
+    public float shakeDuration = 0.5f;
+    public float shakeIntensity = 10f;
 
-    [Header("Decisiones (Opcional)")]
-    public PanelType choicePanelType;
+    [Header("Opciones de Elección")]
     public List<Choice> choices;
+
+    [Header("Aparición / Desaparición Automática de Objetos")]
+    [Tooltip("Arrastra aquí un objeto de la escena para ACTIVARLO automáticamente al salir esta línea de diálogo.")]
+    public GameObject objetoAActivar;
+    [Tooltip("Arrastra aquí un objeto de la escena para DESACTIVARLO automáticamente al salir esta línea de diálogo.")]
+    public GameObject objetoADesactivar;
+
+    [Header("Puentes de Interfaz")]
+    public bool dispararCarruselPaneles = false;
 }
 
-[CreateAssetMenu(fileName = "NewConversation", menuName = "Dialogues/Conversation")]
+[CreateAssetMenu(fileName = "NewDialogueScript", menuName = "Dialogue/DialogueScript")]
 public class DialogueScript : ScriptableObject
 {
-    [Header("Configuración Global de la Conversación")]
-    public PanelType defaultPanelType;
+    public List<Line> conversationLines;
 
-    [Header("Continuación Automática (Opcional)")]
+    [Header("Siguiente Conversación Directa")]
     public DialogueScript nextConversation;
 
-    [Header("Cambio de Escena al Terminar (Opcional)")]
-    public bool changeSceneOnEnd; 
-    public string sceneToLoadOnEnd; 
+    [Header("Cambio de Escena al Finalizar")]
+    public bool changeSceneOnEnd = false;
+    public string sceneToLoadOnEnd;
 
-    [Space(10)]
-    public List<Line> conversationLines;
+    [Header("Condicionales Globales de Banderas")]
+    public string flagRequeridaParaSiguiente;
+    public DialogueScript conversationSiTieneFlag;
 }

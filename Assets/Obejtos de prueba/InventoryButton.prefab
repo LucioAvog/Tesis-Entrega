@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 6438486851280981561}
   - component: {fileID: 2302927733921611025}
   - component: {fileID: 7373966847610806516}
+  - component: {fileID: -4133101451269943240}
   m_Layer: 5
   m_Name: InventoryButton
   m_TagString: Untagged
@@ -259,9 +260,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2471552147417102128, guid: 8f99f793361944d45a6b8c2f27f0032f, type: 3}
-        m_TargetAssemblyTypeName: ToggleInventory, Assembly-CSharp
-        m_MethodName: TogglePanel
+      - m_Target: {fileID: 4210732274857836078, guid: 363753e511c0ada438d2a0a79d7191df, type: 3}
+        m_TargetAssemblyTypeName: ItemPickup, Assembly-CSharp
+        m_MethodName: RecogerObjeto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -284,3 +285,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleInventory
   inventoryPanel: {fileID: 6324981544765373195, guid: 6998d2f7440ddc94680e1e5c4d29a9a4, type: 3}
+--- !u!114 &-4133101451269943240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033039608338884980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830303e1a615c434b9402371aa5243c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
+  datosDelItem: {fileID: 0}
+  destruirAlRecoger: 1

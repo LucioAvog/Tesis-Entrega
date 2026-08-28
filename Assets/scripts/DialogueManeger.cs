@@ -5,7 +5,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem; 
 
 public class DialogueManager : MonoBehaviour
@@ -14,14 +13,8 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
     [System.Serializable]
@@ -30,7 +23,6 @@ public class DialogueManager : MonoBehaviour
         public GameObject choicePanel;
         public Button buttonA, buttonB;
         public TextMeshProUGUI textA, textB;
-
         [HideInInspector] public Sprite defaultSpriteA, defaultSpriteB;
 
         public void InitializeDefaults()
@@ -44,6 +36,13 @@ public class DialogueManager : MonoBehaviour
             if (choicePanel != null) choicePanel.SetActive(active);
         }
     }
+
+    [Header("Control de Avance")]
+    public bool permitirAvanceManual = true; 
+
+    [Header("Control de UI Global")]
+    [SerializeField] private List<Button> botonesSiemprePermitidos = new List<Button>();
+    [SerializeField] private GameObject panelInventario;
 
     [Header("UI General")]
     [SerializeField] private TextMeshProUGUI nameText;
@@ -64,50 +63,41 @@ public class DialogueManager : MonoBehaviour
     [Header("Imágenes de Personaje")]
     [SerializeField] private Image characterImageDisplay;
     [SerializeField] private RectTransform characterImageRect;
-
     [SerializeField] private Image characterImageDisplay2;
     [SerializeField] private RectTransform characterImageRect2;
-
     [SerializeField] private Image characterImageDisplay3;
     [SerializeField] private RectTransform characterImageRect3;
 
-    [Header("Posiciones Predefinidas de Personajes")]
+    [Header("Posiciones Predefinidas")]
     [SerializeField] private Vector2 positionLeft = new Vector2(-350, -90);
     [SerializeField] private Vector2 positionCenter = new Vector2(0, -90);
     [SerializeField] private Vector2 positionRight = new Vector2(350, -90);
 
-    [Header("Efectos Especiales - Temblor")]
+    [Header("Efectos")]
     [SerializeField] private Transform objectToShake;
     private Coroutine activeShakeCoroutine;
-
-    [Header("Efectos de Audio (Canal Voz/Texto)")]
     [SerializeField] private AudioSource dialogueAudioSource;
-
-    [Header("Efectos de Audio (Canal SFX Independiente)")]
     [SerializeField] private AudioSource sfxAudioSource; 
     private Coroutine sfxDurationCoroutine; 
 
     [Header("Paneles de Decisiones Separados")]
     [SerializeField] private ChoicePanelGroup choicesPanel1;
     [SerializeField] private ChoicePanelGroup choicesPanel2;
-    [SerializeField] private ChoicePanelGroup choicesPanel3;
 
-    private bool dialogueActive;
+    public bool dialogueActive { get; private set; }
     private bool awaitingChoice;
     private Queue<Line> lines = new Queue<Line>();
-
     private DialogueScript currentConversation;
-    private Vector2 defaultCharacterSize;
-    private Vector2 defaultCharacterSize2;
-    private Vector2 defaultCharacterSize3;
-
+    private Vector2 defaultCharacterSize, defaultCharacterSize2, defaultCharacterSize3;
+    private HashSet<string> playerFlags = new HashSet<string>();
+    
+    private Action onDialogueEndCallback;
     public static bool BloquearAvancePorCarrusel { get; set; } = false;
 
     void Start()
     {
         choicesPanel1.InitializeDefaults();
         choicesPanel2.InitializeDefaults();
-        choicesPanel3.InitializeDefaults();
 
         DesactivarTodosLosPaneles();
         LimpiarTodosLosTextos();
@@ -120,27 +110,80 @@ public class DialogueManager : MonoBehaviour
         if (characterImageRect2 != null) defaultCharacterSize2 = characterImageRect2.sizeDelta;
         if (characterImageRect3 != null) defaultCharacterSize3 = characterImageRect3.sizeDelta;
 
-        choicesPanel1.SetActive(false);
-        choicesPanel2.SetActive(false);
-        choicesPanel3.SetActive(false);
+        if (dialogueAudioSource == null) dialogueAudioSource = gameObject.AddComponent<AudioSource>();
+        if (sfxAudioSource == null) sfxAudioSource = gameObject.AddComponent<AudioSource>();
+    }
 
-        if (dialogueAudioSource == null)
-        {
-            dialogueAudioSource = GetComponent<AudioSource>();
-            if (dialogueAudioSource == null) dialogueAudioSource = gameObject.AddComponent<AudioSource>();
-        }
+    void Update()
+    {
+        if (panelInventario == null)
+            panelInventario = GameObject.Find("PanelMochila") ?? GameObject.Find("MochilaPanel") ?? GameObject.Find("InventoryPanel") ?? GameObject.Find("Mochila");
 
-        if (sfxAudioSource == null)
+        bool inventarioAbierto = panelInventario != null && panelInventario.activeInHierarchy;
+        ActualizarRaycastOpciones(!inventarioAbierto);
+
+        bool presionoEspacio = false;
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) presionoEspacio = true;
+        #if !ENABLE_INPUT_SYSTEM_ONLY
+        if (Input.GetKeyDown(KeyCode.Space)) presionoEspacio = true;
+        #endif
+
+        if (presionoEspacio && !inventarioAbierto && permitirAvanceManual) 
         {
-            AudioSource[] sources = GetComponents<AudioSource>();
-            if (sources.Length > 1) sfxAudioSource = sources[1];
-            else sfxAudioSource = gameObject.AddComponent<AudioSource>();
+            AdvanceDialogue();
         }
     }
 
+    private void ActualizarRaycastOpciones(bool permitir)
+    {
+        AplicarCanvasGroup(choicesPanel1.choicePanel, permitir);
+        AplicarCanvasGroup(choicesPanel2.choicePanel, permitir);
+    }
+
+    private void AplicarCanvasGroup(GameObject panel, bool permitir)
+    {
+        if (panel == null) return;
+        CanvasGroup cg = panel.GetComponent<CanvasGroup>();
+        if (cg == null) cg = panel.AddComponent<CanvasGroup>();
+        cg.interactable = permitir; cg.blocksRaycasts = permitir;
+    }
+
+    public void BloquearBotonesEscena(bool bloquear, List<Button> excepcionesAdicionales = null)
+    {
+        Button[] todosLosBotones = UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        
+        foreach (Button btn in todosLosBotones)
+        {
+            if (btn == null || EsBotonDelDialogueManager(btn) || btn.GetComponentInParent<ItemPickup>() != null) continue;
+            if (botonesSiemprePermitidos != null && botonesSiemprePermitidos.Contains(btn))
+            {
+                btn.interactable = true; btn.transform.SetAsLastSibling(); continue;
+            }
+            if (excepcionesAdicionales != null && excepcionesAdicionales.Contains(btn))
+            {
+                btn.interactable = true; btn.transform.SetAsLastSibling(); continue;
+            }
+            btn.interactable = !bloquear;
+        }
+    }
+
+    private bool EsBotonDelDialogueManager(Button btn)
+    {
+        return btn == choicesPanel1.buttonA || btn == choicesPanel1.buttonB ||
+               btn == choicesPanel2.buttonA || btn == choicesPanel2.buttonB;
+    }
+
+    public void SetFlag(string flagName)
+    {
+        if (!string.IsNullOrEmpty(flagName) && !playerFlags.Contains(flagName)) playerFlags.Add(flagName);
+    }
+    public bool HasFlag(string flagName) => !string.IsNullOrEmpty(flagName) && playerFlags.Contains(flagName);
+    public void ClearFlags() => playerFlags.Clear();
+
     public void AdvanceDialogue()
     {
-        if (BloquearAvancePorCarrusel) return;
+        if (BloquearAvancePorCarrusel || (panelInventario != null && panelInventario.activeInHierarchy)) return;
+        if (!permitirAvanceManual && !awaitingChoice) return;
 
         if (dialogueActive && !awaitingChoice)
         {
@@ -148,55 +191,28 @@ public class DialogueManager : MonoBehaviour
             {
                 StopCoroutine(typingCoroutine);
                 typingCoroutine = null;
-
-                if (activeLineText != null)
-                {
-                    activeLineText.text = fullTextOfCurrentLine;
-                    RestablecerAlphaTexto(activeLineText);
-                }
-
+                if (activeLineText != null) { activeLineText.text = fullTextOfCurrentLine; RestablecerAlphaTexto(activeLineText); }
                 StopDialogueAudio();
             }
-            else
-            {
-                ProduceNextLine();
-            }
+            else ProduceNextLine();
         }
     }
 
-    void Update()
+    public void GetConversation(DialogueScript dialogue, Action onComplete = null)
     {
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            AdvanceDialogue();
-        }
-    }
-
-    public void GetConversation(DialogueScript dialogue)
-    {
-        if (dialogue.conversationLines == null || dialogue.conversationLines.Count == 0)
-        {
-            Debug.LogError("¡El DialogueScript no tiene líneas de texto agregadas!");
-            return;
-        }
-        
-        if (dialogueActive) return;
+        if (dialogue == null || dialogue.conversationLines == null || dialogue.conversationLines.Count == 0) return;
+        onDialogueEndCallback = onComplete;
         StartDialogueSequence(dialogue);
     }
 
-    private void StartDialogueSequence(DialogueScript dialogue)
+    private void StartDialogueSequence(DialogueScript dialogue, int startAtLineIndex = 0)
     {
         currentConversation = dialogue;
         lines.Clear();
-        foreach (var line in dialogue.conversationLines) lines.Enqueue(line);
+        int startIndex = Mathf.Clamp(startAtLineIndex, 0, Mathf.Max(0, dialogue.conversationLines.Count - 1));
+        for (int i = startIndex; i < dialogue.conversationLines.Count; i++) lines.Enqueue(dialogue.conversationLines[i]);
 
-        dialogueActive = true;
-        awaitingChoice = false;
-
-        choicesPanel1.SetActive(false);
-        choicesPanel2.SetActive(false);
-        choicesPanel3.SetActive(false);
-
+        dialogueActive = true; awaitingChoice = false; DesactivarOpciones();
         ProduceNextLine();
     }
 
@@ -204,32 +220,29 @@ public class DialogueManager : MonoBehaviour
     {
         if (lines.Count == 0)
         {
-            if (currentConversation != null && currentConversation.nextConversation != null)
+            if (currentConversation != null)
             {
-                StartDialogueSequence(currentConversation.nextConversation);
+                if (!string.IsNullOrEmpty(currentConversation.flagRequeridaParaSiguiente) && HasFlag(currentConversation.flagRequeridaParaSiguiente) && currentConversation.conversationSiTieneFlag != null)
+                { StartDialogueSequence(currentConversation.conversationSiTieneFlag); return; }
+                if (currentConversation.nextConversation != null) { StartDialogueSequence(currentConversation.nextConversation); return; }
+                if (currentConversation.changeSceneOnEnd && !string.IsNullOrEmpty(currentConversation.sceneToLoadOnEnd))
+                { SceneManager.LoadScene(currentConversation.sceneToLoadOnEnd); return; }
             }
-            else if (currentConversation != null && currentConversation.changeSceneOnEnd && !string.IsNullOrEmpty(currentConversation.sceneToLoadOnEnd))
-            {
-                SceneManager.LoadScene(currentConversation.sceneToLoadOnEnd);
-            }
-            else
-            {
-                EndDialogue();
-            }
-            return;
+            EndDialogue(); return;
         }
 
         LimpiarTodosLosTextos();
-
         Line currentLine = lines.Dequeue();
+
+        BloquearBotonesEscena(currentLine.bloquearOtrosBotones);
+        if (currentLine.objetoAActivar != null) currentLine.objetoAActivar.SetActive(true);
+        if (currentLine.objetoADesactivar != null && currentLine.objetoADesactivar != dialoguePanel3 && (gameBackgroundDisplay == null || currentLine.objetoADesactivar != gameBackgroundDisplay.gameObject)) 
+            currentLine.objetoADesactivar.SetActive(false);
+
         if (nameText != null) nameText.text = currentLine.speaker;
+        if (gameBackgroundDisplay != null && currentLine.newBackground != null) 
+        { gameBackgroundDisplay.gameObject.SetActive(true); gameBackgroundDisplay.sprite = currentLine.newBackground; }
 
-        if (currentLine.newBackground != null && gameBackgroundDisplay != null)
-        {
-            gameBackgroundDisplay.sprite = currentLine.newBackground;
-        }
-
-        // 1. Asignar componente de texto activo
         switch (currentLine.panelType)
         {
             case PanelType.Panel1: activeLineText = lineText; break;
@@ -237,202 +250,72 @@ public class DialogueManager : MonoBehaviour
             case PanelType.Panel3: activeLineText = lineText3; break;
         }
 
-        // 2. Control de Paneles y Activación Explícita del GameObject del Texto
-        if (currentLine.ocultarPanelDialogo)
-        {
-            DesactivarTodosLosPaneles();
-        }
+        if (currentLine.ocultarPanelDialogo) DesactivarTodosLosPaneles();
         else
         {
             if (dialoguePanel != null) dialoguePanel.SetActive(currentLine.panelType == PanelType.Panel1);
             if (dialoguePanel2 != null) dialoguePanel2.SetActive(currentLine.panelType == PanelType.Panel2);
             if (dialoguePanel3 != null) dialoguePanel3.SetActive(currentLine.panelType == PanelType.Panel3);
-
-            // Asegurar la activación explícita del GameObject del texto asignado
-            if (activeLineText != null && !activeLineText.gameObject.activeSelf)
-            {
-                activeLineText.gameObject.SetActive(true);
-            }
+            if (activeLineText != null) activeLineText.gameObject.SetActive(true);
         }
 
         fullTextOfCurrentLine = currentLine.text;
-        
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
 
-        if (currentLine.usarTransicionTexto)
-        {
-            float duration = currentLine.duracionTransicion > 0f ? currentLine.duracionTransicion : 1f;
-            typingCoroutine = StartCoroutine(FadeInText(fullTextOfCurrentLine, duration));
-        }
-        else
-        {
-            typingCoroutine = StartCoroutine(TypeText(fullTextOfCurrentLine));
-        }
+        if (currentLine.usarTransicionTexto) typingCoroutine = StartCoroutine(FadeInText(fullTextOfCurrentLine, currentLine.duracionTransicion > 0f ? currentLine.duracionTransicion : 1f));
+        else typingCoroutine = StartCoroutine(TypeText(fullTextOfCurrentLine));
 
         if (currentLine.triggerShake)
         {
             if (activeShakeCoroutine != null) StopCoroutine(activeShakeCoroutine);
-            float duration = currentLine.shakeDuration > 0 ? currentLine.shakeDuration : 0.5f;
-            float intensity = currentLine.shakeIntensity > 0 ? currentLine.shakeIntensity : 10f;
-            activeShakeCoroutine = StartCoroutine(ScreenShakeRoutine(duration, intensity));
+            activeShakeCoroutine = StartCoroutine(ScreenShakeRoutine(currentLine.shakeDuration > 0 ? currentLine.shakeDuration : 0.5f, currentLine.shakeIntensity > 0 ? currentLine.shakeIntensity : 10f));
         }
 
-        HandleAudio(currentLine);
-        HandleAllCharacterImages(currentLine);
+        HandleAudio(currentLine); HandleAllCharacterImages(currentLine); DesactivarOpciones();
 
-        choicesPanel1.SetActive(false);
-        choicesPanel2.SetActive(false);
-        choicesPanel3.SetActive(false);
-
-        if (currentLine.choices != null && currentLine.choices.Count > 0)
-        {
-            SetupChoices(currentLine.choices, currentLine.choicePanelType);
-        }
-        else
-        {
-            awaitingChoice = false;
-        }
+        if (currentLine.choices != null && currentLine.choices.Count > 0) SetupChoices(currentLine.choices, currentLine.choicePanelType, currentLine.bloquearOtrosBotones);
+        else awaitingChoice = false;
 
         if (currentLine.dispararCarruselPaneles)
         {
             BridgePanelesDialogo bridge = UnityEngine.Object.FindAnyObjectByType<BridgePanelesDialogo>(FindObjectsInactive.Include);
-            if (bridge != null)
-            {
-                bridge.ActivarPanelesVN();
-            }
+            if (bridge != null) bridge.ActivarPanelesVN();
         }
     }
 
     private void HandleAudio(Line currentLine)
     {
         StopDialogueAudio(); 
-        if (currentLine.playSound && currentLine.soundClip != null && dialogueAudioSource != null)
-        {
-            dialogueAudioSource.clip = currentLine.soundClip;
-            dialogueAudioSource.Play();
-        }
-
+        if (currentLine.playSound && currentLine.soundClip != null && dialogueAudioSource != null) { dialogueAudioSource.clip = currentLine.soundClip; dialogueAudioSource.Play(); }
         StopSFXAudio();
-        if (currentLine.playSFX && currentLine.sfxClip != null && sfxAudioSource != null)
-        {
-            sfxAudioSource.clip = currentLine.sfxClip;
-            sfxAudioSource.Play();
-
-            if (currentLine.sfxDuration > 0f)
-            {
-                sfxDurationCoroutine = StartCoroutine(CutSFXAfterDelay(currentLine.sfxDuration));
-            }
-        }
+        if (currentLine.playSFX && currentLine.sfxClip != null && sfxAudioSource != null) { sfxAudioSource.clip = currentLine.sfxClip; sfxAudioSource.Play(); if (currentLine.sfxDuration > 0f) sfxDurationCoroutine = StartCoroutine(CutSFXAfterDelay(currentLine.sfxDuration)); }
     }
-
-    private void StopDialogueAudio()
-    {
-        if (dialogueAudioSource != null && dialogueAudioSource.isPlaying)
-        {
-            dialogueAudioSource.Stop();
-        }
-    }
-
-    private void StopSFXAudio()
-    {
-        if (sfxAudioSource != null && sfxAudioSource.isPlaying)
-        {
-            sfxAudioSource.Stop();
-        }
-        if (sfxDurationCoroutine != null)
-        {
-            StopCoroutine(sfxDurationCoroutine);
-            sfxDurationCoroutine = null;
-        }
-    }
-
-    private IEnumerator CutSFXAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        if (sfxAudioSource != null && sfxAudioSource.isPlaying)
-        {
-            sfxAudioSource.Stop();
-        }
-        sfxDurationCoroutine = null;
-    }
+    private void StopDialogueAudio() { if (dialogueAudioSource != null && dialogueAudioSource.isPlaying) dialogueAudioSource.Stop(); }
+    private void StopSFXAudio() { if (sfxAudioSource != null && sfxAudioSource.isPlaying) sfxAudioSource.Stop(); if (sfxDurationCoroutine != null) { StopCoroutine(sfxDurationCoroutine); sfxDurationCoroutine = null; } }
+    private IEnumerator CutSFXAfterDelay(float delay) { yield return new WaitForSeconds(delay); if (sfxAudioSource != null) sfxAudioSource.Stop(); sfxDurationCoroutine = null; }
 
     private IEnumerator TypeText(string textToType)
     {
-        if (activeLineText == null)
-        {
-            typingCoroutine = null;
-            yield break;
-        }
-
-        RestablecerAlphaTexto(activeLineText);
-        activeLineText.text = "";
-        char[] letters = textToType.ToCharArray();
-        
-        for (int i = 0; i < letters.Length; i++)
-        {
-            activeLineText.text += letters[i];
-            if (textSpeed > 0)
-                yield return new WaitForSeconds(textSpeed);
-        }
-        
-        StopDialogueAudio();
-        typingCoroutine = null; 
+        if (activeLineText == null) yield break;
+        RestablecerAlphaTexto(activeLineText); activeLineText.text = "";
+        foreach (char letter in textToType.ToCharArray()) { activeLineText.text += letter; if (textSpeed > 0) yield return new WaitForSeconds(textSpeed); }
+        StopDialogueAudio(); typingCoroutine = null; 
     }
-
     private IEnumerator FadeInText(string textToType, float duration)
     {
-        if (activeLineText == null)
-        {
-            typingCoroutine = null;
-            yield break;
-        }
-
-        activeLineText.text = textToType;
-        
-        Color originalColor = activeLineText.color;
-        activeLineText.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
-
-        float elapsed = 0f;
-        while (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-            float alpha = Mathf.Clamp01(elapsed / duration);
-            activeLineText.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-            yield return null;
-        }
-
-        RestablecerAlphaTexto(activeLineText);
-        StopDialogueAudio();
-        typingCoroutine = null;
+        if (activeLineText == null) yield break;
+        activeLineText.text = textToType; Color c = activeLineText.color; float elapsed = 0f;
+        while (elapsed < duration) { elapsed += Time.deltaTime; activeLineText.color = new Color(c.r, c.g, c.b, Mathf.Clamp01(elapsed / duration)); yield return null; }
+        RestablecerAlphaTexto(activeLineText); StopDialogueAudio(); typingCoroutine = null;
     }
-
-    private void RestablecerAlphaTexto(TextMeshProUGUI tmpText)
-    {
-        if (tmpText != null)
-        {
-            Color c = tmpText.color;
-            tmpText.color = new Color(c.r, c.g, c.b, 1f);
-        }
-    }
+    private void RestablecerAlphaTexto(TextMeshProUGUI tmpText) { if (tmpText != null) tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 1f); }
 
     private IEnumerator ScreenShakeRoutine(float duration, float intensity)
     {
         if (objectToShake == null) yield break;
-
-        Vector3 originalPosition = objectToShake.localPosition;
-        float elapsed = 0.0f;
-
-        while (elapsed < duration)
-        {
-            float x = UnityEngine.Random.Range(-1f, 1f) * intensity;
-            float y = UnityEngine.Random.Range(-1f, 1f) * intensity;
-            objectToShake.localPosition = new Vector3(originalPosition.x + x, originalPosition.y + y, originalPosition.z);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        objectToShake.localPosition = originalPosition;
-        activeShakeCoroutine = null;
+        Vector3 orig = objectToShake.localPosition; float elapsed = 0.0f;
+        while (elapsed < duration) { objectToShake.localPosition = orig + (Vector3)(UnityEngine.Random.insideUnitCircle * intensity); elapsed += Time.deltaTime; yield return null; }
+        objectToShake.localPosition = orig; activeShakeCoroutine = null;
     }
 
     private void HandleAllCharacterImages(Line currentLine)
@@ -441,92 +324,70 @@ public class DialogueManager : MonoBehaviour
         ProcessSingleCharacter(currentLine.showImage2, currentLine.characterImage2, currentLine.imagePosition2, currentLine.characterImagePosition2, currentLine.characterImageSize2, characterImageDisplay2, characterImageRect2, defaultCharacterSize2);
         ProcessSingleCharacter(currentLine.showImage3, currentLine.characterImage3, currentLine.imagePosition3, currentLine.characterImagePosition3, currentLine.characterImageSize3, characterImageDisplay3, characterImageRect3, defaultCharacterSize3);
     }
-
-    private void ProcessSingleCharacter(bool show, Sprite sprite, ImagePosition position, Vector2 customPosition, Vector2 customSize, Image display, RectTransform rect, Vector2 defaultSize)
+    private void ProcessSingleCharacter(bool show, Sprite sprite, ImagePosition pos, Vector2 customPos, Vector2 customSize, Image display, RectTransform rect, Vector2 defSize)
     {
         if (display == null) return;
-
-        if (show && sprite != null)
-        {
-            display.gameObject.SetActive(true);
-            display.sprite = sprite;
-            display.preserveAspect = true;
-
-            if (rect != null)
-            {
-                rect.sizeDelta = (customSize != Vector2.zero) ? customSize : defaultSize;
-
-                if (position == ImagePosition.Personalizada || customPosition != Vector2.zero)
-                {
-                    rect.anchoredPosition = customPosition;
-                }
-                else
-                {
-                    switch (position)
-                    {
-                        case ImagePosition.Izquierda: rect.anchoredPosition = positionLeft; break;
-                        case ImagePosition.Centro: rect.anchoredPosition = positionCenter; break;
-                        case ImagePosition.Derecha: rect.anchoredPosition = positionRight; break;
-                    }
-                }
+        if (show && sprite != null) {
+            display.gameObject.SetActive(true); display.sprite = sprite; display.preserveAspect = true;
+            if (rect != null) { rect.sizeDelta = (customSize != Vector2.zero) ? customSize : defSize;
+                if (pos == ImagePosition.Personalizada || customPos != Vector2.zero) rect.anchoredPosition = customPos;
+                else switch (pos) { case ImagePosition.Izquierda: rect.anchoredPosition = positionLeft; break; case ImagePosition.Centro: rect.anchoredPosition = positionCenter; break; case ImagePosition.Derecha: rect.anchoredPosition = positionRight; break; }
             }
-        }
-        else
-        {
-            display.gameObject.SetActive(false);
-        }
+        } else display.gameObject.SetActive(false);
     }
 
-    void SetupChoices(List<Choice> choices, PanelType panelType)
+    private void DesactivarOpciones() { choicesPanel1.SetActive(false); choicesPanel2.SetActive(false); }
+
+    void SetupChoices(List<Choice> choices, PanelType panelType, bool bloquearOtros)
     {
-        awaitingChoice = true;
-        ChoicePanelGroup activeGroup = choicesPanel1;
-        if (panelType == PanelType.Panel2) activeGroup = choicesPanel2;
-        else if (panelType == PanelType.Panel3) activeGroup = choicesPanel3;
-
+        awaitingChoice = true; BloquearBotonesEscena(bloquearOtros);
+        ChoicePanelGroup activeGroup = panelType == PanelType.Panel2 ? choicesPanel2 : choicesPanel1;
         activeGroup.SetActive(true);
+        if (activeGroup.buttonA != null) { activeGroup.buttonA.gameObject.SetActive(false); activeGroup.buttonA.onClick.RemoveAllListeners(); }
+        if (activeGroup.buttonB != null) { activeGroup.buttonB.gameObject.SetActive(false); activeGroup.buttonB.onClick.RemoveAllListeners(); }
+        if (choices.Count > 0 && activeGroup.buttonA != null) SetupChoiceButton(activeGroup.buttonA, activeGroup.textA, choices[0], activeGroup.defaultSpriteA);
+        if (choices.Count > 1 && activeGroup.buttonB != null) SetupChoiceButton(activeGroup.buttonB, activeGroup.textB, choices[1], activeGroup.defaultSpriteB);
+    }
 
-        if (activeGroup.buttonA != null) activeGroup.buttonA.gameObject.SetActive(false);
-        if (activeGroup.buttonB != null) activeGroup.buttonB.gameObject.SetActive(false);
-
-        if (activeGroup.buttonA != null) activeGroup.buttonA.onClick.RemoveAllListeners();
-        if (activeGroup.buttonB != null) activeGroup.buttonB.onClick.RemoveAllListeners();
-
-        if (choices.Count > 0 && activeGroup.buttonA != null)
-        {
-            activeGroup.buttonA.gameObject.SetActive(true);
-            if (activeGroup.textA != null) activeGroup.textA.text = choices[0].buttonText;
-            if (activeGroup.buttonA.image != null) activeGroup.buttonA.image.sprite = choices[0].buttonBackground != null ? choices[0].buttonBackground : activeGroup.defaultSpriteA;
-            Choice choiceA = choices[0];
-            activeGroup.buttonA.onClick.AddListener(() => OnChoiceSelected(choiceA));
-        }
-
-        if (choices.Count > 1 && activeGroup.buttonB != null)
-        {
-            activeGroup.buttonB.gameObject.SetActive(true);
-            if (activeGroup.textB != null) activeGroup.textB.text = choices[1].buttonText;
-            if (activeGroup.buttonB.image != null) activeGroup.buttonB.image.sprite = choices[1].buttonBackground != null ? choices[1].buttonBackground : activeGroup.defaultSpriteB;
-            Choice choiceB = choices[1];
-            activeGroup.buttonB.onClick.AddListener(() => OnChoiceSelected(choiceB));
-        }
+    private void SetupChoiceButton(Button btn, TextMeshProUGUI txt, Choice choice, Sprite defSprite)
+    {
+        btn.gameObject.SetActive(true); btn.interactable = true;
+        if (txt != null) txt.text = choice.buttonText;
+        if (btn.image != null) btn.image.sprite = choice.buttonBackground != null ? choice.buttonBackground : defSprite;
+        btn.onClick.AddListener(() => OnChoiceSelected(choice));
     }
 
     void OnChoiceSelected(Choice selectedChoice)
     {
-        awaitingChoice = false;
-        choicesPanel1.SetActive(false);
-        choicesPanel2.SetActive(false);
-        choicesPanel3.SetActive(false);
+        if (panelInventario != null && panelInventario.activeInHierarchy) return;
+        awaitingChoice = false; DesactivarOpciones();
+        if (UnityEngine.EventSystems.EventSystem.current != null) UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
 
-        if (EventSystem.current != null) EventSystem.current.SetSelectedGameObject(null);
+        // Descontar vida si la opción está configurada como incorrecta
+        if (selectedChoice.restarVida) 
+        { 
+            TrialManager trial = UnityEngine.Object.FindAnyObjectByType<TrialManager>(); 
+            if (trial != null) 
+            {
+                trial.RestarVidaDirecta();
 
-        if (selectedChoice.changeScene && !string.IsNullOrEmpty(selectedChoice.sceneToLoad))
-        {
-            SceneManager.LoadScene(selectedChoice.sceneToLoad);
-            return;
+                // Detiene la secuencia si el jugador llega a 0 vidas
+                if (trial.EstaMuerto)
+                {
+                    return; 
+                }
+            }
         }
 
-        if (selectedChoice.nextDialogue != null) StartDialogueSequence(selectedChoice.nextDialogue);
+        if (!string.IsNullOrEmpty(selectedChoice.guardarFlag)) SetFlag(selectedChoice.guardarFlag);
+        if (selectedChoice.changeScene && !string.IsNullOrEmpty(selectedChoice.sceneToLoad)) { SceneManager.LoadScene(selectedChoice.sceneToLoad); return; }
+
+        DialogueScript targetDialogue = selectedChoice.nextDialogue;
+        if (!string.IsNullOrEmpty(selectedChoice.flagRequerida) && HasFlag(selectedChoice.flagRequerida) && selectedChoice.dialogoSiTieneFlag != null) targetDialogue = selectedChoice.dialogoSiTieneFlag;
+
+        int startLine = selectedChoice.reiniciarEnLineaEspecifica ? selectedChoice.lineaDestino : 0;
+        if (targetDialogue != null) StartDialogueSequence(targetDialogue, startLine);
+        else if (selectedChoice.reiniciarEnLineaEspecifica && currentConversation != null) StartDialogueSequence(currentConversation, startLine);
         else EndDialogue();
     }
 
@@ -536,37 +397,25 @@ public class DialogueManager : MonoBehaviour
         if (dialoguePanel2 != null) dialoguePanel2.SetActive(false);
         if (dialoguePanel3 != null) dialoguePanel3.SetActive(false);
     }
-
     public void LimpiarTodosLosTextos()
     {
-        RestablecerAlphaTexto(lineText);
-        RestablecerAlphaTexto(lineText2);
-        RestablecerAlphaTexto(lineText3);
-
-        if (lineText != null) lineText.text = "";
-        if (lineText2 != null) lineText2.text = "";
-        if (lineText3 != null) lineText3.text = "";
-        if (nameText != null) nameText.text = "";
+        RestablecerAlphaTexto(lineText); RestablecerAlphaTexto(lineText2); RestablecerAlphaTexto(lineText3);
+        if (lineText != null) lineText.text = ""; if (lineText2 != null) lineText2.text = ""; if (lineText3 != null) lineText3.text = ""; if (nameText != null) nameText.text = "";
     }
-
+    public void ForceStopDialogue()
+    {
+        if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+        StopDialogueAudio(); StopSFXAudio(); dialogueActive = false; onDialogueEndCallback = null;
+    }
     void EndDialogue()
     {
-        dialogueActive = false;
-        awaitingChoice = false;
+        dialogueActive = false; awaitingChoice = false;
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
-        
-        StopDialogueAudio();
-        StopSFXAudio();
-
-        DesactivarTodosLosPaneles();
-        LimpiarTodosLosTextos();
-
-        choicesPanel1.SetActive(false);
-        choicesPanel2.SetActive(false);
-        choicesPanel3.SetActive(false);
-
+        BloquearBotonesEscena(false); StopDialogueAudio(); StopSFXAudio();
+        DesactivarTodosLosPaneles(); LimpiarTodosLosTextos(); DesactivarOpciones();
         if (characterImageDisplay != null) characterImageDisplay.gameObject.SetActive(false);
         if (characterImageDisplay2 != null) characterImageDisplay2.gameObject.SetActive(false);
         if (characterImageDisplay3 != null) characterImageDisplay3.gameObject.SetActive(false);
+        Action callback = onDialogueEndCallback; onDialogueEndCallback = null; callback?.Invoke();
     }
 }

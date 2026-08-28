@@ -25,11 +25,19 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(ItemData item)
     {
-        if (item == null) return;
+        if (item == null)
+        {
+            Debug.LogWarning("InventoryManager recibió un ItemData nulo.");
+            return;
+        }
 
         if (!inventory.Contains(item))
         {
             inventory.Add(item);
+            UpdateUI();
+        }
+        else
+        {
             UpdateUI();
         }
     }
@@ -50,7 +58,17 @@ public class InventoryManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (itemsParent == null) return;
+        if (itemsParent == null)
+        {
+            Debug.LogError("InventoryManager no tiene asignado itemsParent.");
+            return;
+        }
+
+        if (slotPrefab == null)
+        {
+            Debug.LogError("InventoryManager no tiene asignado slotPrefab.");
+            return;
+        }
 
         foreach (Transform child in itemsParent)
         {
@@ -73,5 +91,10 @@ public class InventoryManager : MonoBehaviour
             }
             slotUI.Setup(item, itemsParent.gameObject);
         }
+    }
+
+    private void OnEnable()
+    {
+        if (inventory.Count > 0) UpdateUI();
     }
 }

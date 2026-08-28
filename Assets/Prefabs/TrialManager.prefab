@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8873727173144365118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5496232906361906669}
+  - component: {fileID: 1661249248296638980}
+  m_Layer: 0
+  m_Name: TrialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5496232906361906669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873727173144365118}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.65898, y: -0.43432, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661249248296638980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873727173144365118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08287376b89aa44eb4462f1c7741ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrialManager
+  introDialogue: {fileID: 0}
+  testimonies:
+  - statementText: Elije opcion
+    speakerName: Diputado
+    speakerPortrait: {fileID: -6732210578636942074, guid: bec1fc50343e6394db43fe4dc6c8d604, type: 3}
+    isContradictory: 0
+    correctEvidenceID: 
+    conversationForStatement: {fileID: 11400000, guid: 2e091992049433d4399aa9335f4b2974, type: 2}
+    reactionOnObjection: {fileID: 11400000, guid: 0ba10c388551d694eb3c4dade07cb3fc, type: 2}
+    reactionOnWrongObjection: {fileID: 11400000, guid: 197bfdbbc8d092247a2801973ed155c6, type: 2}
+  botonesPermitidosEnJuicio: []
+  maxHealth: 3
+  selectedEvidenceID: 
+  dialogoAlMorir: {fileID: 11400000, guid: aa6f97f911d6332429d875a5787e6cbd, type: 2}
+  speakerText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  healthText: {fileID: 0}
+  objectionEffectPanel: {fileID: 0}

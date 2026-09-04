@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: "Ejecuci\xF3n 2"
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: 
+    text: '21 de enero de 1792.
+
+'
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: -8567135106048223669, guid: 93063343dab56b94dad05c816f275552, type: 3}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "El d\xEDa de la ejecuci\xF3n hab\xEDa llegado. La neblina en la plaza
+      era tan densa que apenas pod\xEDa ver la silueta de la guillotina.\r\n"
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: Cientos de personas ocupaban el lugar en un silencio sofocante.
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jean y yo permanec\xEDamos en la primera fila,  custodiados por el guardia
+      nacional. El carruaje que transportaba al pasado Rey se detuvo."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Luis Capeto subi\xF3 los escalones con paso lento, casi parec\xEDa que
+      quer\xEDa ganar tiempo. Intent\xF3 hablarle a la multitud, pero el redoble
+      de tambores interrumpi\xF3 sus palabras."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "La pesada cuchilla de acero cay\xF3"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: e7f5439db9427744981585cebf28a9dd, type: 3}
+    sfxDuration: 8
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices:
+    - buttonText: Mantener la mirada y mostrarte sereno.
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      nextDialogue: {fileID: 11400000, guid: bd72cb858334c734dac7c836f24a70ed, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 1
+      dialogoAlMorirSiPierde: {fileID: 0}
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: 'Cerrar los ojos y buscar a Jean con la mirada.
+
+'
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      nextDialogue: {fileID: 11400000, guid: edcecc7532f76954da8b945610dcfeb1, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 1
+      dialogoAlMorirSiPierde: {fileID: 0}
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}

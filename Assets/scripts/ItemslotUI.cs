@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI; 
 
-public class ItemSlotUI : MonoBehaviour, IPointerClickHandler
+public class ItemSlotUI : MonoBehaviour
 {
     private ItemData itemData;
     private GameObject inventoryPanel;
@@ -10,22 +10,34 @@ public class ItemSlotUI : MonoBehaviour, IPointerClickHandler
     {
         itemData = item;
         inventoryPanel = panel;
+        
+        // Conexión exclusiva mediante el componente Button
+        Button btn = GetComponent<Button>();
+        if (btn != null)
+        {
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(OnSlotClicked);
+        }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnSlotClicked()
     {
+        Debug.Log("¡Clic detectado en el ítem: " + (itemData != null ? itemData.itemName : "NULO") + "!");
+
         if (itemData != null)
         {
-            // Oculta la mochila al seleccionar un ítem
             if (inventoryPanel != null)
             {
-                inventoryPanel.SetActive(false);
+                inventoryPanel.SetActive(false); 
             }
 
-            // CORREGIDO: Abre el ítem en ItemDialogueManager y NO en el DialogueManager de la novela
             if (ItemDialogueManager.Instance != null)
             {
                 ItemDialogueManager.Instance.MostrarItem(itemData);
+            }
+            else
+            {
+                Debug.LogError("No se encontró el ItemDialogueManager en la escena.");
             }
         }
     }

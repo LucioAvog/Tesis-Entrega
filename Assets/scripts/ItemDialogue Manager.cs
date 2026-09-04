@@ -17,25 +17,23 @@ public class ItemDialogueManager : MonoBehaviour
     [Header("Ajustes")]
     [SerializeField] private float textSpeed = 0.03f;
     
-    // Solo guardamos el texto puro, ignorando paneles y actores
     private Queue<string> lineasDeTexto = new Queue<string>(); 
     private Coroutine typingCoroutine;
     private string lineaActual;
     private bool estaInspeccionando = false;
+    private bool justOpened = false;
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
+        Instance = this;
         if (itemPopupPanel != null) itemPopupPanel.SetActive(false);
     }
 
     private void Update()
     {
-        if (!estaInspeccionando) return;
+        if (!estaInspeccionando || justOpened) return;
 
-        // Permite avanzar con Espacio o Clic izquierdo (optimizado)
+        // Si presionas Espacio o haces Clic mientras se escribe, acelera/autocompleta la línea
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             AvanzarTexto();
@@ -46,10 +44,28 @@ public class ItemDialogueManager : MonoBehaviour
     {
         if (item == null) return;
 
-        estaInspeccionando = true;
-        lineasDeTexto.Clear();
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
 
-        if (item.itemDialogue != null && item.itemDialogue.conversationLines.Count > 0)
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.permitirAvanceManual = false;
+        }
+
+        estaInspeccionando = true;
+        justOpened = true;
+        StartCoroutine(CooldownInput());
+
+        lineasDeTexto.Clear();
+        if (itemDescriptionText != null)
+        {
+            itemDescriptionText.text = "";
+        }
+
+        if (item.itemDialogue != null && item.itemDialogue.conversationLines != null && item.itemDialogue.conversationLines.Count > 0)
         {
             foreach (var line in item.itemDialogue.conversationLines)
             {
@@ -61,7 +77,6 @@ public class ItemDialogueManager : MonoBehaviour
             lineasDeTexto.Enqueue(item.description);
         }
 
-        // Rellenar datos visuales
         if (itemNameText != null) itemNameText.text = item.itemName;
         if (itemIconImage != null)
         {
@@ -73,19 +88,31 @@ public class ItemDialogueManager : MonoBehaviour
         {
             itemPopupPanel.SetActive(true);
         }
+        
         AvanzarTexto();
+    }
+
+    private IEnumerator CooldownInput()
+    {
+        yield return null; 
+        justOpened = false;
     }
 
     private void AvanzarTexto()
     {
+        // Si el texto se está escribiendo y haces clic/espacio, muestra todo de golpe
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
             typingCoroutine = null;
-            if (itemDescriptionText != null) itemDescriptionText.text = lineaActual; // Autocompletar
+            if (itemDescriptionText != null) 
+            {
+                itemDescriptionText.maxVisibleCharacters = lineaActual.Length; 
+            }
             return;
         }
 
+        // Si terminó de escribir, pasa a la siguiente línea o cierra la ventana
         if (lineasDeTexto.Count > 0)
         {
             lineaActual = lineasDeTexto.Dequeue();
@@ -99,24 +126,32 @@ public class ItemDialogueManager : MonoBehaviour
 
     private IEnumerator EscribirTexto(string texto)
     {
-        if (itemDescriptionText == null)
-        {
-            typingCoroutine = null;
-            yield break;
-        }
+        if (itemDescriptionText == null) yield break;
 
-        itemDescriptionText.text = "";
-        foreach (char letra in texto.ToCharArray())
+        // Configuración inicial del texto y cálculo de malla en TextMeshPro
+        itemDescriptionText.text = texto;
+        itemDescriptionText.ForceMeshUpdate(); // ¡CLAVE! Obliga a TMP a procesar la estructura del texto antes de animar
+        itemDescriptionText.maxVisibleCharacters = 0;
+
+        // Revela letra por letra automáticamente
+        for (int i = 0; i <= texto.Length; i++)
         {
-            itemDescriptionText.text += letra;
-            yield return new WaitForSeconds(textSpeed);
+            itemDescriptionText.maxVisibleCharacters = i;
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
+        
         typingCoroutine = null;
     }
 
     public void CerrarPopup()
     {
         estaInspeccionando = false;
+        justOpened = false;
         if (itemPopupPanel != null) itemPopupPanel.SetActive(false);
+
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.permitirAvanceManual = true;
+        }
     }
 }

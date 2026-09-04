@@ -10,22 +10,14 @@ public class ItemPickup : MonoBehaviour
 
     public void RecogerObjeto()
     {
-        if (datosDelItem == null) 
-        {
-            Debug.LogWarning("El botón/objeto en la escena no tiene un ItemData asignado.");
-            return;
-        }
+        if (datosDelItem == null) return;
 
         if (InventoryManager.Instance != null)
         {
             InventoryManager.Instance.AddItem(datosDelItem);
         }
-        else
-        {
-            Debug.LogWarning("No hay un InventoryManager activo en la escena.");
-        }
 
-        // 1. Mostrar la ventana de inspección (100% aislada)
+        // Ahora solo usamos el manager bueno (el que tiene la animación)
         if (ItemDialogueManager.Instance != null)
         {
             ItemDialogueManager.Instance.MostrarItem(datosDelItem);

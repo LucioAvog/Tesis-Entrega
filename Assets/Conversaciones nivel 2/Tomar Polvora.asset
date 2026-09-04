@@ -1,0 +1,314 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Tomar Polvora
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: Francois
+    text: "Estoy contigo, Jean. \xA1No hay tregua con los opresores! \xA1Entreguen
+      la p\xF3lvora o morir\xE1n aqu\xED mismo!"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 1
+    shakeDuration: 0.3
+    shakeIntensity: 10
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "grit\xE9 alzando mi brazo.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Marat sonri\xF3 con malevolencia desde la multitud mientras la masa derribaba
+      los portones. Jean exhal\xF3 un suspiro ahogado y dijo frente a m\xED:"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 6122966833367877651, guid: 04f27108445be2749bb7033ac2a601ff, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "Tomaste la decisi\xF3n correcta "
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 6122966833367877651, guid: 04f27108445be2749bb7033ac2a601ff, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "murmur\xF3 Jean, su mirada fija en m\xED"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: 'Debemos quemar lo viejo para construir lo nuevo.
+
+'
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jules no dijo nada. Solo suspir\xF3, negando con la cabeza antes de darse
+      la vuelta y marcharse. Gabriel ten\xEDa una expresi\xF3n triste en sus ojos,
+      mientras que Elodie apret\xF3 mi brazo entusiasmadamente."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Tomamos una decisi\xF3n, ya no hay vuelta atr\xE1s."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    characterImageSize: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    characterImagePosition2: {x: 0, y: 0}
+    characterImageSize2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    characterImagePosition3: {x: 0, y: 0}
+    characterImageSize3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 0}
+  changeSceneOnEnd: 1
+  sceneToLoadOnEnd: Palacio Exterior
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}

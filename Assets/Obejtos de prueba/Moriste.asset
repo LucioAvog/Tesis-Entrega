@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
   conversationLines:
   - speaker: 
-    text: Estas muerto
-    panelType: 1
+    text: 
+    panelType: 2
     choicePanelType: 0
     ocultarPanelDialogo: 0
     bloquearOtrosBotones: 0
@@ -46,11 +46,13 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
   nextConversation: {fileID: 0}
-  changeSceneOnEnd: 0
-  sceneToLoadOnEnd: 
+  changeSceneOnEnd: 1
+  sceneToLoadOnEnd: Mal Final
   flagRequeridaParaSiguiente: 
   conversationSiTieneFlag: {fileID: 0}

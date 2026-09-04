@@ -6,40 +6,65 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }
 
+    [Header("Configuración de UI")]
+    public GameObject inventoryPanel; 
     public Transform itemsParent;
     public GameObject slotPrefab;
 
-    private List<ItemData> inventory = new List<ItemData>();
+    [Header("Notificación de Nuevo Ítem")]
+    [Tooltip("Arrastra aquí la imagen/icono de notificación (punto rojo, exclamación, etc.)")]
+    public GameObject iconoNotificacion;
+
+    [Header("Controles")]
+    [Tooltip("Tecla opcional para abrir/cerrar el inventario desde el teclado")]
+    public KeyCode teclaAbrirInventario = KeyCode.I;
+
+    private static readonly List<ItemData> inventory = new List<ItemData>();
 
     private void Awake()
     {
-        if (Instance == null)
+        // Garantiza que la instancia siempre sea válida en la escena actual
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        UpdateUI();
+
+        // Aseguramos que la notificación empiece apagada al iniciar
+        if (iconoNotificacion != null)
         {
-            Instance = this;
+            iconoNotificacion.SetActive(false);
         }
-        else
+    }
+
+    private void Update()
+    {
+        // Si presionas la tecla configurada (ej. la 'I'), abre o cierra el inventario
+        if (teclaAbrirInventario != KeyCode.None && Input.GetKeyDown(teclaAbrirInventario))
         {
-            Destroy(gameObject);
+            ToggleInventario();
         }
     }
 
     public void AddItem(ItemData item)
     {
-        if (item == null)
-        {
-            Debug.LogWarning("InventoryManager recibió un ItemData nulo.");
-            return;
-        }
-
+        if (item == null) return;
+        
         if (!inventory.Contains(item))
         {
             inventory.Add(item);
-            UpdateUI();
+            
+            // Si el inventario está cerrado cuando llega el ítem, activa la imagen de notificación
+            if (inventoryPanel != null && !inventoryPanel.activeSelf)
+            {
+                if (iconoNotificacion != null)
+                {
+                    iconoNotificacion.SetActive(true);
+                }
+            }
         }
-        else
-        {
-            UpdateUI();
-        }
+        UpdateUI();
     }
 
     public bool HasItem(string itemName)
@@ -58,17 +83,7 @@ public class InventoryManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (itemsParent == null)
-        {
-            Debug.LogError("InventoryManager no tiene asignado itemsParent.");
-            return;
-        }
-
-        if (slotPrefab == null)
-        {
-            Debug.LogError("InventoryManager no tiene asignado slotPrefab.");
-            return;
-        }
+        if (itemsParent == null || slotPrefab == null) return;
 
         foreach (Transform child in itemsParent)
         {
@@ -77,7 +92,9 @@ public class InventoryManager : MonoBehaviour
 
         foreach (ItemData item in inventory)
         {
-            GameObject newSlot = Instantiate(slotPrefab, itemsParent);
+            GameObject newSlot = Instantiate(slotPrefab);
+            newSlot.transform.SetParent(itemsParent, false);
+
             Image slotImage = newSlot.GetComponentInChildren<Image>();
             if (slotImage != null)
             {
@@ -89,12 +106,47 @@ public class InventoryManager : MonoBehaviour
             {
                 slotUI = newSlot.AddComponent<ItemSlotUI>();
             }
-            slotUI.Setup(item, itemsParent.gameObject);
+
+            GameObject panelToHide = inventoryPanel != null ? inventoryPanel : itemsParent.parent.gameObject;
+            slotUI.Setup(item, panelToHide);
         }
     }
 
-    private void OnEnable()
+    // --- MÉTODOS PARA ABRIR, CERRAR Y ALTERNAR EL INVENTARIO ---
+
+    public void ToggleInventario()
     {
-        if (inventory.Count > 0) UpdateUI();
+        if (inventoryPanel == null) return;
+
+        if (inventoryPanel.activeSelf)
+        {
+            CerrarInventario();
+        }
+        else
+        {
+            AbrirInventario();
+        }
+    }
+
+    public void AbrirInventario()
+    {
+        if (inventoryPanel != null)
+        {
+            inventoryPanel.SetActive(true);
+        }
+
+        // Desactiva automáticamente el icono de notificación al abrir la mochila
+        if (iconoNotificacion != null)
+        {
+            iconoNotificacion.SetActive(false);
+        }
+    }
+
+    public void CerrarInventario()
+    {
+        if (inventoryPanel != null)
+        {
+            inventoryPanel.SetActive(false);
+        }
     }
 }

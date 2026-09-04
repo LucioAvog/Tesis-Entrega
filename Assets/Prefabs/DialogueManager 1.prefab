@@ -44,18 +44,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e0a63c69e9fdd44bd6a1e4ecd36523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  permitirAvanceManual: 1
+  botonesSiemprePermitidos: []
+  panelInventario: {fileID: 0}
   nameText: {fileID: 0}
   lineText: {fileID: 0}
   lineText2: {fileID: 0}
+  lineText3: {fileID: 0}
   dialoguePanel: {fileID: 0}
   dialoguePanel2: {fileID: 0}
+  dialoguePanel3: {fileID: 0}
   gameBackgroundDisplay: {fileID: 0}
-  textSpeed: 0.03
+  textSpeed: 0.05
   characterImageDisplay: {fileID: 0}
   characterImageRect: {fileID: 0}
-  positionLeft: {x: 10, y: 0}
-  positionCenter: {x: 0, y: 0}
-  positionRight: {x: -10, y: 0}
+  characterImageDisplay2: {fileID: 0}
+  characterImageRect2: {fileID: 0}
+  characterImageDisplay3: {fileID: 0}
+  characterImageRect3: {fileID: 0}
+  positionLeft: {x: 0, y: 0}
+  positionCenter: {x: 225, y: 0}
+  positionRight: {x: 500, y: 0}
   objectToShake: {fileID: 0}
   dialogueAudioSource: {fileID: 0}
   sfxAudioSource: {fileID: 0}

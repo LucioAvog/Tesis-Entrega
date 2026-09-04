@@ -24,7 +24,11 @@ public class Choice
     public string buttonText;
     public Sprite buttonBackground;
     public DialogueScript nextDialogue;
+
+    [Header("Mecánica de Vidas")]
     public bool restarVida = false;
+    public int cantidadVidaARestar = 1;
+    public DialogueScript dialogoAlMorirSiPierde;
 
     [Header("Reinicio / Continuación")]
     public bool reiniciarEnLineaEspecifica = false;
@@ -60,6 +64,12 @@ public class Line
     [Header("Animación de Texto")]
     public bool usarTransicionTexto = false;
     public float duracionTransicion = 1f;
+
+    [Header("Imagen Destacada / Ilustración en Pantalla")]
+    public bool mostrarImagenPantalla = false;
+    public Sprite imagenPantalla;
+    public Vector2 posicionImagenPantalla = Vector2.zero;
+    public Vector2 tamanoImagenPantalla = new Vector2(500, 500);
 
     [Header("Imágenes del Personaje (Hasta 3)")]
     public bool showImage = false;
@@ -98,6 +108,11 @@ public class Line
 
     [Header("Opciones de Elección")]
     public List<Choice> choices;
+
+    [Header("Recompensa de Inventario")]
+    public bool agregarItemAlInventario = false;
+    [Tooltip("Arrastra aquí el ItemData que quieres añadir al inventario al mostrar esta línea.")]
+    public ItemData itemAAgregar;
 
     [Header("Aparición / Desaparición Automática de Objetos")]
     [Tooltip("Arrastra aquí un objeto de la escena para ACTIVARLO automáticamente al salir esta línea de diálogo.")]

@@ -512,8 +512,10 @@ MonoBehaviour:
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
-  nextConversation: {fileID: 11400000, guid: def637237a796b845828f40a0e8e2ba4, type: 2}
-  changeSceneOnEnd: 0
-  sceneToLoadOnEnd: 
+  nextConversation: {fileID: 0}
   flagRequeridaParaSiguiente: 
   conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: checkpoint 1
+  dialogoAlPerderUltimaVida: {fileID: 11400000, guid: 3cfd7d8efad9c0149abf14f623325702, type: 2}

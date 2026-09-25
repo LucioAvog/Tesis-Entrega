@@ -536,6 +536,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665676991525603594, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -569,7 +601,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 833678938911430264, guid: de758c8510f383d4890933e94098a445, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5240113051772016807, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
@@ -1092,11 +1125,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2053999236}
+  - {fileID: 1499099583}
   - {fileID: 931268823}
   - {fileID: 1391573769}
   - {fileID: 1919142000}
   - {fileID: 1668802080}
   - {fileID: 94026928}
-  - {fileID: 1499099583}
   - {fileID: 297216833}
   - {fileID: 1792034053}

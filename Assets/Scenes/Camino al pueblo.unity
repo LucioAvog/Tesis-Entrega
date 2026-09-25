@@ -430,6 +430,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1.730011
       objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024540253403446282, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665676991525603594, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1042,11 +1074,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 689735250}
+  - {fileID: 1301738656}
   - {fileID: 1740062733}
   - {fileID: 164892509}
   - {fileID: 1996535973}
   - {fileID: 1401792863}
   - {fileID: 1791769705}
   - {fileID: 2050097629}
-  - {fileID: 1301738656}
   - {fileID: 268980830}

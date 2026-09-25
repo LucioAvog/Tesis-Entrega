@@ -22,6 +22,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -62,6 +66,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -101,6 +109,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -139,6 +151,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -178,6 +194,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -217,6 +237,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -256,6 +280,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -294,6 +322,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -333,6 +365,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -373,6 +409,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -411,6 +451,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -450,6 +494,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -481,7 +529,9 @@ MonoBehaviour:
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
   nextConversation: {fileID: 0}
-  changeSceneOnEnd: 1
-  sceneToLoadOnEnd: 'Nivel 2 Jean '
-  flagRequeridaParaSiguiente: 
-  conversationSiTieneFlag: {fileID: 0}
+  flagRequeridaParaSiguiente: checkpoint 1
+  conversationSiTieneFlag: {fileID: 11400000, guid: c87f0861c07c8dd4a99be3b102ef5e5b, type: 2}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: Ejecucion
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}

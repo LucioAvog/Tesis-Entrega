@@ -131,12 +131,18 @@ public class DialogueScript : ScriptableObject
 
     [Header("Siguiente Conversación Directa")]
     public DialogueScript nextConversation;
+    public string flagRequeridaParaSiguiente;
+    public DialogueScript conversationSiTieneFlag;
 
     [Header("Cambio de Escena al Finalizar")]
     public bool changeSceneOnEnd = false;
     public string sceneToLoadOnEnd;
 
-    [Header("Condicionales Globales de Banderas")]
-    public string flagRequeridaParaSiguiente;
-    public DialogueScript conversationSiTieneFlag;
+    [Header("Punto de Guardado")]
+    [Tooltip("Flag que se guarda al terminar este diálogo.")]
+    public string flagAlFinalizar;
+
+    [Header("Diálogo al perder la última vida en esta conversación")]
+    public DialogueScript dialogoAlPerderUltimaVida;
+
 }

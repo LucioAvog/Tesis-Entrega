@@ -23,6 +23,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -48,6 +52,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -61,6 +67,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -86,6 +96,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -97,6 +109,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -122,6 +138,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -134,6 +152,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -159,6 +181,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -171,6 +195,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -196,6 +224,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -208,6 +238,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -233,6 +267,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -244,6 +280,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -269,6 +309,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -280,6 +322,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -305,6 +351,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -317,6 +365,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -342,6 +394,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -354,6 +408,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -379,6 +437,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -390,6 +450,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -415,6 +479,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -428,6 +494,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -453,6 +523,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -465,6 +537,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -490,6 +566,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -501,6 +579,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -526,6 +608,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -537,6 +621,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -562,6 +650,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -574,6 +664,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -599,6 +693,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -610,6 +706,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -635,6 +735,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -648,6 +750,10 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
@@ -694,16 +800,21 @@ MonoBehaviour:
       dialogoAlMorirSiPierde: {fileID: 0}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
-      flagRequerida: 
+      flagRequerida: Checkpoint 2
       dialogoSiTieneFlag: {fileID: 0}
       guardarFlag: 
       changeScene: 0
       sceneToLoad: 
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
   nextConversation: {fileID: 0}
-  changeSceneOnEnd: 0
-  sceneToLoadOnEnd: 
   flagRequeridaParaSiguiente: 
   conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  dialogoCheckpoint1: {fileID: 0}
+  dialogoCheckpoint2: {fileID: 0}
+  dialogoCheckpoint3: {fileID: 0}

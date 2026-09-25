@@ -214,18 +214,18 @@ PrefabInstance:
     - target: {fileID: 4533613730099188959, guid: 8920eabd4d9ab45478bdcb31d0e0d2e8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4788203847256914605, guid: cfa521d9edad1fc41afb0800c175e568, type: 3}
+      objectReference: {fileID: 4075174015176210328, guid: 1fa7cfe8ee0fbfd4e8800451ecd72e3d, type: 3}
     - target: {fileID: 6304958309331949601, guid: 8920eabd4d9ab45478bdcb31d0e0d2e8, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 129326828}
     - target: {fileID: 6439266759998633698, guid: 8920eabd4d9ab45478bdcb31d0e0d2e8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -835.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6439266759998633698, guid: 8920eabd4d9ab45478bdcb31d0e0d2e8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.2051086
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6439266759998633698, guid: 8920eabd4d9ab45478bdcb31d0e0d2e8, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -37,6 +37,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    [System.Serializable]
+    public struct Checkpoint
+    {
+        public string flag;
+        public DialogueScript dialogue;
+        public string sceneToLoad;
+    }
+
     [Header("Sistema de Vidas")]
     [SerializeField] private int maxHealth = 3;
     private static int currentHealth = -1;
@@ -107,10 +115,14 @@ public class DialogueManager : MonoBehaviour
     private Queue<Line> lines = new Queue<Line>();
     private DialogueScript currentConversation;
     private Vector2 defaultCharacterSize, defaultCharacterSize2, defaultCharacterSize3;
-    private HashSet<string> playerFlags = new HashSet<string>();
+    private static readonly Dictionary<string, Checkpoint> checkpointsRegistrados = new Dictionary<string, Checkpoint>();
+    private static DialogueScript dialogoCheckpointPendiente;
     private Action onDialogueEndCallback;
     public static bool BloquearAvancePorCarrusel { get; set; } = false;
     private float tiempoBusquedaInventario = 0f;
+
+    [Header("Puntos de Guardado")]
+    [SerializeField] private List<Checkpoint> checkpoints = new List<Checkpoint>();
 
     void Start()
     {
@@ -137,10 +149,26 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogueAudioSource == null) dialogueAudioSource = gameObject.AddComponent<AudioSource>();
         if (sfxAudioSource == null) sfxAudioSource = gameObject.AddComponent<AudioSource>();
+
+        foreach (Checkpoint checkpoint in checkpoints)
+        {
+            if (!string.IsNullOrEmpty(checkpoint.flag))
+            {
+                checkpointsRegistrados[checkpoint.flag] = checkpoint;
+            }
+        }
+
+        if (dialogoCheckpointPendiente != null)
+        {
+            DialogueScript checkpointDialogue = dialogoCheckpointPendiente;
+            dialogoCheckpointPendiente = null;
+            GetConversation(checkpointDialogue);
+        }
     }
 
     void Update()
     {
+        // Optimización de búsqueda de inventario con temporizador
         if (panelInventario == null && Time.time > tiempoBusquedaInventario)
         {
             panelInventario = GameObject.Find("PanelMochila") ?? GameObject.Find("MochilaPanel") ?? GameObject.Find("InventoryPanel") ?? GameObject.Find("Mochila");
@@ -165,7 +193,8 @@ public class DialogueManager : MonoBehaviour
 
     public void UpdateHealthUI()
     {
-        if (healthText != null) healthText.text = "Vida: " + currentHealth + "/" + maxHealth;
+        // Optimización: Interpolación de Strings ($"")
+        if (healthText != null) healthText.text = $"Vida: {currentHealth}/{maxHealth}";
     }
 
     public void RestarVida(int cantidad = 1, DialogueScript dialogoMuertePersonalizado = null, bool posponerMuerte = false)
@@ -176,7 +205,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentHealth == 0)
         {
-            if (posponerMuerte) dialogoMuertePendiente = dialogoMuertePersonalizado != null ? dialogoMuertePersonalizado : dialogoAlMorir;
+            if (posponerMuerte) dialogoMuertePendiente = ObtenerDialogoMuerte(dialogoMuertePersonalizado);
             else GameOver(dialogoMuertePersonalizado);
         }
     }
@@ -206,12 +235,73 @@ public class DialogueManager : MonoBehaviour
 
     private void GameOver(DialogueScript dialogoMuerteOverride = null)
     {
-        DialogueScript dialogoAIniciar = dialogoMuerteOverride != null ? dialogoMuerteOverride : dialogoAlMorir;
+        DialogueScript dialogoAIniciar = ObtenerDialogoMuerte(dialogoMuerteOverride);
         ForceStopDialogue();
-        estaMuerto = false;
-        currentHealth = maxHealth;
-        UpdateHealthUI();
-        if (dialogoAIniciar != null) GetConversation(dialogoAIniciar);
+        estaMuerto = true;
+        ultimoDialogoDeMuerteEjecutado = dialogoAIniciar;
+
+        // Ejecuta el diálogo de muerte y, al TERMINAR el diálogo, llama a EjecutarRespawn
+        if (dialogoAIniciar != null) 
+        {
+            GetConversation(dialogoAIniciar, EjecutarRespawn);
+        }
+        else
+        {
+            EjecutarRespawn();
+        }
+    }
+
+    private DialogueScript ObtenerDialogoMuerte(DialogueScript dialogoMuerteOverride = null)
+    {
+        if (dialogoMuerteOverride != null) return dialogoMuerteOverride;
+        if (currentConversation != null && currentConversation.dialogoAlPerderUltimaVida != null)
+        {
+            return currentConversation.dialogoAlPerderUltimaVida;
+        }
+
+        return dialogoAlMorir;
+    }
+
+    private void EjecutarRespawn()
+    {
+        Checkpoint checkpoint = ObtenerUltimoCheckpoint();
+        if (!string.IsNullOrEmpty(checkpoint.flag))
+        {
+            currentHealth = 1;
+            estaMuerto = false;
+            UpdateHealthUI();
+
+            if (!string.IsNullOrEmpty(checkpoint.sceneToLoad) && checkpoint.sceneToLoad != SceneManager.GetActiveScene().name)
+            {
+                dialogoCheckpointPendiente = checkpoint.dialogue;
+                SceneManager.LoadScene(checkpoint.sceneToLoad);
+            }
+            else if (checkpoint.dialogue != null)
+            {
+                GetConversation(checkpoint.dialogue);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            return;
+        }
+
+        ReiniciarVida();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private Checkpoint ObtenerUltimoCheckpoint()
+    {
+        string ultimaFlagCheckpoint = DialogueStateManager.Instance.LastCheckpointFlag;
+        if (!string.IsNullOrEmpty(ultimaFlagCheckpoint) &&
+            checkpointsRegistrados.TryGetValue(ultimaFlagCheckpoint, out Checkpoint checkpoint) &&
+            HasFlag(checkpoint.flag))
+        {
+            return checkpoint;
+        }
+
+        return default;
     }
 
     private bool EsJugadorMuertoYNoEsDialogoDeMuerte(DialogueScript nuevoDialogo = null)
@@ -241,7 +331,7 @@ public class DialogueManager : MonoBehaviour
 
     public void BloquearBotonesEscena(bool bloquear, List<Button> excepcionesAdicionales = null)
     {
-        Button[] todosLosBotones = UnityEngine.Object.FindObjectsByType<Button>(FindObjectsInactive.Include);
+        Button[] todosLosBotones = UnityEngine.Object.FindObjectsByType<Button>();
         foreach (Button btn in todosLosBotones)
         {
             if (btn == null || EsBotonDelDialogueManager(btn) || btn.GetComponentInParent<ItemPickup>() != null) continue;
@@ -265,12 +355,16 @@ public class DialogueManager : MonoBehaviour
 
     public void SetFlag(string flagName)
     {
-        if (!string.IsNullOrEmpty(flagName) && !playerFlags.Contains(flagName)) playerFlags.Add(flagName);
+        if (string.IsNullOrEmpty(flagName)) return;
+        DialogueStateManager.Instance.SetFlag(flagName);
     }
+
+    public bool HasFlag(string flagName) => DialogueStateManager.Instance.HasFlag(flagName);
     
-    public bool HasFlag(string flagName) => !string.IsNullOrEmpty(flagName) && playerFlags.Contains(flagName);
-    
-    public void ClearFlags() => playerFlags.Clear();
+    public void ClearFlags()
+    {
+        DialogueStateManager.Instance.ClearFlags();
+    }
 
     public void AdvanceDialogue()
     {
@@ -337,7 +431,11 @@ public class DialogueManager : MonoBehaviour
                 { StartDialogueSequence(currentConversation.conversationSiTieneFlag); return; }
                 if (currentConversation.nextConversation != null) { StartDialogueSequence(currentConversation.nextConversation); return; }
                 if (currentConversation.changeSceneOnEnd && !string.IsNullOrEmpty(currentConversation.sceneToLoadOnEnd))
-                { SceneManager.LoadScene(currentConversation.sceneToLoadOnEnd); return; }
+                {
+                    GuardarFlagAlFinalizarConversacion();
+                    SceneManager.LoadScene(currentConversation.sceneToLoadOnEnd);
+                    return;
+                }
             }
             EndDialogue(); return;
         }
@@ -668,6 +766,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueActive = false; awaitingChoice = false;
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+        GuardarFlagAlFinalizarConversacion();
         BloquearBotonesEscena(false); StopDialogueAudio(); StopSFXAudio();
         DesactivarTodosLosPaneles(false); LimpiarTodosLosTextos(); DesactivarOpciones();
         if (imagenPantallaDisplay != null) imagenPantallaDisplay.gameObject.SetActive(false);
@@ -675,5 +774,13 @@ public class DialogueManager : MonoBehaviour
         if (characterImageDisplay2 != null) characterImageDisplay2.gameObject.SetActive(false);
         if (characterImageDisplay3 != null) characterImageDisplay3.gameObject.SetActive(false);
         Action callback = onDialogueEndCallback; onDialogueEndCallback = null; callback?.Invoke();
+    }
+
+    private void GuardarFlagAlFinalizarConversacion()
+    {
+        if (currentConversation != null && !string.IsNullOrEmpty(currentConversation.flagAlFinalizar))
+        {
+            SetFlag(currentConversation.flagAlFinalizar);
+        }
     }
 }

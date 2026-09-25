@@ -48,7 +48,6 @@ public class TrialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI speakerText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI healthText;
-    [SerializeField] private GameObject objectionEffectPanel;
 
     private bool isProcessingEvent = false; 
     private bool estaMuerto = false;

@@ -66,7 +66,7 @@ MonoBehaviour:
   - speaker: 
     text: " El viento trae olor a trigo mojado, esti\xE9rcol y humo de chimenea de
       otros campesinos cercanos. "
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 0
     characterImageSize: {x: 200, y: 400}
@@ -184,7 +184,7 @@ MonoBehaviour:
     text: "Este a\xF1o las cosechas fueron malas, otra vez. \xDAltimamente, los d\xEDas
       han sido muy secos o muy lluviosos, arruinando la plantaci\xF3n. A\xFAn as\xED,
       los recaudadores de impuestos exigen exactamente lo mismo."
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 0
     characterImageSize: {x: 300, y: 400}

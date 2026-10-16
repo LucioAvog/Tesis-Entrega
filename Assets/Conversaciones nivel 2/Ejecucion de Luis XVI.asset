@@ -499,7 +499,7 @@ MonoBehaviour:
       nextDialogue: {fileID: 11400000, guid: 196e168f15de78d4d9bd987e6899e24f, type: 2}
       restarVida: 1
       cantidadVidaARestar: 1
-      dialogoAlMorirSiPierde: {fileID: 0}
+      dialogoAlMorirSiPierde: {fileID: 11400000, guid: 0d0d9573075db7940a57f622cddceeef, type: 2}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: 

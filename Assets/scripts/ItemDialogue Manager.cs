@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class ItemDialogueManager : MonoBehaviour
 {
@@ -15,26 +16,126 @@ public class ItemDialogueManager : MonoBehaviour
     [SerializeField] private Image itemIconImage;
 
     [Header("Ajustes")]
-    [SerializeField] private float textSpeed = 0.03f;
+    [SerializeField] private float textSpeed = 0.05f;
     
     private Queue<string> lineasDeTexto = new Queue<string>(); 
     private Coroutine typingCoroutine;
     private string lineaActual;
     private bool estaInspeccionando = false;
     private bool justOpened = false;
+    private bool permitirAvanceManualAnterior = true;
+
+    public bool EstaInspeccionando => estaInspeccionando;
 
     private void Awake()
     {
         Instance = this;
+        ResolverReferenciasDeEscena();
         if (itemPopupPanel != null) itemPopupPanel.SetActive(false);
+    }
+
+    private void ResolverReferenciasDeEscena()
+    {
+        GameObject[] sceneObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        GameObject popupWithController = null;
+        GameObject popupByName = null;
+
+        foreach (GameObject sceneObject in sceneObjects)
+        {
+            if (sceneObject.name != "ItemsPickupPopUp 1" || sceneObject.scene != gameObject.scene)
+            {
+                continue;
+            }
+
+            popupByName = sceneObject;
+            if (sceneObject.GetComponent<PanelPopUp>() != null)
+            {
+                popupWithController = sceneObject;
+                break;
+            }
+        }
+
+        if (popupWithController != null)
+        {
+            itemPopupPanel = popupWithController;
+        }
+        else if (itemPopupPanel == null || itemPopupPanel.scene != gameObject.scene)
+        {
+            itemPopupPanel = popupByName;
+        }
+
+        if (itemPopupPanel == null)
+        {
+            Debug.LogError("No se encontró el panel ItemsPickupPopUp 1 en la escena.", this);
+            return;
+        }
+
+        PanelPopUp popupController = itemPopupPanel.GetComponent<PanelPopUp>();
+        if (popupController != null)
+        {
+            if (popupController.popupPanel != null &&
+                popupController.popupPanel.scene == gameObject.scene)
+            {
+                itemPopupPanel = popupController.popupPanel;
+            }
+
+            itemNameText = EsComponenteDeEstaEscena(popupController.titleText)
+                ? popupController.titleText
+                : BuscarHijo<TextMeshProUGUI>("ItemName");
+            itemDescriptionText = EsComponenteDeEstaEscena(popupController.descriptionText)
+                ? popupController.descriptionText
+                : BuscarHijo<TextMeshProUGUI>("ItemDescription");
+            itemIconImage = EsComponenteDeEstaEscena(popupController.itemImageDisplay)
+                ? popupController.itemImageDisplay
+                : BuscarHijo<Image>("Item Icon");
+        }
+        else
+        {
+            itemNameText = BuscarHijo<TextMeshProUGUI>("ItemName");
+            itemDescriptionText = BuscarHijo<TextMeshProUGUI>("ItemDescription");
+            itemIconImage = BuscarHijo<Image>("Item Icon");
+        }
+
+        if (itemNameText == null || itemDescriptionText == null)
+        {
+            Debug.LogError(
+                $"El popup '{itemPopupPanel.name}' no tiene referencias válidas para el nombre y la descripción.",
+                this);
+            return;
+        }
+
+    }
+
+    private bool EsComponenteDeEstaEscena(Component component)
+    {
+        return component != null && component.gameObject.scene == gameObject.scene;
+    }
+
+    private T BuscarHijo<T>(string childName) where T : Component
+    {
+        T[] components = itemPopupPanel.GetComponentsInChildren<T>(true);
+        foreach (T component in components)
+        {
+            if (component.gameObject.name == childName)
+            {
+                return component;
+            }
+        }
+
+        return null;
     }
 
     private void Update()
     {
         if (!estaInspeccionando || justOpened) return;
 
-        // Si presionas Espacio o haces Clic mientras se escribe, acelera/autocompleta la línea
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        bool presionoTeclaAvance = Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame;
+
+        #if !ENABLE_INPUT_SYSTEM_ONLY
+        if (Input.GetKeyDown(KeyCode.E)) presionoTeclaAvance = true;
+        #endif
+
+        if (presionoTeclaAvance)
         {
             AvanzarTexto();
         }
@@ -43,6 +144,11 @@ public class ItemDialogueManager : MonoBehaviour
     public void MostrarItem(ItemData item)
     {
         if (item == null) return;
+        if (itemPopupPanel == null || itemNameText == null || itemDescriptionText == null)
+        {
+            Debug.LogError("No se puede mostrar el ítem: faltan referencias de la interfaz.", this);
+            return;
+        }
 
         if (typingCoroutine != null)
         {
@@ -50,8 +156,9 @@ public class ItemDialogueManager : MonoBehaviour
             typingCoroutine = null;
         }
 
-        if (DialogueManager.Instance != null)
+        if (!estaInspeccionando && DialogueManager.Instance != null)
         {
+            permitirAvanceManualAnterior = DialogueManager.Instance.permitirAvanceManual;
             DialogueManager.Instance.permitirAvanceManual = false;
         }
 
@@ -87,6 +194,7 @@ public class ItemDialogueManager : MonoBehaviour
         if (itemPopupPanel != null)
         {
             itemPopupPanel.SetActive(true);
+            itemPopupPanel.transform.SetAsLastSibling();
         }
         
         AvanzarTexto();
@@ -100,7 +208,7 @@ public class ItemDialogueManager : MonoBehaviour
 
     private void AvanzarTexto()
     {
-        // Si el texto se está escribiendo y haces clic/espacio, muestra todo de golpe
+        // Si el texto se está escribiendo, muestra toda la línea de golpe.
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
@@ -151,7 +259,7 @@ public class ItemDialogueManager : MonoBehaviour
 
         if (DialogueManager.Instance != null)
         {
-            DialogueManager.Instance.permitirAvanceManual = true;
+            DialogueManager.Instance.permitirAvanceManual = permitirAvanceManualAnterior;
         }
     }
 }

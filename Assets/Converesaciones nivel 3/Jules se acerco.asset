@@ -1,0 +1,572 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Jules se acerco
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: 
+    text: "Vi a Jules acercarse al centro, nosotros empez\xE1bamos a hablar."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "\xA1Ciudadanos de la Convenci\xF3n! Nadie aqu\xED pretende negar los fallos
+      de la monarqu\xEDa, pero\u2026 \xBFdecapitar al Rey y a su familia? \xA1\xBFQu\xE9
+      somos?! \xA1\xBFSalvajes?!"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 1
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "Es una imprudencia, no solo seremos v\xEDctimas de Inglaterra, sino que
+      tambi\xE9n el resto de potencia europeas buscar\xE1n desestabilizarnos y ganar
+      nuestras tierras"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "explic\xF3 en alto, con molestia y seriedad.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Not\xE9 algo raro\u2026 Hab\xEDa guardias cerca del juez, hombres armados
+      cerca de cada uno de los que decid\xEDan el juicio.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "En ese instante de tensi\xF3n, Jean avanz\xF3 hasta el centro a pesar
+      de que no era su turno\u2026 \xBFpor qu\xE9 nadie lo deten\xEDa?"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "\xA1Demasiada elocuencia para cubrir a un traidor, Jules!"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "interrumpi\xF3 con esa sonrisa afilada y cruel"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Mientras el \u201Cquerido amigo del pueblo\u201D habla de paz y evitar
+      guerras, tengo una prueba que demuestra porqu\xE9 es necesario eliminar al
+      Rey. "
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jules pareci\xF3 fruncir el ce\xF1o ante eso, busc\xE1ndome con la mirada
+      para fijarse si tambi\xE9n estaba igual de confundido que \xE9l. "
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "Luis solicita abiertamente la intervenci\xF3n militar de potencias extranjeras
+      para aplastar al pueblo franc\xE9s que est\xE1 en su contra. \xBFY dices que
+      no hay que ejecutarlo?"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jean tir\xF3 con poca educaci\xF3n la carta sobre la mesa del juez."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "El rugido de los jacobinos celebrando por esto como si fuera una victoria
+      aplastante se oy\xF3 a trav\xE9s de la sala, a pesar de que el juez ni daba
+      su veredicto todav\xEDa. "
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices:
+    - buttonText: Defender a Jules
+      buttonBackground: {fileID: 0}
+      nextDialogue: {fileID: 11400000, guid: 30dec7b0ccdc02946a9de2c3ec71731b, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 0
+      dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 0
+      cantidadReputacionARestar: 0
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: Quedarme en silencio
+      buttonBackground: {fileID: 0}
+      nextDialogue: {fileID: 11400000, guid: 2268bbae546778d479bf1a450b8668a6, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 0
+      dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 1
+      cantidadReputacionARestar: 1
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 0}
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}

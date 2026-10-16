@@ -336,7 +336,7 @@ MonoBehaviour:
   - speaker: 
     text: "Que vergonzoso era saber que hab\xEDan m\xE1s personas enteradas, Elodie
       apoy\xF3 una mano en mi hombro al verme tan tenso."
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 168661227485434523, guid: 17bfadfbd598e5e4b8abcaf37a53538d, type: 3}
     imagePosition: 2
     characterImageSize: {x: 0, y: 0}

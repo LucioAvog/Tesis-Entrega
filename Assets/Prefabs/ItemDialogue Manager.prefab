@@ -48,4 +48,4 @@ MonoBehaviour:
   itemNameText: {fileID: 0}
   itemDescriptionText: {fileID: 0}
   itemIconImage: {fileID: 0}
-  textSpeed: 0.03
+  textSpeed: 0.05

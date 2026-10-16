@@ -89,7 +89,7 @@ MonoBehaviour:
     text: "Dijo el hombre empezando a levantarse, mientras su esposa le ofrec\xEDa
       un pa\xF1uelo para limpiarse la sangre.\r\n"
     showImage: 1
-    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    characterImage: {fileID: -7399391854166598851, guid: 260ec547fce8ebb4ca9bc0505ca47ff7, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -132,8 +132,8 @@ MonoBehaviour:
     choices: []
   - speaker: 
     text: "Murmur\xF3 aquella se\xF1ora preocupada."
-    showImage: 0
-    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    showImage: 1
+    characterImage: {fileID: -2104025550643437901, guid: a2f0a44243d59c44f8b5ec5444bfcf48, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
     choices: []
   - speaker: Francois
     text: "\xBFProblemas? \xBFQu\xE9 clases de problemas?\r\n"
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: -8894258904770162708, guid: 6d753f0340af57948a2878db80eb22eb, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
@@ -222,8 +222,8 @@ MonoBehaviour:
     text: 'Dijo el hombre en un susurro.
 
 '
-    showImage: 0
-    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    showImage: 1
+    characterImage: {fileID: 3651360570310532851, guid: 10f1667fe3eff034a9f75c2e7ed33afe, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -290,8 +290,8 @@ MonoBehaviour:
     choices: []
   - speaker: 
     text: "Pregunt\xF3 la mujer, algo curiosa."
-    showImage: 0
-    characterImage: {fileID: -279528177590649484, guid: a43165c25c2222c4f916d608d276ce9e, type: 3}
+    showImage: 1
+    characterImage: {fileID: -371421024749649275, guid: 41a21f1bb2e4a6041bd44b12409add92, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
     choices: []
   - speaker: 
     text: "Lade\xF3 Elodie, girando la cabeza de manera curiosa.\r\n\r\n"
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}

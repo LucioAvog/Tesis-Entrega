@@ -1,0 +1,420 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Defender a Jules nivel 3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: Francois
+    text: "\xBFC\xF3mo sabemos que no fue falsificada?"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "pregunt\xE9, acerc\xE1ndome al centro y mirando a Jean molesto."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "Qu\xE9 ternura, \xBFdefiendes a un privilegiado que quiere a la monarqu\xEDa
+      para seguir teniendo sus privilegios?"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "ciza\xF1ero Jean, con una sonrisa amarga. Comenz\xF3 a acercarse a m\xED
+      hasta que Jules puso su brazo, interponi\xE9ndose entre \xE9l y yo"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "\xBFTemes que toque a tu pobre ni\xF1o rescatado? Jules, Fran\xE7ois,
+      vieron al Rey tratando de huir de Francia hacia Austria\u2026"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: fueron identificados porque su maldita carroza era tan ostentosa que la
+      oyeron desde la iglesia.
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jean comenz\xF3 a acercarse de manera amenazante, pero antes de que pudiera
+      encarar directamente, Jules interpuso su brazo con firmeza, bloque\xE1ndole
+      el paso."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "Mant\xE9n la distancia, Jean"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "advirti\xF3 Jules con voz fr\xEDa, sosteniendo la mirada sin dar un paso
+      atr\xE1s.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "Ambos sabemos por qu\xE9 lo haces. Tu soberbio Rey utiliza la diplomacia
+      para proteger sus propios intereses."
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 11400000, guid: 47f753bd012f3e045b4d2e47f020e95f, type: 2}
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}

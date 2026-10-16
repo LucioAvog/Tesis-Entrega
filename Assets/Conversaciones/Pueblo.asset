@@ -20,8 +20,8 @@ MonoBehaviour:
   - speaker: 
     text: "El comerciante apenas levant\xF3 la vista al vernos. Parec\xEDa estar
       guardando las cosas, el lugar casi vac\xEDo.\r\n"
-    showImage: 0
-    characterImage: {fileID: 1746383676720419681, guid: 8bfdc9237ca903b44ad9b064fb315cc0, type: 3}
+    showImage: 1
+    characterImage: {fileID: -3145973604060329065, guid: d300b125a153efd41bc2f4a3ac0201d9, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   - speaker: Francois Mercier
     text: "\xBFNo est\xE1 teniendo clientes? \r\n"
     showImage: 0
-    characterImage: {fileID: 1746383676720419681, guid: 8bfdc9237ca903b44ad9b064fb315cc0, type: 3}
+    characterImage: {fileID: 0}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0

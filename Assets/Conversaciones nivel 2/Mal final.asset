@@ -30,18 +30,15 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
-    newBackground: {fileID: 0}
+    newBackground: {fileID: -8567135106048223669, guid: 93063343dab56b94dad05c816f275552, type: 3}
     playSound: 0
     soundClip: {fileID: 0}
     playSFX: 0
@@ -74,17 +71,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -117,20 +111,17 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -159,17 +150,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
@@ -202,20 +190,17 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -245,17 +230,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
@@ -288,17 +270,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -330,17 +309,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
@@ -373,17 +349,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
@@ -417,17 +390,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -459,20 +429,17 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -502,17 +469,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}

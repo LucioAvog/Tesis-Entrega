@@ -130,7 +130,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4da69b084cb3005409ea152f38594f9e, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -797,12 +797,12 @@ MonoBehaviour:
       nextDialogue: {fileID: 11400000, guid: 016d8c0a2b4e9e34ea71c2a07a1ec20a, type: 2}
       restarVida: 1
       cantidadVidaARestar: 1
-      dialogoAlMorirSiPierde: {fileID: 0}
+      dialogoAlMorirSiPierde: {fileID: 11400000, guid: 0d0d9573075db7940a57f622cddceeef, type: 2}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: Checkpoint 2
       dialogoSiTieneFlag: {fileID: 0}
-      guardarFlag: 
+      guardarFlag: Checkpoint 2
       changeScene: 0
       sceneToLoad: 
     agregarItemAlInventario: 0

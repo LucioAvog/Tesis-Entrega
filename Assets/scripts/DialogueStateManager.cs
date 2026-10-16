@@ -59,8 +59,22 @@ public class DialogueStateManager : MonoBehaviour
         if (string.IsNullOrWhiteSpace(flagName)) return;
 
         flags.Add(flagName);
-        LastCheckpointFlag = flagName;
+
+        if (EsFlagCheckpoint(flagName))
+        {
+            LastCheckpointFlag = flagName;
+        }
+
         SaveState();
+    }
+
+    private static bool EsFlagCheckpoint(string flagName)
+    {
+        if (string.IsNullOrWhiteSpace(flagName)) return false;
+
+        return flagName.StartsWith("PuntoGuardado", StringComparison.OrdinalIgnoreCase)
+            || flagName.StartsWith("Checkpoint", StringComparison.OrdinalIgnoreCase)
+            || flagName.StartsWith("CheckPoint", StringComparison.OrdinalIgnoreCase);
     }
 
     public bool HasFlag(string flagName)

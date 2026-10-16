@@ -537,6 +537,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1942619234}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionRight.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionCenter.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: characterImageRect
       value: 
       objectReference: {fileID: 2106056089}
@@ -1109,11 +1117,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 273125125}
+  - {fileID: 2106056077}
   - {fileID: 2099775649}
   - {fileID: 299436230}
   - {fileID: 2034582530}
   - {fileID: 1564944847}
   - {fileID: 2072855762}
-  - {fileID: 2106056077}
   - {fileID: 1942619233}
   - {fileID: 1966417491}

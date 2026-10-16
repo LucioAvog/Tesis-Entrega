@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Aceptar propuesta
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: Francois
+    text: 'Solo son dos minutos, Jules. Ya regreso.
+
+'
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Me dirigi\xF3 una mirada desconfiada, lo entend\xEDa. Despu\xE9s de todo,
+      el juicio era contra los jacobinos para decidir si eliminar al Rey o no\u2026"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "e irme precisamente con una de las acompa\xF1antes de Jean no era lo mejor.
+      Nos fuimos atr\xE1s de una columna, alejados del resto."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -1087421258012235777, guid: c2d09e26aef54fc4884531ebf704c0fd, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Elodie
+    text: "S\xE9 que no soy qui\xE9n para decirte esto, pero\u2026 me gustar\xEDa
+      que tengas esto "
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -1087421258012235777, guid: c2d09e26aef54fc4884531ebf704c0fd, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "me entreg\xF3 una llave, la mir\xE9 sin entender"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -1087421258012235777, guid: c2d09e26aef54fc4884531ebf704c0fd, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 1
+    itemAAgregar: {fileID: 11400000, guid: e6c61a71a2364e90a5179b44807b0001, type: 2}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Elodie
+    text: "Solo\u2026 por favor, conf\xEDa en m\xED, ser\xE1 \xFAtil. \xBFSi?\r\n"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Me dio una mirada apenada y se march\xF3. El juicio estaba por empezar.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -1087421258012235777, guid: c2d09e26aef54fc4884531ebf704c0fd, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 11400000, guid: 100948ffef525514a9f8afc5950a7db3, type: 2}
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}

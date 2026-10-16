@@ -221,8 +221,8 @@ MonoBehaviour:
     characterImagePosition3: {x: 0, y: 0}
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
-    playSound: 0
-    soundClip: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0

@@ -27,8 +27,14 @@ public class Choice
 
     [Header("Mecánica de Vidas")]
     public bool restarVida = false;
+    [Min(0)]
     public int cantidadVidaARestar = 1;
     public DialogueScript dialogoAlMorirSiPierde;
+
+    [Header("Mecánica de Reputación")]
+    public bool restarReputacion = false;
+    [Min(0)]
+    public int cantidadReputacionARestar = 1;
 
     [Header("Reinicio / Continuación")]
     public bool reiniciarEnLineaEspecifica = false;
@@ -76,19 +82,16 @@ public class Line
     public Sprite characterImage;
     public ImagePosition imagePosition = ImagePosition.Izquierda;
     public Vector2 characterImagePosition;
-    public Vector2 characterImageSize;
 
     public bool showImage2 = false;
     public Sprite characterImage2;
     public ImagePosition imagePosition2 = ImagePosition.Izquierda;
     public Vector2 characterImagePosition2;
-    public Vector2 characterImageSize2;
 
     public bool showImage3 = false;
     public Sprite characterImage3;
     public ImagePosition imagePosition3 = ImagePosition.Izquierda;
     public Vector2 characterImagePosition3;
-    public Vector2 characterImageSize3;
 
     [Header("Fondo")]
     public Sprite newBackground;
@@ -144,5 +147,13 @@ public class DialogueScript : ScriptableObject
 
     [Header("Diálogo al perder la última vida en esta conversación")]
     public DialogueScript dialogoAlPerderUltimaVida;
+
+    [Header("Finales condicionales del nivel 3")]
+    public bool enrutarFinalesNivel3;
+    public string flagReputacionAgotada = "Nivel3_ReputacionAgotada";
+    public string itemLlave = "Llave";
+    public string sceneFinalPorReputacionAgotada;
+    public string sceneFinalConLlave;
+    public string sceneFinalSinLlave;
 
 }

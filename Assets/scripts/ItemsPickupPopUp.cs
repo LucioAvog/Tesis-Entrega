@@ -23,6 +23,12 @@ public class ItemsPickUpPopUp : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        GameObject exitPrompt = GameObject.Find("Presiona E para salir");
+        if (exitPrompt != null && exitPrompt.transform.parent != transform)
+        {
+            exitPrompt.transform.SetParent(transform, true);
+        }
         
         // El popup inicia desactivado para no estorbar en pantalla
         if (popupPanel != null) popupPanel.SetActive(false);

@@ -136,8 +136,8 @@ MonoBehaviour:
     choices: []
   - speaker: 
     text: "Dijo con una mirada fr\xEDa y estoica. "
-    showImage: 0
-    characterImage: {fileID: 0}
+    showImage: 1
+    characterImage: {fileID: 337413337032453024, guid: 79e83278b075ad24eacb370ad420ecad, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
     text: "De repente, el guardia alz\xF3 su mano y form\xF3 un pu\xF1o. Retorci\xF3
       su brazo hacia atr\xE1s para luego golpear al ladr\xF3n con una fuerza brutal.
       La evidencia se marc\xF3 en sus nudillos.\r\n"
-    showImage: 0
-    characterImage: {fileID: 4422801775354360503, guid: 0af5e0bf20c4b6f4586282803de379e2, type: 3}
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -205,8 +205,8 @@ MonoBehaviour:
   - speaker: 
     text: "Mi vecino cay\xF3 de rodillas. El barro comenz\xF3 a mezclarse con la
       sangre que brotaba de su nariz, que recibi\xF3 todo el impacto.\r\n"
-    showImage: 0
-    characterImage: {fileID: 0}
+    showImage: 1
+    characterImage: {fileID: -7399391854166598851, guid: 260ec547fce8ebb4ca9bc0505ca47ff7, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
   - speaker: 
     text: "Mi vecino intent\xF3 levantarse, pero un guardia sac\xF3 su espada y lo
       detuvo:\r\n"
-    showImage: 0
-    characterImage: {fileID: 4422801775354360503, guid: 0af5e0bf20c4b6f4586282803de379e2, type: 3}
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0

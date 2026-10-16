@@ -65,8 +65,8 @@ MonoBehaviour:
     text: "Mi arrepentimiento fue instant\xE1neo, al observar que la espada del guardia
       segu\xEDa en sus manos. Sin embargo, no fui degollado. \xC9l me observ\xF3
       un momento, murmur\xF3 algo a su compa\xF1ero y se alej\xF3."
-    showImage: 0
-    characterImage: {fileID: 4422801775354360503, guid: 0af5e0bf20c4b6f4586282803de379e2, type: 3}
+    showImage: 1
+    characterImage: {fileID: -6908545255849982002, guid: eeb8d35e726ff2647ba93e332e34e804, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0

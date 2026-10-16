@@ -11,6 +11,11 @@ public class BridgePanelesDialogo : MonoBehaviour
             objetoCarrusel.SetActive(false);
     }
 
+    private void OnDisable()
+    {
+        DialogueManager.BloquearAvancePorCarrusel = false;
+    }
+
     public void ActivarPanelesVN()
     {
         if (objetoCarrusel == null) return;

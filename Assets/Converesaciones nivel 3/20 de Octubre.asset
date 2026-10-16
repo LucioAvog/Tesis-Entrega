@@ -1,0 +1,1212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: 20 de Octubre
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: 
+    text: '20 de octubre de 1973
+
+'
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "El Rey y su familia murieron un 21 de enero de 1793, los d\xEDas pasaron
+      sumidos en un ambiente pesado y tenso, mi voto en la \xFAltima estancia hab\xEDa
+      sido poco importante"
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "porque no hubiera cambiado nada, los jacobinos hubieran ganado igual,
+      ellos ten\xEDan el control de las calles y al jurado contra la pared. "
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Las potencias extranjeras buscaban aprovecharse de eso, y Jules\u2026
+      bueno, \xE9l estaba devastado."
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "El estr\xE9s lo consum\xEDa d\xEDa a d\xEDa, se la pasaba encerrado en
+      su estudio, entre botellas de vino a medio tomar y malas militares con las
+      ojeras marcadas"
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "ya no hab\xEDa mucho que hacer. Sab\xEDa que su bando perd\xEDa terreno
+      a cada hora frente al radicalismo de los jacobinos."
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Est\xE1bamos en la mansi\xF3n de Jules, quien me hab\xEDa ofrecido su
+      hogar desde que trabaj\xE1bamos juntos. Estaba leyendo un libro cuando una
+      puerta se abri\xF3 de golpe\u2026 "
+    panelType: 2
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 0
+    characterImage: {fileID: 0}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 0
+    characterImage3: {fileID: 0}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Francois
+    text: "\xBFEmma...?"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Emma
+    text: "\xA1Jules, Fran\xE7ois! \xA1Tienen que salir de aqu\xED ahora mismo!"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 1
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "estaba respirando agitada y se ve\xEDa muy preocupada."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "Emma, cuando te d\xED las llaves de mi hogar no fue para que vinieras
+      sin previo aviso, dije que solo para las emergencias"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "la rega\xF1\xF3 Jules."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Francois
+    text: "\xBFEst\xE1s bien?"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "pregunt\xE9 al verla tan nerviosa."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Emma
+    text: "\xA1No lo entienden! Mi padre estuvo en una reuni\xF3n con el comit\xE9.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 1931676074218231991, guid: a441ad8e8bd5d0045a5af5151539c3ac, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 1
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Emma
+    text: "Escuch\xF3 que Robespierre y Jean han firmado un acuerdo para eliminarlos
+      a ustedes, planean asesinar a todo aquel que no est\xE9 a favor de la revoluci\xF3n
+      o de haber matado al Rey."
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 1931676074218231991, guid: a441ad8e8bd5d0045a5af5151539c3ac, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Emma estaba al borde de las l\xE1grimas mientras Jules solt\xF3 una carcajada
+      seca y sin gracia."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "Era de esperarse\u2026 perdimos el juicio y el control de la asamblea,
+      y ahora vienen a cobrar con nuestra sangre\u2026"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 0}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Antes de que pudi\xE9ramos reaccionar para planear una huida, el sonido
+      rotundo de botas pesadas y armas reson\xF3 por el pasillo principal."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: b492623569eb59b4488b9d1be905e496, type: 3}
+    sfxDuration: 3
+    triggerShake: 0
+    shakeDuration: 0
+    shakeIntensity: 0
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "La puerta doble del sal\xF3n fue derribada en un segundo."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 0
+    characterImage2: {fileID: 0}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: -317443146522145287, guid: df7f1da8d8246a048be21f79e5336ecb, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 1
+    triggerShake: 1
+    shakeDuration: 0.25
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jean Dubois entr\xF3 primero, sin preocupaci\xF3n alguna, flanqueado por
+      cuatro guardias armados con mosquetes."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: -317443146522145287, guid: df7f1da8d8246a048be21f79e5336ecb, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 0}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "Miren qu\xE9 reuni\xF3n tan acogedora\u2026 \xBFacaso su querida amiga
+      decidi\xF3 avisarles? Esto es traici\xF3n, ustedes tres traicionan a la patria,
+      \xA1a la Revoluci\xF3n!"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: -4988242933721425723, guid: 46bce7f00b4eee246a1da01a66cbb2d1, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 1931676074218231991, guid: a441ad8e8bd5d0045a5af5151539c3ac, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "murmur\xF3 Jean amargamente.\r\n"
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 1931676074218231991, guid: a441ad8e8bd5d0045a5af5151539c3ac, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Jules reaccion\xF3 con rapidez, poni\xE9ndose delante nuestro para protegernos."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 0
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jules
+    text: "D\xE9jalos a ellos irse, no tienen la culpa."
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "No me interesa. Jules Laurent, Fran\xE7ois Mercier, ambos quedan arrestados
+      en nombre del Comit\xE9 de Salvaci\xF3n p\xFAblica por traici\xF3n\u2026 "
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "en cuanto a Emma, tu padre nos avis\xF3 que vendr\xEDas a este lugar y
+      tratar\xEDas de avisarle a tus amigos para que escaparon"
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: Jean
+    text: "est\xE1s perdonada, agrad\xE9cele a tu progenitor\u2026 y m\xE1s te vale
+      no volver a interferir en nuestros asuntos."
+    panelType: 0
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  - speaker: 
+    text: "Emma pareci\xF3 quedarse en shock, apretando mi brazo asustada."
+    panelType: 1
+    choicePanelType: 0
+    ocultarPanelDialogo: 0
+    bloquearOtrosBotones: 0
+    usarTransicionTexto: 0
+    duracionTransicion: 0
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 0, y: 0}
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    characterImagePosition: {x: 0, y: 0}
+    showImage2: 1
+    characterImage2: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition2: 0
+    characterImagePosition2: {x: 0, y: 0}
+    showImage3: 1
+    characterImage3: {fileID: 5379436502913547165, guid: 1567e858bcf1f7f429dedfc72d70ac8b, type: 3}
+    imagePosition3: 0
+    characterImagePosition3: {x: 0, y: 0}
+    newBackground: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    playSFX: 0
+    sfxClip: {fileID: 8300000, guid: 9263d3730aebafc43a9f7c5665571eb4, type: 3}
+    sfxDuration: 0
+    triggerShake: 0
+    shakeDuration: 2.5
+    shakeIntensity: 10
+    choices:
+    - buttonText: Enfrentar a Jean
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      nextDialogue: {fileID: 11400000, guid: c80678f652ae1ab499e709f4bacd3049, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 0
+      dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 0
+      cantidadReputacionARestar: 0
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    - buttonText: Razonar
+      buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
+      nextDialogue: {fileID: 11400000, guid: 31a4e66c81cdef948b5520afdf4634cd, type: 2}
+      restarVida: 0
+      cantidadVidaARestar: 0
+      dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 0
+      cantidadReputacionARestar: 0
+      reiniciarEnLineaEspecifica: 0
+      lineaDestino: 0
+      flagRequerida: 
+      dialogoSiTieneFlag: {fileID: 0}
+      guardarFlag: 
+      changeScene: 0
+      sceneToLoad: 
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
+    objetoAActivar: {fileID: 0}
+    objetoADesactivar: {fileID: 0}
+    dispararCarruselPaneles: 0
+  nextConversation: {fileID: 0}
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}
+  enrutarFinalesNivel3: 0
+  flagReputacionAgotada: Nivel3_ReputacionAgotada
+  itemLlave: Llave de Elodie
+  sceneFinalPorReputacionAgotada: Final 1
+  sceneFinalConLlave: Final 2
+  sceneFinalSinLlave: Final 3

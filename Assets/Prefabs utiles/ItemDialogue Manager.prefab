@@ -48,4 +48,4 @@ MonoBehaviour:
   itemNameText: {fileID: 2371438947359455922, guid: 6fb106676949dcf4db1019ffa53df11c, type: 3}
   itemDescriptionText: {fileID: 284460124709077985, guid: b654aa9970750274c9a707ac6ee28759, type: 3}
   itemIconImage: {fileID: 255954492314444327, guid: d672d7ce152d646459354a67da4085fe, type: 3}
-  textSpeed: 0.03
+  textSpeed: 0.05

@@ -33,37 +33,61 @@ EditorBuildSettings:
     path: Assets/Scenes/Seleccion de bando.unity
     guid: 2204b57e2ed68eb4a95975720d603e77
   - enabled: 1
-    path: Assets/Scene 2 Jean/Nivel 2 Jean.unity
+    path: Assets/Scenes/Scene 2 Jean/Nivel 2 Jean.unity
     guid: a8faac36b6bfde249b49d844fae4245d
   - enabled: 1
-    path: Assets/Scene 2 Jean/Asamblea.unity
+    path: Assets/Scenes/Scene 2 Jean/Asamblea.unity
     guid: 5361eb58e21792c448092c5cef4f98a2
   - enabled: 1
-    path: Assets/Scene 2 Jean/Asesinato de Marat.unity
+    path: Assets/Scenes/Scene 2 Jean/Asesinato de Marat.unity
     guid: 7aa17d3eaad36e64bbaa1d2a858b0c3d
   - enabled: 1
-    path: Assets/Scene 2 Jean/Comienzo Abolicion.unity
+    path: Assets/Scenes/Scene 2 Jean/Comienzo Abolicion.unity
     guid: cdab1662c28485f4babc20364c1531f5
   - enabled: 1
-    path: Assets/Scene 2 Jean/Ejecucion.unity
+    path: Assets/Scenes/Scene 2 Jean/Ejecucion.unity
     guid: 17d906bf990077749a4407eb490265e8
   - enabled: 1
-    path: Assets/Scene 2 Jean/Imprenta.unity
+    path: Assets/Scenes/Scene 2 Jean/Imprenta.unity
     guid: 0bf1592589b884f49a11e0f595252236
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Final.unity
+    guid: 566ed5c8e8dea4f4da4cf5efc0fefbf3
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Final 3 Ejecucion.unity
+    guid: 049d7147ae978eb4aa83f7a4803c062c
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Inicio nivel 3.unity
+    guid: 12987f0b68ff6b34fa879338f8ac6812
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Tribunal.unity
+    guid: c4789d8d7eeaea44ba69e7387dfc8409
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Mansion de Jules.unity
+    guid: c5f832928916ab346aac6f3738cdf13d
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Final 2.unity
+    guid: 734799fb2a40cbf44a5bebd0eb677213
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Final 3.unity
+    guid: 13d2dc6b92b13a848b1e116e8cb9f697
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3 Jules/Final 1.unity
+    guid: f706ddff97cd38840915842954841305
   - enabled: 0
     path: Assets/Scene 2/Buen Final.unity
     guid: 183455a56135afd43854c5584058b443
   - enabled: 1
-    path: Assets/Scene 2 Jean/Mal final.unity
+    path: Assets/Scenes/Scene 2 Jean/Mal final.unity
     guid: e71743d3464b36b4ea3364a2b9aaa215
-  - enabled: 1
-    path: Assets/Scene 2 Jules/Nivel 2 Jules.unity
+  - enabled: 0
+    path: Assets/Scenes/Scene 2 Jules/Nivel 2 Jules.unity
     guid: 28273ab6ccd299e4ea967d4fefbbfba4
   - enabled: 1
-    path: Assets/Scene 2 Jean/Palacio Exterior.unity
+    path: Assets/Scenes/Scene 2 Jean/Palacio Exterior.unity
     guid: 4e9009ba03ac1984e9b2041e0d642e3c
   - enabled: 1
-    path: Assets/Scene 2 Jean/Purga.unity
+    path: Assets/Scenes/Scene 2 Jean/Purga.unity
     guid: 28613593c73804848bf74edefe4ed0d9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

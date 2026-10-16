@@ -158,7 +158,7 @@ MonoBehaviour:
     text: "Suspir\xE9 mientras segu\xEDa avanzando detr\xE1s de ella, finalmente
       se detuvo frente a una vieja bodega de piedras, la puerta estaba custodiada
       por dos hombres que se aseguraron de que no fu\xE9ramos guardias\u2026"
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 2
     characterImageSize: {x: 0, y: 0}
@@ -181,7 +181,7 @@ MonoBehaviour:
   - speaker: 
     text: "Adentro hab\xEDa m\xE1s personas de lo que esperaba, campesinos, herreros,
       mujeres con ni\xF1os en brazos, y m\xE1s comerciantes de lo que imagin\xE9.\r\n"
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 2
     characterImageSize: {x: 0, y: 0}
@@ -206,7 +206,7 @@ MonoBehaviour:
       de aquella reuni\xF3n. Uno de ellos era un hombre de cabellos casta\xF1os,
       casi rojizos, ten\xEDa una sonrisa afilada como la de un zorro y parec\xEDa
       divertido por la reuni\xF3n.\r\n"
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 2
     characterImageSize: {x: 0, y: 0}
@@ -229,7 +229,7 @@ MonoBehaviour:
   - speaker: 
     text: El otro se veia mas serio, ropa que delataba mas estatus social y un cabello
       negro perfectamente ordenado.
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
     text: "Mientras que el \xFAltimo, resaltaba mucho menos, ten\xEDa ropas de campesinos
       y una mirada amable, incluso algo t\xEDmida, sus cabellos rubios alborotados
       y se ve\xEDa menor que los otros dos."
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
@@ -322,7 +322,7 @@ MonoBehaviour:
       cabeza levemente hacia nosotros.
 
 '
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: 3850027480385225625, guid: 61e58d5789b358445b85b781cf208851, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
@@ -620,7 +620,7 @@ MonoBehaviour:
     choices: []
   - speaker: Francois
     text: "\xBFQu\xE9 dijo?  "
-    showImage: 0
+    showImage: 1
     characterImage: {fileID: -6834798008387797036, guid: 702d7aeab0f63b64490247044f6c0131, type: 3}
     imagePosition: 2
     characterImageSize: {x: 0, y: 0}

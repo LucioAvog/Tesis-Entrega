@@ -21,21 +21,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -46,6 +47,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -58,21 +61,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -83,6 +87,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -95,21 +101,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -120,6 +127,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -132,21 +141,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -157,6 +167,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -170,21 +182,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -195,6 +208,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -208,21 +223,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -233,6 +249,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -245,21 +263,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 0
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -270,6 +289,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -283,21 +304,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -308,6 +330,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -319,21 +343,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -344,6 +369,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -356,21 +383,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -381,6 +409,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -394,21 +424,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -419,6 +450,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -431,21 +464,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
@@ -456,6 +490,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -467,21 +503,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
@@ -492,6 +529,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -503,21 +542,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
@@ -528,6 +568,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -539,21 +581,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: b86074ec92355cd4d81fd67ee9c6fb62, type: 3}
@@ -564,6 +607,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -576,21 +621,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -601,6 +647,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -612,21 +660,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -637,6 +686,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -649,21 +700,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 5184651387025587248, guid: a0e2fdf87989cc049932ed6f5604fc02, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -674,6 +726,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -687,21 +741,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: -3181186342807475808, guid: 9915cead131f9f14b9205f2864a7401b, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -712,6 +767,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -723,21 +780,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 221470673211238588, guid: ed9303c8bb322be4dbbee981e9729619, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
@@ -748,6 +806,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -759,21 +819,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 221470673211238588, guid: ed9303c8bb322be4dbbee981e9729619, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
@@ -784,6 +845,8 @@ MonoBehaviour:
     shakeDuration: 0
     shakeIntensity: 0
     choices: []
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
@@ -796,21 +859,22 @@ MonoBehaviour:
     bloquearOtrosBotones: 0
     usarTransicionTexto: 0
     duracionTransicion: 1
+    mostrarImagenPantalla: 0
+    imagenPantalla: {fileID: 0}
+    posicionImagenPantalla: {x: 0, y: 0}
+    tamanoImagenPantalla: {x: 500, y: 500}
     showImage: 1
     characterImage: {fileID: 221470673211238588, guid: ed9303c8bb322be4dbbee981e9729619, type: 3}
     imagePosition: 1
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 0
     characterImage2: {fileID: 0}
     imagePosition2: 0
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 0
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 37c6e533efafb7d4d95bd1c260f45f3f, type: 3}
@@ -825,6 +889,8 @@ MonoBehaviour:
       buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
       nextDialogue: {fileID: 11400000, guid: 30bfd7bddf251394aafb7ad3bbbc4f7f, type: 2}
       restarVida: 0
+      cantidadVidaARestar: 1
+      dialogoAlMorirSiPierde: {fileID: 0}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: 
@@ -836,6 +902,8 @@ MonoBehaviour:
       buttonBackground: {fileID: 3364988206025089807, guid: 838328866da142743a820ec1cd07e6ac, type: 3}
       nextDialogue: {fileID: 11400000, guid: 92a0311082c673148bcf3ddd4fcf8c94, type: 2}
       restarVida: 0
+      cantidadVidaARestar: 1
+      dialogoAlMorirSiPierde: {fileID: 0}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: 
@@ -843,11 +911,15 @@ MonoBehaviour:
       guardarFlag: 
       changeScene: 0
       sceneToLoad: 
+    agregarItemAlInventario: 0
+    itemAAgregar: {fileID: 0}
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
   nextConversation: {fileID: 0}
-  changeSceneOnEnd: 0
-  sceneToLoadOnEnd: 
   flagRequeridaParaSiguiente: 
   conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}

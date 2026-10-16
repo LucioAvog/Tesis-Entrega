@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &636122442527518789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4976026602047864999}
+  - component: {fileID: 44600285551458423}
+  m_Layer: 0
+  m_Name: DialogueManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4976026602047864999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636122442527518789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1829, y: 0.54585, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44600285551458423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636122442527518789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e0a63c69e9fdd44bd6a1e4ecd36523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  maxHealth: 3
+  healthText: {fileID: 6764430577307279317, guid: 93aadb22c06dc4b49bbdc5b2a6974fa6, type: 3}
+  maxReputation: 3
+  reputationText: {fileID: 0}
+  diferirFinalNivel3Hasta20DeOctubre: 1
+  dialogoAlMorir: {fileID: 11400000, guid: aa6f97f911d6332429d875a5787e6cbd, type: 2}
+  permitirAvanceManual: 1
+  botonesSiemprePermitidos: []
+  panelInventario: {fileID: 5284446494895368515, guid: b53f6f3f136862d40b535f58b88b1c96, type: 3}
+  nameText: {fileID: 7444812537444420583, guid: 19b2db8aebd1fca4ab42e9c02cdaf055, type: 3}
+  lineText: {fileID: 5018010358368209851, guid: 79a67a9534aee444e8e0e9c5b76a6477, type: 3}
+  lineText2: {fileID: 2513623374833864473, guid: 498a130d59eadf3449b5a8f16ce11f54, type: 3}
+  lineText3: {fileID: 2999797697564683410, guid: 89f6cc949eb1e8b478c32b31387393d5, type: 3}
+  dialoguePanel: {fileID: 5471346809951917862, guid: ceab6d24c1781c049bc27eda632a38fd, type: 3}
+  dialoguePanel2: {fileID: 4779394511497286539, guid: 402252d5e3c4b594ab19695f538c6117, type: 3}
+  dialoguePanel3: {fileID: 2159371228360882802, guid: f14cc494497b01743aeddc2c65ac16b9, type: 3}
+  duracionFadePanel3: 0.5
+  gameBackgroundDisplay: {fileID: 1344468308368746990, guid: 251e4062266244d459623c0ba014af8a, type: 3}
+  textSpeed: 0.05
+  imagenPantallaDisplay: {fileID: 0}
+  imagenPantallaRect: {fileID: 0}
+  characterImageDisplay: {fileID: 1793384450429895130, guid: d494a31d54363434cb9153dc6a1d2db1, type: 3}
+  characterImageRect: {fileID: 6144065527830104149, guid: d494a31d54363434cb9153dc6a1d2db1, type: 3}
+  characterImageDisplay2: {fileID: 4077387056816118093, guid: 0a8265ac0d2bba5428ce7b436f761ebd, type: 3}
+  characterImageRect2: {fileID: 7052350671701570143, guid: 0a8265ac0d2bba5428ce7b436f761ebd, type: 3}
+  characterImageDisplay3: {fileID: 8738971107213118529, guid: 94363165acdbc2d4f808de8842f526d9, type: 3}
+  characterImageRect3: {fileID: 5741406254563340458, guid: 94363165acdbc2d4f808de8842f526d9, type: 3}
+  positionLeft: {x: 0, y: 0}
+  positionCenter: {x: 0, y: 0}
+  positionRight: {x: 0, y: 0}
+  objectToShake: {fileID: 1490986142780151324, guid: 233b73055edcf9546a864efb2a42214a, type: 3}
+  dialogueAudioSource: {fileID: 3404253497100325773, guid: ce91b306949f9b3469f9bdc95c8fb7be, type: 3}
+  sfxAudioSource: {fileID: 2663389854684325486, guid: c0e1c5263650cfe478c85196502b38f4, type: 3}
+  choicesPanel1:
+    choicePanel: {fileID: 4595597658687772897, guid: cad85b4334134574fbe213ed90669375, type: 3}
+    buttonA: {fileID: 472174296514916636, guid: ef07d137f79e08d49a522df10fc7a857, type: 3}
+    buttonB: {fileID: 5207298424017273453, guid: 35682a0e36e11104e94caca6e14c2bbb, type: 3}
+    textA: {fileID: 3267069500571378617, guid: 4ea480220cd835742b6d712ab57ad4fc, type: 3}
+    textB: {fileID: 2546822108470492242, guid: 14587bb2938f22044a2f3406ec66861a, type: 3}
+    defaultSpriteA: {fileID: 0}
+    defaultSpriteB: {fileID: 0}
+  choicesPanel2:
+    choicePanel: {fileID: 3296864363075380020, guid: c659e5b47643e1547b6fce03b5116c9d, type: 3}
+    buttonA: {fileID: 5510353717022739522, guid: 282c94b7a1298984eb8c846579d4c435, type: 3}
+    buttonB: {fileID: 2174672400026475467, guid: 7e84885604fc2ea499f96a78ed7e38ee, type: 3}
+    textA: {fileID: 4571411894454846599, guid: 5141e42963735194fbf55e02deab3fce, type: 3}
+    textB: {fileID: 4760171068054450601, guid: 813d5a230b4f9a94ca13505476c6eacb, type: 3}
+    defaultSpriteA: {fileID: 0}
+    defaultSpriteB: {fileID: 0}
+  checkpoints: []

@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   maxHealth: 3
   healthText: {fileID: 6764430577307279317, guid: 93aadb22c06dc4b49bbdc5b2a6974fa6, type: 3}
+  maxReputation: 3
+  reputationText: {fileID: 0}
   dialogoAlMorir: {fileID: 11400000, guid: aa6f97f911d6332429d875a5787e6cbd, type: 2}
   permitirAvanceManual: 1
   botonesSiemprePermitidos: []
@@ -88,3 +90,10 @@ MonoBehaviour:
     textB: {fileID: 4760171068054450601, guid: 813d5a230b4f9a94ca13505476c6eacb, type: 3}
     defaultSpriteA: {fileID: 0}
     defaultSpriteB: {fileID: 0}
+  checkpoints:
+  - flag: Checkpoint 2
+    dialogue: {fileID: 11400000, guid: 51e777fcf6bd03b40a71aa6bb55b7fe7, type: 2}
+    sceneToLoad: Imprenta
+  - flag: Checkpoint 3
+    dialogue: {fileID: 11400000, guid: eafb770a5dd55484e8a8132ffa1b3fba, type: 2}
+    sceneToLoad: Purga

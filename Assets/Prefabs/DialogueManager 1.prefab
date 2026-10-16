@@ -51,6 +51,8 @@ MonoBehaviour:
   lineText: {fileID: 0}
   lineText2: {fileID: 0}
   lineText3: {fileID: 0}
+  maxReputation: 3
+  reputationText: {fileID: 0}
   dialoguePanel: {fileID: 0}
   dialoguePanel2: {fileID: 0}
   dialoguePanel3: {fileID: 0}

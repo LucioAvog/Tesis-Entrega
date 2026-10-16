@@ -1034,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 1099501963}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: positionLeft.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: positionLeft.y
@@ -1046,10 +1046,14 @@ PrefabInstance:
       objectReference: {fileID: 820048000}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: positionRight.x
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: positionRight.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionCenter.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
@@ -1248,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5087702906432332179, guid: 5bbb469c9ff78854796e6cdd701890db, type: 3}
       propertyPath: delayInSeconds
-      value: 2
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 5087702906432332179, guid: 5bbb469c9ff78854796e6cdd701890db, type: 3}
       propertyPath: dialogueManager

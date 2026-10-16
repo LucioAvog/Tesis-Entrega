@@ -20,7 +20,10 @@ public class PanelPopUp : MonoBehaviour
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        if (popupPanel != null) popupPanel.SetActive(false);
+        if (popupPanel != null && popupPanel != gameObject)
+        {
+            popupPanel.SetActive(false);
+        }
     }
 
     void Update()
@@ -41,7 +44,10 @@ public class PanelPopUp : MonoBehaviour
 
     public void MostrarItem(string nombre, string descripcion, Sprite icono = null)
     {
-        if (DialogueManager.Instance != null) DialogueManager.Instance.permitirAvanceManual = false;
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.permitirAvanceManual = false;
+        }
 
         if (titleText != null) titleText.text = nombre;
         if (descriptionText != null) descriptionText.text = descripcion;

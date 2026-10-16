@@ -112,8 +112,8 @@ MonoBehaviour:
     characterImagePosition3: {x: 0, y: 0}
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
-    playSound: 0
-    soundClip: {fileID: 0}
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 8300000, guid: 0b6ce84d814b61548a729a545282dedf, type: 3}
     sfxDuration: 5
@@ -186,7 +186,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 5
@@ -479,7 +479,7 @@ MonoBehaviour:
     characterImagePosition3: {x: 0, y: 0}
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
-    playSound: 0
+    playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}

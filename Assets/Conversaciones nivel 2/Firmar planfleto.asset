@@ -77,7 +77,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0

@@ -603,7 +603,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
     characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
-    soundClip: {fileID: 8300000, guid: 4a7dcfa4144ce62428dff7536d87bae6, type: 3}
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
     playSFX: 0
     sfxClip: {fileID: 0}
     sfxDuration: 0
@@ -889,12 +889,12 @@ MonoBehaviour:
       nextDialogue: {fileID: 11400000, guid: aa6f97f911d6332429d875a5787e6cbd, type: 2}
       restarVida: 1
       cantidadVidaARestar: 1
-      dialogoAlMorirSiPierde: {fileID: 0}
+      dialogoAlMorirSiPierde: {fileID: 11400000, guid: 9375db67f7fbb554d8f595ad632d39ea, type: 2}
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: Checkpoint 3
       dialogoSiTieneFlag: {fileID: 0}
-      guardarFlag: 
+      guardarFlag: Checkpoint 3
       changeScene: 0
       sceneToLoad: 
     agregarItemAlInventario: 0

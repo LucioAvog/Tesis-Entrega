@@ -258,6 +258,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1792034054}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionRight.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionCenter.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: characterImageRect
       value: 
       objectReference: {fileID: 1499099595}

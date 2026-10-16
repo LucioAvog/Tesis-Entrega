@@ -13,7 +13,11 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            BloquearAvancePorCarrusel = false;
+        }
         else Destroy(gameObject);
     }
 
@@ -46,16 +50,21 @@ public class DialogueManager : MonoBehaviour
     }
 
     [Header("Sistema de Vidas")]
+    [Min(1)]
     [SerializeField] private int maxHealth = 3;
     private static int currentHealth = -1;
     [SerializeField] private TextMeshProUGUI healthText;
+    [Header("Sistema de Reputación")]
+    [Range(1, 3)]
+    [SerializeField] private int maxReputation = 3;
+    private static int currentReputation = -1;
+    [SerializeField] private TextMeshProUGUI reputationText;
+    [SerializeField] private bool diferirFinalNivel3Hasta20DeOctubre;
     [SerializeField] private DialogueScript dialogoAlMorir;
     private DialogueScript ultimoDialogoDeMuerteEjecutado;
     private bool estaMuerto = false;
+    private bool derrotaPorReputacion = false;
     private DialogueScript dialogoMuertePendiente = null;
-
-    public bool EstaMuerto => estaMuerto;
-    public int VidaActual => currentHealth;
 
     [Header("Control de Avance")]
     public bool permitirAvanceManual = true;
@@ -76,7 +85,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image gameBackgroundDisplay;
 
     [Header("Configuración de Texto Animado")]
-    [SerializeField] private float textSpeed = 0.03f;
+    [SerializeField] private float textSpeed = 0.05f;
     private Coroutine typingCoroutine;
     private Coroutine panel3FadeCoroutine;
     private string fullTextOfCurrentLine;
@@ -120,14 +129,25 @@ public class DialogueManager : MonoBehaviour
     private Action onDialogueEndCallback;
     public static bool BloquearAvancePorCarrusel { get; set; } = false;
     private float tiempoBusquedaInventario = 0f;
+    private bool estadoInventarioRaycastInicializado;
+    private bool ultimoEstadoInventarioAbierto;
 
     [Header("Puntos de Guardado")]
     [SerializeField] private List<Checkpoint> checkpoints = new List<Checkpoint>();
 
     void Start()
     {
-        if (currentHealth == -1) currentHealth = maxHealth;
+        if (InventoryManager.Instance != null && InventoryManager.Instance.inventoryPanel != null)
+        {
+            panelInventario = InventoryManager.Instance.inventoryPanel;
+        }
+
+        maxHealth = Mathf.Max(1, maxHealth);
+        maxReputation = Mathf.Clamp(maxReputation, 1, 3);
+        currentHealth = currentHealth == -1 ? maxHealth : Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentReputation = currentReputation == -1 ? maxReputation : Mathf.Clamp(currentReputation, 0, maxReputation);
         estaMuerto = false;
+        derrotaPorReputacion = false;
         ultimoDialogoDeMuerteEjecutado = null;
         dialogoMuertePendiente = null;
         UpdateHealthUI();
@@ -176,7 +196,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         bool inventarioAbierto = panelInventario != null && panelInventario.activeInHierarchy;
-        ActualizarRaycastOpciones(!inventarioAbierto);
+        if (!estadoInventarioRaycastInicializado || inventarioAbierto != ultimoEstadoInventarioAbierto)
+        {
+            ActualizarRaycastOpciones(!inventarioAbierto);
+            ultimoEstadoInventarioAbierto = inventarioAbierto;
+            estadoInventarioRaycastInicializado = true;
+        }
 
         bool presionoEspacio = false;
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame) presionoEspacio = true;
@@ -185,7 +210,7 @@ public class DialogueManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) presionoEspacio = true;
         #endif
 
-        if (presionoEspacio && !inventarioAbierto && permitirAvanceManual)
+        if (presionoEspacio && !inventarioAbierto && permitirAvanceManual && !AvanceBloqueadoPorTransicionOSFX())
         {
             AdvanceDialogue();
         }
@@ -193,41 +218,54 @@ public class DialogueManager : MonoBehaviour
 
     public void UpdateHealthUI()
     {
-        // Optimización: Interpolación de Strings ($"")
-        if (healthText != null) healthText.text = $"Vida: {currentHealth}/{maxHealth}";
+        if (healthText != null)
+        {
+            string healthStatus = $"Vida: {currentHealth}/{maxHealth}";
+            healthText.text = reputationText == null
+                ? $"{healthStatus}\nReputación: {currentReputation}/{maxReputation}"
+                : healthStatus;
+        }
+
+        if (reputationText != null) reputationText.text = $"Reputación: {currentReputation}/{maxReputation}";
     }
 
     public void RestarVida(int cantidad = 1, DialogueScript dialogoMuertePersonalizado = null, bool posponerMuerte = false)
     {
+        RestarRecurso(ref currentHealth, cantidad, dialogoMuertePersonalizado, posponerMuerte, false);
+    }
+
+    public void RestarReputacion(int cantidad = 1, DialogueScript dialogoMuertePersonalizado = null, bool posponerMuerte = false)
+    {
+        RestarRecurso(ref currentReputation, cantidad, dialogoMuertePersonalizado, posponerMuerte, true);
+    }
+
+    private void RestarRecurso(ref int recursoActual, int cantidad, DialogueScript dialogoMuertePersonalizado, bool posponerMuerte, bool esReputacion)
+    {
         if (estaMuerto) return;
-        currentHealth = Mathf.Clamp(currentHealth - cantidad, 0, maxHealth);
+        int maximo = esReputacion ? maxReputation : maxHealth;
+        recursoActual = Mathf.Clamp(recursoActual - Mathf.Max(0, cantidad), 0, maximo);
         UpdateHealthUI();
 
-        if (currentHealth == 0)
+        if (recursoActual == 0 && dialogoMuertePendiente == null)
         {
+            if (esReputacion) SetFlag("Nivel3_ReputacionAgotada");
+            derrotaPorReputacion = esReputacion;
             if (posponerMuerte) dialogoMuertePendiente = ObtenerDialogoMuerte(dialogoMuertePersonalizado);
             else GameOver(dialogoMuertePersonalizado);
         }
     }
 
-    public void ModificarVida(int cantidad)
-    {
-        if (estaMuerto) return;
-        currentHealth = Mathf.Clamp(currentHealth + cantidad, 0, maxHealth);
-        UpdateHealthUI();
-        if (currentHealth == 0) GameOver();
-    }
-
-    public void EstablecerVida(int nuevaVida)
-    {
-        currentHealth = Mathf.Clamp(nuevaVida, 0, maxHealth);
-        UpdateHealthUI();
-        if (currentHealth == 0 && !estaMuerto) GameOver();
-    }
-
     public void ReiniciarVida()
     {
         currentHealth = maxHealth;
+        estaMuerto = false;
+        dialogoMuertePendiente = null;
+        UpdateHealthUI();
+    }
+
+    public void ReiniciarReputacion()
+    {
+        currentReputation = maxReputation;
         estaMuerto = false;
         dialogoMuertePendiente = null;
         UpdateHealthUI();
@@ -267,8 +305,10 @@ public class DialogueManager : MonoBehaviour
         Checkpoint checkpoint = ObtenerUltimoCheckpoint();
         if (!string.IsNullOrEmpty(checkpoint.flag))
         {
-            currentHealth = 1;
+            if (derrotaPorReputacion) currentReputation = 1;
+            else currentHealth = 1;
             estaMuerto = false;
+            derrotaPorReputacion = false;
             UpdateHealthUI();
 
             if (!string.IsNullOrEmpty(checkpoint.sceneToLoad) && checkpoint.sceneToLoad != SceneManager.GetActiveScene().name)
@@ -288,6 +328,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         ReiniciarVida();
+        ReiniciarReputacion();
+        derrotaPorReputacion = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -353,6 +395,11 @@ public class DialogueManager : MonoBehaviour
                btn == choicesPanel2.buttonA || btn == choicesPanel2.buttonB;
     }
 
+    private bool AvanceBloqueadoPorTransicionOSFX()
+    {
+        return panel3FadeCoroutine != null || (sfxAudioSource != null && sfxAudioSource.isPlaying);
+    }
+
     public void SetFlag(string flagName)
     {
         if (string.IsNullOrEmpty(flagName)) return;
@@ -374,6 +421,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (AvanceBloqueadoPorTransicionOSFX()) return;
+        if (ItemDialogueManager.Instance != null && ItemDialogueManager.Instance.EstaInspeccionando) return;
         if (BloquearAvancePorCarrusel || (panelInventario != null && panelInventario.activeInHierarchy)) return;
         if (!permitirAvanceManual && !awaitingChoice) return;
 
@@ -393,6 +442,17 @@ public class DialogueManager : MonoBehaviour
     public void GetConversation(DialogueScript dialogue, Action onComplete = null)
     {
         if (dialogue == null || dialogue.conversationLines == null || dialogue.conversationLines.Count == 0) return;
+
+        if (!gameObject.activeInHierarchy)
+        {
+            gameObject.SetActive(true);
+        }
+
+        if (!isActiveAndEnabled)
+        {
+            Debug.LogError("No se puede iniciar el diálogo porque DialogueManager sigue inactivo. Activa también su objeto padre.", this);
+            return;
+        }
 
         if (EsJugadorMuertoYNoEsDialogoDeMuerte(dialogue))
         {
@@ -433,6 +493,16 @@ public class DialogueManager : MonoBehaviour
                 if (currentConversation.changeSceneOnEnd && !string.IsNullOrEmpty(currentConversation.sceneToLoadOnEnd))
                 {
                     GuardarFlagAlFinalizarConversacion();
+                    if (currentConversation.enrutarFinalesNivel3)
+                    {
+                        string sceneFinalNivel3 = ObtenerEscenaFinalNivel3(currentConversation);
+                        if (!string.IsNullOrEmpty(sceneFinalNivel3))
+                        {
+                            SceneManager.LoadScene(sceneFinalNivel3);
+                        }
+                        return;
+                    }
+
                     SceneManager.LoadScene(currentConversation.sceneToLoadOnEnd);
                     return;
                 }
@@ -445,7 +515,7 @@ public class DialogueManager : MonoBehaviour
 
         BloquearBotonesEscena(currentLine.bloquearOtrosBotones);
         if (currentLine.objetoAActivar != null) currentLine.objetoAActivar.SetActive(true);
-        if (currentLine.objetoADesactivar != null && currentLine.objetoADesactivar != dialoguePanel3 && (gameBackgroundDisplay == null || currentLine.objetoADesactivar != gameBackgroundDisplay.gameObject))
+        if (currentLine.objetoADesactivar != null && currentLine.objetoADesactivar != gameObject && currentLine.objetoADesactivar != dialoguePanel3 && (gameBackgroundDisplay == null || currentLine.objetoADesactivar != gameBackgroundDisplay.gameObject))
             currentLine.objetoADesactivar.SetActive(false);
 
         if (currentLine.agregarItemAlInventario && currentLine.itemAAgregar != null)
@@ -603,12 +673,12 @@ public class DialogueManager : MonoBehaviour
 
     private void HandleAllCharacterImages(Line currentLine)
     {
-        ProcessSingleCharacter(currentLine.showImage, currentLine.characterImage, currentLine.imagePosition, currentLine.characterImagePosition, currentLine.characterImageSize, characterImageDisplay, characterImageRect, defaultCharacterSize);
-        ProcessSingleCharacter(currentLine.showImage2, currentLine.characterImage2, currentLine.imagePosition2, currentLine.characterImagePosition2, currentLine.characterImageSize2, characterImageDisplay2, characterImageRect2, defaultCharacterSize2);
-        ProcessSingleCharacter(currentLine.showImage3, currentLine.characterImage3, currentLine.imagePosition3, currentLine.characterImagePosition3, currentLine.characterImageSize3, characterImageDisplay3, characterImageRect3, defaultCharacterSize3);
+        ProcessSingleCharacter(currentLine.showImage, currentLine.characterImage, currentLine.imagePosition, currentLine.characterImagePosition, characterImageDisplay, characterImageRect, defaultCharacterSize);
+        ProcessSingleCharacter(currentLine.showImage2, currentLine.characterImage2, currentLine.imagePosition2, currentLine.characterImagePosition2, characterImageDisplay2, characterImageRect2, defaultCharacterSize2);
+        ProcessSingleCharacter(currentLine.showImage3, currentLine.characterImage3, currentLine.imagePosition3, currentLine.characterImagePosition3, characterImageDisplay3, characterImageRect3, defaultCharacterSize3);
     }
     
-    private void ProcessSingleCharacter(bool show, Sprite sprite, ImagePosition pos, Vector2 customPos, Vector2 customSize, Image display, RectTransform rect, Vector2 defSize)
+    private void ProcessSingleCharacter(bool show, Sprite sprite, ImagePosition pos, Vector2 customPos, Image display, RectTransform rect, Vector2 defSize)
     {
         if (display == null) return;
         if (show && sprite != null)
@@ -616,7 +686,7 @@ public class DialogueManager : MonoBehaviour
             display.gameObject.SetActive(true); display.sprite = sprite; display.preserveAspect = true;
             if (rect != null)
             {
-                rect.sizeDelta = (customSize != Vector2.zero) ? customSize : defSize;
+                rect.sizeDelta = defSize;
                 if (pos == ImagePosition.Personalizada || customPos != Vector2.zero) rect.anchoredPosition = customPos;
                 else switch (pos) { case ImagePosition.Izquierda: rect.anchoredPosition = positionLeft; break; case ImagePosition.Centro: rect.anchoredPosition = positionCenter; break; case ImagePosition.Derecha: rect.anchoredPosition = positionRight; break; }
             }
@@ -653,12 +723,22 @@ public class DialogueManager : MonoBehaviour
 
         if (selectedChoice.restarVida)
         {
-            int cantidadARestar = selectedChoice.cantidadVidaARestar > 0 ? selectedChoice.cantidadVidaARestar : 1;
-            RestarVida(cantidadARestar, selectedChoice.dialogoAlMorirSiPierde, true);
+            RestarVida(selectedChoice.cantidadVidaARestar, selectedChoice.dialogoAlMorirSiPierde, true);
+        }
+
+        if (selectedChoice.restarReputacion)
+        {
+            RestarReputacion(selectedChoice.cantidadReputacionARestar, selectedChoice.dialogoAlMorirSiPierde, true);
         }
 
         if (!string.IsNullOrEmpty(selectedChoice.guardarFlag)) SetFlag(selectedChoice.guardarFlag);
         if (selectedChoice.changeScene && !string.IsNullOrEmpty(selectedChoice.sceneToLoad)) { SceneManager.LoadScene(selectedChoice.sceneToLoad); return; }
+
+        if (diferirFinalNivel3Hasta20DeOctubre && currentReputation == 0)
+        {
+            SetFlag("Nivel3_ReputacionAgotada");
+            dialogoMuertePendiente = null;
+        }
 
         if (dialogoMuertePendiente != null)
         {
@@ -773,7 +853,51 @@ public class DialogueManager : MonoBehaviour
         if (characterImageDisplay != null) characterImageDisplay.gameObject.SetActive(false);
         if (characterImageDisplay2 != null) characterImageDisplay2.gameObject.SetActive(false);
         if (characterImageDisplay3 != null) characterImageDisplay3.gameObject.SetActive(false);
+
+        string sceneFinalNivel3 = ObtenerEscenaFinalNivel3(currentConversation);
+        if (!string.IsNullOrEmpty(sceneFinalNivel3))
+        {
+            SceneManager.LoadScene(sceneFinalNivel3);
+            return;
+        }
+
         Action callback = onDialogueEndCallback; onDialogueEndCallback = null; callback?.Invoke();
+    }
+
+    private string ObtenerEscenaFinalNivel3(DialogueScript dialogue)
+    {
+        if (dialogue == null || !dialogue.enrutarFinalesNivel3) return null;
+
+        string sceneFinal;
+        if (currentReputation <= 0)
+        {
+            sceneFinal = dialogue.sceneFinalPorReputacionAgotada;
+        }
+        else
+        {
+            InventoryManager inventoryManager = InventoryManager.Instance;
+            if (inventoryManager == null)
+            {
+                inventoryManager = UnityEngine.Object.FindAnyObjectByType<InventoryManager>(FindObjectsInactive.Include);
+            }
+
+            if (inventoryManager == null)
+            {
+                Debug.LogError("No se puede elegir el final del nivel 3 porque no hay un InventoryManager activo.", this);
+                return null;
+            }
+
+            sceneFinal = inventoryManager.HasItem(dialogue.itemLlave)
+                ? dialogue.sceneFinalConLlave
+                : dialogue.sceneFinalSinLlave;
+        }
+
+        if (string.IsNullOrWhiteSpace(sceneFinal))
+        {
+            Debug.LogError($"Falta asignar la escena del final correspondiente en '{dialogue.name}'.", dialogue);
+        }
+
+        return sceneFinal;
     }
 
     private void GuardarFlagAlFinalizarConversacion()

@@ -43,7 +43,7 @@ MonoBehaviour:
   - speaker: 
     text: "Murmur\xE9 en voz baja mientras los mir\xE9 algo dudosos.\r\n"
     showImage: 0
-    characterImage: {fileID: 749445152557612188, guid: 8626c246a03ffbf4da7e963b1bf26a69, type: 3}
+    characterImage: {fileID: 0}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0

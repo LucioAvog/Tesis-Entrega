@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5240113051772016807, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5790506952747849980, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
       propertyPath: m_Camera
       value: 
@@ -479,7 +483,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -6414187696295180080, guid: 0714f990d1014d740b8257c10c19b76e, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5240113051772016807, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
@@ -789,6 +794,14 @@ PrefabInstance:
       propertyPath: sfxAudioSource
       value: 
       objectReference: {fileID: 268980831}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionRight.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
+      propertyPath: positionCenter.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5861565818520267772, guid: 0a6dfcbaf928e41459e5b8e6649943ad, type: 3}
       propertyPath: characterImageRect
       value: 

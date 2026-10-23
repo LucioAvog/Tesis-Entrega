@@ -220,10 +220,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (healthText != null)
         {
-            string healthStatus = $"Vida: {currentHealth}/{maxHealth}";
-            healthText.text = reputationText == null
-                ? $"{healthStatus}\nReputación: {currentReputation}/{maxReputation}"
-                : healthStatus;
+            healthText.text = $"Vida: {currentHealth}/{maxHealth}";
         }
 
         if (reputationText != null) reputationText.text = $"Reputación: {currentReputation}/{maxReputation}";

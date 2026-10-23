@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adeb66ea48d6884c9ae1c35b5ca9e1a, type: 3}
+  m_Name: Inicio nivel 3 - Asamblea y Bastilla
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
+  conversationLines:
+  - speaker: 
+    text: "Jean subió a la tribuna, golpeando la madera con el puño."
+    panelType: 1
+    showImage2: 1
+    characterImage2: {fileID: 917618852127017080, guid: 2f6669fe673bb294287a7fd07480ab21, type: 3}
+    imagePosition2: 1
+    choices: []
+  - speaker: Jean
+    text: "ㅤㅤ❝  ───¡Ciudadanos! ─────gritó la voz de Jean, resonando en toda la sala─────. ¡No podemos hablar de libertad mientras la sombra de la corona siga envenenando la patria! ¡La monarquía debe ser abolida de inmediato! ¡Francia debe renacer como una República única e indivisible!"
+    panelType: 0
+    showImage2: 1
+    characterImage2: {fileID: 917618852127017080, guid: 2f6669fe673bb294287a7fd07480ab21, type: 3}
+    imagePosition2: 1
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    choices: []
+  - speaker: 
+    text: "La multitud estalló en gritos y aplausos, pero entre las bancadas más moderadas se escuchaban murmullos de duda y miedo. Jean bajó de la tribuna y se posó a mi lado, fijando su mirada inquisidora en mí."
+    panelType: 1
+    showImage2: 1
+    characterImage2: {fileID: 917618852127017080, guid: 2f6669fe673bb294287a7fd07480ab21, type: 3}
+    imagePosition2: 1
+    choices: []
+  - speaker: Jean
+    text: "ㅤㅤ❝  ───Llegó el momento de demostrar tu lealtad a la causa, François ─────susurró Jean─────. ¿Estás listo para enterrar la monarquía para siempre?"
+    panelType: 0
+    showImage2: 1
+    characterImage2: {fileID: 917618852127017080, guid: 2f6669fe673bb294287a7fd07480ab21, type: 3}
+    imagePosition2: 1
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    choices: []
+  - speaker: Elodie
+    text: "ㅤㅤ❝  ───François, esto es por lo que hemos luchado todos estos años ─────añadió Elodie con tono firme."
+    panelType: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: 
+    text: "Observé a ambos por un momento. Tras un momento de reflexión, decidí ir con Jean y estrechar su mano."
+    panelType: 1
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: Jean
+    text: "ㅤㅤ❝  ───Tomaste la decisión correcta ─────murmuró Jean, su mirada fija en mí─────. Debemos quemar lo viejo para construir lo nuevo."
+    panelType: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    choices: []
+  - speaker: 
+    text: "Jules no dijo nada. Solo suspiró, negando con la cabeza antes de darse la vuelta y marcharse. Gabriel tenía una expresión triste en sus ojos, mientras que Elodie apretó mi brazo entusiasmadamente."
+    panelType: 1
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: 
+    text: "Tomamos una decisión, ya no hay vuelta atrás."
+    panelType: 1
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: 
+    text: "El aire se sentía denso y pesado, el olor a humo se filtraba a mis fosas nasales. Miles de personas se apretaban contra la puerta de la Bastille Saint-Antoine, según Elodie, un símbolo del absolutismo que gobernaba en aquella época, y el mayor dispositivo de pólvora del país. El lugar era una masacre. Había múltiples cadáveres esparcidos por el suelo, al menos cien revolucionarios… una enorme cantidad a diferencia de los guardias."
+    panelType: 1
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: 0b6ce84d814b61548a729a545282dedf, type: 3}
+    sfxDuration: 3
+    choices: []
+  - speaker: 
+    text: "Entre el humo denso de las primeras descargas de mosquete, divisamos a Jean y a Jules en la vanguardia, representando dos caminos irreconciliables frente al mismo abismo. Jean tenía la camisa manchada de hollín y agitaba una pica con la cabeza de Jacques de Flesselles, la autoridad del lugar."
+    panelType: 1
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 0
+    showImage3: 1
+    characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition3: 2
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: b492623569eb59b4488b9d1be905e496, type: 3}
+    sfxDuration: 3
+    choices: []
+  - speaker: Jean
+    text: "ㅤㅤ❝  ───¡Ciudadanos, no nos aliaremos con los ciervos del rey! ¡Si se niegan a darnos la pólvora acabaremos con ellos! ¡Los masacramos a cada guardia que nos mande! ─────dijo Jean con convicción."
+    panelType: 0
+    showImage: 1
+    characterImage: {fileID: 3186338516151188185, guid: be4a907c3cdcf92489a59fe72fc46377, type: 3}
+    imagePosition: 0
+    showImage3: 1
+    characterImage3: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition3: 2
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
+    choices: []
+  - speaker: 
+    text: "Jules a su lado pareció mirarlo con algo parecido al desprecio, claramente disgustado. A diferencia de Jean, su ropa seguía igual de pulcra que siempre… mejor dicho, manchado con pequeñas gotas de sangre gracias a la cabeza que el contrario sostenía."
+    panelType: 1
+    showImage: 1
+    characterImage: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition: 0
+    showImage3: 1
+    characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: Jules
+    text: "ㅤㅤ❝  ───¡Escúchenme! Si asaltamos la Bastilla salvajemente, la Asamblea perderá la legitimidad ─────intervino Jules, alzando la voz tratando de contener la gran violencia─────. ¡No hagan que esta masacre continúe!"
+    panelType: 0
+    showImage: 1
+    characterImage: {fileID: 2399263849078135281, guid: 5155e5976ca336f4bb96455406902952, type: 3}
+    imagePosition: 0
+    showImage3: 1
+    characterImage3: {fileID: 6132321653257676300, guid: 0e351293a5e9d1945b919c54ad4bee83, type: 3}
+    imagePosition3: 2
+    playSound: 1
+    soundClip: {fileID: 8300000, guid: 1545c71d4d2b37b4bb497cad0e859aa4, type: 3}
+    choices: []
+  - speaker: Elodie
+    text: "ㅤㅤ❝  ───François… vamos con ellos ─────dijo Elodie en voz baja a mi lado, la mayoría de guardias habían sido capturados, la primera línea se encargó de todo."
+    panelType: 0
+    showImage: 1
+    characterImage: {fileID: 8883360511585950124, guid: 1cf1d2b45460c7b49bd2f70b748b0d16, type: 3}
+    imagePosition: 0
+    showImage2: 1
+    characterImage2: {fileID: -1329315260624158904, guid: b937601961538294e95dff96cc314eca, type: 3}
+    imagePosition2: 1
+    showImage3: 1
+    characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
+    imagePosition3: 2
+    choices: []
+  - speaker: 
+    text: "El lugar era una masacre… y nosotros seríamos parte de ella."
+    panelType: 1
+    playSFX: 1
+    sfxClip: {fileID: 8300000, guid: b492623569eb59b4488b9d1be905e496, type: 3}
+    sfxDuration: 3
+    choices: []
+  nextConversation: {fileID: 11400000, guid: fa62049d62bd28c49a225e5f8ef2f485, type: 2}
+  flagRequeridaParaSiguiente: 
+  conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 0
+  sceneToLoadOnEnd: 
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}
+  enrutarFinalesNivel3: 0
+  flagReputacionAgotada: Nivel3_ReputacionAgotada
+  itemLlave: Llave
+  sceneFinalPorReputacionAgotada: 
+  sceneFinalConLlave: 
+  sceneFinalSinLlave: 

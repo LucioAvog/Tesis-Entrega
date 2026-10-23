@@ -488,7 +488,7 @@ PrefabInstance:
     - target: {fileID: 6887326347439566297, guid: 5aa7548e2e2d1b74dad30d33eb98ac5d, type: 3}
       propertyPath: myDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: fa62049d62bd28c49a225e5f8ef2f485, type: 2}
+      objectReference: {fileID: 11400000, guid: 9e5f5c2e7638441eb2afd82075bca148, type: 2}
     - target: {fileID: 6887326347439566297, guid: 5aa7548e2e2d1b74dad30d33eb98ac5d, type: 3}
       propertyPath: dialogueManager
       value: 
@@ -1137,7 +1137,7 @@ PrefabInstance:
     - target: {fileID: 5252162466879316400, guid: eba7d6b874992af489d810ecce250d75, type: 3}
       propertyPath: dialogueToTrigger
       value: 
-      objectReference: {fileID: 11400000, guid: fa62049d62bd28c49a225e5f8ef2f485, type: 2}
+      objectReference: {fileID: 11400000, guid: 9e5f5c2e7638441eb2afd82075bca148, type: 2}
     - target: {fileID: 5651241208071322090, guid: eba7d6b874992af489d810ecce250d75, type: 3}
       propertyPath: m_Name
       value: DialogueTimer 1

@@ -1309,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 714109634}
     - target: {fileID: 8688120504633688729, guid: 43e393375860f9c468f170b85c643565, type: 3}
       propertyPath: maxReputation
-      value: 50
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8688120504633688729, guid: 43e393375860f9c468f170b85c643565, type: 3}
       propertyPath: objectToShake
@@ -1513,14 +1513,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2093125762189783480, guid: 16b8e3b226c6915498e663b703bccdc8, type: 3}
-      propertyPath: m_Name
-      value: Musica de ambiente
-      objectReference: {fileID: 0}
     - target: {fileID: 374347443142149547, guid: 16b8e3b226c6915498e663b703bccdc8, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 2434469f3ae460b46ab2b30abe91923b, type: 3}
+    - target: {fileID: 2093125762189783480, guid: 16b8e3b226c6915498e663b703bccdc8, type: 3}
+      propertyPath: m_Name
+      value: Musica de ambiente
+      objectReference: {fileID: 0}
     - target: {fileID: 4956276827958329478, guid: 16b8e3b226c6915498e663b703bccdc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.63275

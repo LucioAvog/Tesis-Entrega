@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
   conversationLines:
   - speaker: 
-    text: "ACTO 2:\nCa\xEDda de la Bastilla"
+    text: "Ca\xEDda de la Bastilla"
     panelType: 2
     choicePanelType: 0
     ocultarPanelDialogo: 0
@@ -850,10 +850,10 @@ MonoBehaviour:
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
-  - speaker: 
+  - speaker: Emma
     text: "Toma esto. Es un plano con los accesos al almac\xE9n de p\xF3lvora. Consid\xE9ralo
       un regalo."
-    panelType: 1
+    panelType: 0
     choicePanelType: 0
     ocultarPanelDialogo: 0
     bloquearOtrosBotones: 0
@@ -891,6 +891,8 @@ MonoBehaviour:
       restarVida: 0
       cantidadVidaARestar: 1
       dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 0
+      cantidadReputacionARestar: 1
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: 
@@ -904,6 +906,8 @@ MonoBehaviour:
       restarVida: 0
       cantidadVidaARestar: 1
       dialogoAlMorirSiPierde: {fileID: 0}
+      restarReputacion: 0
+      cantidadReputacionARestar: 1
       reiniciarEnLineaEspecifica: 0
       lineaDestino: 0
       flagRequerida: 
@@ -923,3 +927,9 @@ MonoBehaviour:
   sceneToLoadOnEnd: 
   flagAlFinalizar: 
   dialogoAlPerderUltimaVida: {fileID: 0}
+  enrutarFinalesNivel3: 0
+  flagReputacionAgotada: Nivel3_ReputacionAgotada
+  itemLlave: Llave
+  sceneFinalPorReputacionAgotada: 
+  sceneFinalConLlave: 
+  sceneFinalSinLlave: 

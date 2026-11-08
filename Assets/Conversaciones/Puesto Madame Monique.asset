@@ -20,7 +20,7 @@ MonoBehaviour:
   - speaker: Madame Monique
     text: "Oh, \xA1Fran\xE7ois, Elodie! \xBFC\xF3mo se encuentran, ni\xF1os?\r\n"
     showImage: 1
-    characterImage: {fileID: -7477236536988458850, guid: fcbad9ce4edab3c43a66df965428e321, type: 3}
+    characterImage: {fileID: -371421024749649275, guid: 39146a59cb6a411ab1440e797bb8933e, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   - speaker: 
     text: dijo alegremente.
     showImage: 1
-    characterImage: {fileID: -7477236536988458850, guid: fcbad9ce4edab3c43a66df965428e321, type: 3}
+    characterImage: {fileID: -371421024749649275, guid: 39146a59cb6a411ab1440e797bb8933e, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
       seguir con mi negocio. El precio del trigo ha aumentado mucho, y las cosechas
       no mejoran.\r\n"
     showImage: 1
-    characterImage: {fileID: 8443459525071470120, guid: 1fbbb3f58e5c22c43aa75387b190d837, type: 3}
+    characterImage: {fileID: -371421024749649275, guid: 8946457f9e594cfa9a77bb71b6828e2f, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     text: "Al o\xEDr sus palabras, sent\xED una fuerte tensi\xF3n en mi pecho mientras
       mis hombros se tensaban. Esto era injusto.\r\n"
     showImage: 1
-    characterImage: {fileID: 8443459525071470120, guid: 1fbbb3f58e5c22c43aa75387b190d837, type: 3}
+    characterImage: {fileID: -371421024749649275, guid: 8946457f9e594cfa9a77bb71b6828e2f, type: 3}
     imagePosition: 0
     characterImageSize: {x: 0, y: 0}
     mostrarImagenUI: 0

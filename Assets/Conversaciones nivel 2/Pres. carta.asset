@@ -29,17 +29,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -73,17 +70,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
@@ -115,17 +109,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
@@ -157,17 +148,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 0
     characterImage3: {fileID: 0}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
@@ -199,17 +187,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 6f67ade3026f3c54e9ee369e6bbf3c8f, type: 3}
@@ -242,17 +227,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
@@ -284,21 +266,18 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
-    playSFX: 1
+    playSFX: 0
     sfxClip: {fileID: 8300000, guid: 56ddeee27c343cf4fb4c39310f9da616, type: 3}
     sfxDuration: 0
     triggerShake: 1
@@ -328,17 +307,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -371,17 +347,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 0}
@@ -413,17 +386,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -455,17 +425,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 0
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -497,17 +464,14 @@ MonoBehaviour:
     characterImage: {fileID: 0}
     imagePosition: 0
     characterImagePosition: {x: 0, y: 0}
-    characterImageSize: {x: 0, y: 0}
     showImage2: 1
     characterImage2: {fileID: 2781663074981748457, guid: 3c9bb8ea22c1f9e418787fc98a1aeab6, type: 3}
     imagePosition2: 1
     characterImagePosition2: {x: 0, y: 0}
-    characterImageSize2: {x: 0, y: 0}
     showImage3: 1
     characterImage3: {fileID: 2433035244665607080, guid: 48ccfea1a6bfbef488cf017275230f1d, type: 3}
     imagePosition3: 2
     characterImagePosition3: {x: 0, y: 0}
-    characterImageSize3: {x: 0, y: 0}
     newBackground: {fileID: 0}
     playSound: 1
     soundClip: {fileID: 8300000, guid: 206010bd6ba2348499a63d136c8280ce, type: 3}
@@ -524,7 +488,15 @@ MonoBehaviour:
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
   nextConversation: {fileID: 0}
-  changeSceneOnEnd: 1
-  sceneToLoadOnEnd: Ejecucion
   flagRequeridaParaSiguiente: 
   conversationSiTieneFlag: {fileID: 0}
+  changeSceneOnEnd: 1
+  sceneToLoadOnEnd: Ejecucion
+  flagAlFinalizar: 
+  dialogoAlPerderUltimaVida: {fileID: 0}
+  enrutarFinalesNivel3: 0
+  flagReputacionAgotada: Nivel3_ReputacionAgotada
+  itemLlave: Llave
+  sceneFinalPorReputacionAgotada: 
+  sceneFinalConLlave: 
+  sceneFinalSinLlave: 

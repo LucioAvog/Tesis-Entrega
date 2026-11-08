@@ -99,7 +99,7 @@ MonoBehaviour:
   sceneToLoadOnEnd: 
   flagAlFinalizar: 
   dialogoAlPerderUltimaVida: {fileID: 0}
-  enrutarFinalesNivel3: 0
+  enrutarFinalesNivel3: 1
   flagReputacionAgotada: Nivel3_ReputacionAgotada
   itemLlave: Llave de Elodie
   sceneFinalPorReputacionAgotada: Final 1

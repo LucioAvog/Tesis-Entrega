@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueScript
   conversationLines:
   - speaker: 
-    text: "Acto 3: Ca\xEDda de la Bastilla"
+    text: En el despacho de Jules
     panelType: 2
     choicePanelType: 0
     ocultarPanelDialogo: 0
@@ -295,45 +295,6 @@ MonoBehaviour:
     objetoAActivar: {fileID: 0}
     objetoADesactivar: {fileID: 0}
     dispararCarruselPaneles: 0
-  - speaker: Francois
-    text: "\xBFJuicio? \xBFDe qu\xE9 hablas? .pregunt\xE9 con mi voz llena de confusi\xF3n-\r\n"
-    panelType: 0
-    choicePanelType: 0
-    ocultarPanelDialogo: 0
-    bloquearOtrosBotones: 0
-    usarTransicionTexto: 0
-    duracionTransicion: 0
-    mostrarImagenPantalla: 0
-    imagenPantalla: {fileID: 0}
-    posicionImagenPantalla: {x: 0, y: 0}
-    tamanoImagenPantalla: {x: 0, y: 0}
-    showImage: 1
-    characterImage: {fileID: -8633963525176628289, guid: 8b29488c46c4cca4ea2214f1a9012dcc, type: 3}
-    imagePosition: 0
-    characterImagePosition: {x: 0, y: 0}
-    showImage2: 0
-    characterImage2: {fileID: 0}
-    imagePosition2: 0
-    characterImagePosition2: {x: 0, y: 0}
-    showImage3: 0
-    characterImage3: {fileID: 0}
-    imagePosition3: 0
-    characterImagePosition3: {x: 0, y: 0}
-    newBackground: {fileID: 0}
-    playSound: 1
-    soundClip: {fileID: 8300000, guid: fd8dced5c1745ab4fa4203825aa83b89, type: 3}
-    playSFX: 0
-    sfxClip: {fileID: 0}
-    sfxDuration: 0
-    triggerShake: 0
-    shakeDuration: 0
-    shakeIntensity: 0
-    choices: []
-    agregarItemAlInventario: 0
-    itemAAgregar: {fileID: 0}
-    objetoAActivar: {fileID: 0}
-    objetoADesactivar: {fileID: 0}
-    dispararCarruselPaneles: 0
   - speaker: 
     text: "Jules ladeo su cabeza, con un rostro estoico, como si tuviera que explicarle
       a un ni\xF1o que robar estaba mal y la respuesta fuera tan simple que hasta
@@ -491,3 +452,9 @@ MonoBehaviour:
   sceneToLoadOnEnd: 
   flagAlFinalizar: 
   dialogoAlPerderUltimaVida: {fileID: 0}
+  enrutarFinalesNivel3: 0
+  flagReputacionAgotada: Nivel3_ReputacionAgotada
+  itemLlave: Llave
+  sceneFinalPorReputacionAgotada: 
+  sceneFinalConLlave: 
+  sceneFinalSinLlave: 

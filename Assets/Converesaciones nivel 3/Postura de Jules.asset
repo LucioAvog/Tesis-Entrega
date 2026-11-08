@@ -220,7 +220,7 @@ MonoBehaviour:
   sceneToLoadOnEnd: Mansion de Jules
   flagAlFinalizar: 
   dialogoAlPerderUltimaVida: {fileID: 0}
-  enrutarFinalesNivel3: 1
+  enrutarFinalesNivel3: 0
   flagReputacionAgotada: Nivel3_ReputacionAgotada
   itemLlave: Llave de Elodie
   sceneFinalPorReputacionAgotada: Final 1

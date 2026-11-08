@@ -234,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443415275889441764, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.63494873
+      value: -0.63500977
       objectReference: {fileID: 0}
     - target: {fileID: 443415275889441764, guid: a6f190290d28ff44182ed24dd7337b45, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -587,7 +587,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Nivel 2 Jean
+          m_StringArgument: Nivel 3 Abolicion (Inicio)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1303182950

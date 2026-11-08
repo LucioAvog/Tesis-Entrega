@@ -247,6 +247,13 @@ public class DialogueManager : MonoBehaviour
         {
             if (esReputacion) SetFlag("Nivel3_ReputacionAgotada");
             derrotaPorReputacion = esReputacion;
+            if (TieneFinalPorDerrotaConfigurado())
+            {
+                ForceStopDialogue();
+                SceneManager.LoadScene(currentConversation.sceneFinalPorReputacionAgotada);
+                return;
+            }
+
             if (posponerMuerte) dialogoMuertePendiente = ObtenerDialogoMuerte(dialogoMuertePersonalizado);
             else GameOver(dialogoMuertePersonalizado);
         }
@@ -295,6 +302,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         return dialogoAlMorir;
+    }
+
+    private bool TieneFinalPorDerrotaConfigurado()
+    {
+        return currentConversation != null &&
+            !string.IsNullOrWhiteSpace(currentConversation.sceneFinalPorReputacionAgotada);
     }
 
     private void EjecutarRespawn()
@@ -429,7 +442,12 @@ public class DialogueManager : MonoBehaviour
             {
                 StopCoroutine(typingCoroutine);
                 typingCoroutine = null;
-                if (activeLineText != null) { activeLineText.text = fullTextOfCurrentLine; RestablecerAlphaTexto(activeLineText); }
+                if (activeLineText != null)
+                {
+                    activeLineText.text = fullTextOfCurrentLine;
+                    activeLineText.maxVisibleCharacters = int.MaxValue;
+                    RestablecerAlphaTexto(activeLineText);
+                }
                 StopDialogueAudio();
             }
             else ProduceNextLine();
@@ -615,13 +633,17 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator TypeText(string textToType)
     {
         if (activeLineText == null) yield break;
-        activeLineText.text = "";
+        activeLineText.text = textToType;
+        activeLineText.maxVisibleCharacters = 0;
+        activeLineText.ForceMeshUpdate();
         RestablecerAlphaTexto(activeLineText);
-        foreach (char letter in textToType.ToCharArray()) 
-        { 
-            activeLineText.text += letter; 
+        int characterCount = activeLineText.textInfo.characterCount;
+        for (int i = 1; i <= characterCount; i++)
+        {
+            activeLineText.maxVisibleCharacters = i;
             if (textSpeed > 0) yield return new WaitForSeconds(textSpeed); 
         }
+        activeLineText.maxVisibleCharacters = int.MaxValue;
         StopDialogueAudio(); 
         typingCoroutine = null;
     }
@@ -629,7 +651,9 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator FadeInText(string textToType, float duration)
     {
         if (activeLineText == null) yield break;
-        activeLineText.text = textToType; Color c = activeLineText.color; float elapsed = 0f;
+        activeLineText.text = textToType;
+        activeLineText.maxVisibleCharacters = int.MaxValue;
+        Color c = activeLineText.color; float elapsed = 0f;
         while (elapsed < duration) { elapsed += Time.deltaTime; activeLineText.color = new Color(c.r, c.g, c.b, Mathf.Clamp01(elapsed / duration)); yield return null; }
         RestablecerAlphaTexto(activeLineText); StopDialogueAudio(); typingCoroutine = null;
     }
@@ -721,11 +745,13 @@ public class DialogueManager : MonoBehaviour
         if (selectedChoice.restarVida)
         {
             RestarVida(selectedChoice.cantidadVidaARestar, selectedChoice.dialogoAlMorirSiPierde, true);
+            if (currentHealth == 0 && TieneFinalPorDerrotaConfigurado()) return;
         }
 
         if (selectedChoice.restarReputacion)
         {
             RestarReputacion(selectedChoice.cantidadReputacionARestar, selectedChoice.dialogoAlMorirSiPierde, true);
+            if (currentReputation == 0 && TieneFinalPorDerrotaConfigurado()) return;
         }
 
         if (!string.IsNullOrEmpty(selectedChoice.guardarFlag)) SetFlag(selectedChoice.guardarFlag);
@@ -826,9 +852,9 @@ public class DialogueManager : MonoBehaviour
 
     public void LimpiarTodosLosTextos()
     {
-        if (lineText != null) { lineText.text = ""; RestablecerAlphaTexto(lineText); }
-        if (lineText2 != null) { lineText2.text = ""; RestablecerAlphaTexto(lineText2); }
-        if (lineText3 != null) { lineText3.text = ""; RestablecerAlphaTexto(lineText3); }
+        if (lineText != null) { lineText.text = ""; lineText.maxVisibleCharacters = int.MaxValue; RestablecerAlphaTexto(lineText); }
+        if (lineText2 != null) { lineText2.text = ""; lineText2.maxVisibleCharacters = int.MaxValue; RestablecerAlphaTexto(lineText2); }
+        if (lineText3 != null) { lineText3.text = ""; lineText3.maxVisibleCharacters = int.MaxValue; RestablecerAlphaTexto(lineText3); }
         if (nameText != null) nameText.text = "";
     }
 
